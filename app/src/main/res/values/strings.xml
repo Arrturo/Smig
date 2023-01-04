@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">TEST123</string>
+    <string name="hello_world">Hello, World!</string>
+    <string name="todo">TODO</string>
+    <string name="test">Test</string>
+    <string name="test2">Test</string>
+    <string name="test3">Test</string>
+    <string name="test4">Test</string>
+    <string name="welcome_to_the_app">Welcome to the app!</string>
+    <string name="witaj_janoo820">Witaj, Janoo820!</string>
+    <string name="poka_profil">Pokaż Profil</string>
+    <string name="kup_bilet">Kup Bilet</string>
+    <string name="historia_bilet_w">Historia biletów</string>
+    <string name="rozk_ad_jazdy">Rozkład jazdy</string>
+    <string name="utw_rz_zg_oszenie">Utwórz zgłoszenie</string>
+    <string name="mandaty">Mandaty</string>
+    <string name="wyloguj">Wyloguj</string>
+    <string name="todo123">TODO</string>
+    <string name="profil">Profil</string>
+    <string name="profil123">Profil</string>
+    <string name="zaloguj_si">Zaloguj się</string>
+    <string-array name="discounts">
+        <item>Student(30%)</item>
+        <item>Espresso</item>
+        <item>Mocha</item>
+        <item>Caffè Americano</item>
+        <item>Cafe Zorro</item>
+    </string-array>
+    <string-array name="reports_types">
+        <item>Problem z kierowcą</item>
+        <item>Usterka</item>
+        <item>Inne</item>
+    </string-array>
+</resources>
