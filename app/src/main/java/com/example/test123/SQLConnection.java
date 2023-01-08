@@ -1,38 +1,24 @@
 package com.example.test123;
 
-import android.os.StrictMode;
-import android.util.Log;
-import android.widget.Toast;
-
 import java.sql.Connection;
 import java.sql.DriverManager;
-import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
 
 public class SQLConnection {
-    public final String url = "jdbc:mysql://127.0.0.1/smig";
-    public final String username = "127.0.0.1";
-    public final String password = "";
+    public String url = "jdbc:mysql://127.0.0.1:3306/smig";
+    public String username = "root@localhost";
+    public String password = "";
 
-    public Connection connect() {
-        Connection conn = null;
+    public void connect() {
         try {
-            StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
-            StrictMode.setThreadPolicy(policy);
-            Class.forName("com.mysql.jdbc.Driver");
-            conn = DriverManager.getConnection(url, username, password);
-            return conn;
+            Class.forName("com.mysql.cj.jdbc.Driver");
+            Connection conn = DriverManager.getConnection(url, username, password);
+            System.out.println("Connected to the database!");
         } catch (SQLException e) {
-            Toast.makeText(null, e.getMessage(), Toast.LENGTH_SHORT).show();
-            Log.e("SQLConnection", "SQLException: " + e.getMessage());
-            Log.e("SQLConnection", "SQLState: " + e.getSQLState());
-            Log.e("SQLConnection", "VendorError: " + e.getErrorCode());
+            System.out.println(e.getMessage());
         } catch (ClassNotFoundException e) {
-            Log.e("SQLConnection", "ClassNotFoundException: " + e.getMessage());
+            System.out.println("chuj");
         }
-        return null;
     }
-
-
 }
