@@ -35,6 +35,8 @@ public class ClientProfile extends AppCompatActivity {
         setContentView(R.layout.client_profile);
 
         GetDataToTextView();
+        SQLConnection sqlConnection = new SQLConnection();
+        sqlConnection.connect();
 
         Button previousActivity = findViewById(R.id.previous);
         previousActivity.setOnClickListener(view -> {
