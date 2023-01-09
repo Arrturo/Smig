@@ -33,7 +33,12 @@ public class ClientProfile extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         if (getSupportActionBar() != null) getSupportActionBar().hide();
         setContentView(R.layout.client_profile);
+        Button addDiscount = findViewById(R.id.add_discount);
         GetDataToTextView();
+        if (getIntent().getIntExtra("discount", 0) != 0) {
+            addDiscount.setEnabled(false);
+        }
+        System.out.println(getIntent().getIntExtra("discount", 0));
         Button previousActivity = findViewById(R.id.previous);
         previousActivity.setOnClickListener(view -> {
             // Finish the current activity and return to the previous one
@@ -41,8 +46,6 @@ public class ClientProfile extends AppCompatActivity {
         });
 
         dbHandler = new DBHandler(ClientProfile.this);
-
-        Button addDiscount = findViewById(R.id.add_discount);
         addDiscount.setOnClickListener(v -> {
             Intent intent = new Intent(ClientProfile.this, DiscountActivity.class);
             startActivity(intent);
@@ -57,17 +60,18 @@ public class ClientProfile extends AppCompatActivity {
                 String Password = passwordTV.getText().toString();
 
                 // validating if the text fields are empty or not.
-                if (Username.isEmpty() && Email.isEmpty() && Phone.isEmpty() && Password.isEmpty()) {
-                    Toast.makeText(ClientProfile.this, "Uzupełnij wszystkie pola!!", Toast.LENGTH_SHORT).show();
+                if (Username.isEmpty() || Email.isEmpty() || Phone.isEmpty() || Password.isEmpty() || Password.length() < 8 || Phone.length() < 9) {
+                    Toast.makeText(ClientProfile.this, "Niepoprawne uzupełnione dane!!", Toast.LENGTH_SHORT).show();
                     return;
                 }
 
                 // on below line we are calling a method to add new
                 // course to sqlite data and pass all our values to it.
-                dbHandler.addNewUser(Username, Email, Phone, Password);
+                dbHandler.updateUser(Username, Email, Phone, Password);
 
                 // after adding the data we are displaying a toast message.
                 Toast.makeText(ClientProfile.this, "Edytowane!", Toast.LENGTH_SHORT).show();
+                finish();
 
         });
     }

@@ -1,23 +1,26 @@
 package com.example.test123;
 
+import androidx.annotation.NonNull;
+
 public class User {
     private String username;
     private String email;
     private String phone;
     private String password;
-    private boolean discount;
+    private int discount;
 
-    public User(String username, String email, String phone, String password) {
+    public User(String username, String email, String phone, String password, int discount) {
         this.username = username;
         this.email = email;
         this.phone = phone;
         this.password = password;
+        this.discount = discount;
     }
 
-    public boolean getDiscount() {
+    public int getDiscount() {
         return discount;
     }
-    public void setDiscount(boolean discount) {
+    public void setDiscount(int discount) {
         this.discount = discount;
     }
 
@@ -51,5 +54,17 @@ public class User {
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    @NonNull
+    @Override
+    public String toString() {
+        return "User{" +
+                "username='" + username + '\'' +
+                ", email='" + email + '\'' +
+                ", phone='" + phone + '\'' +
+                ", password='" + password + '\'' +
+                ", discount=" + discount +
+                '}';
     }
 }

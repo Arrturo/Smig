@@ -21,10 +21,10 @@
     <string name="zaloguj_si">Zaloguj się</string>
     <string-array name="discounts">
         <item>Student(30%)</item>
-        <item>Espresso</item>
-        <item>Mocha</item>
-        <item>Caffè Americano</item>
-        <item>Cafe Zorro</item>
+        <item>Niewidomy(50%)</item>
+        <item>Honorowy Dawca Krwi(60%)</item>
+        <item>Pracownik(90%)</item>
+        <item>Inwalida wojenny(70%)</item>
     </string-array>
     <string-array name="reports_types">
         <item>Problem z kierowcą</item>

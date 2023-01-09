@@ -11,15 +11,16 @@ import androidx.appcompat.app.AppCompatActivity;
 public class MainActivity extends AppCompatActivity {
 
 
-    private User user;
+    public User user;
     public DBHandler dbHandler;
 
     @SuppressLint("SetTextI18n")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
         dbHandler = new DBHandler(MainActivity.this);
         user = dbHandler.getUser();
+        super.onCreate(savedInstanceState);
+
 
         // delete header
         if (getSupportActionBar() != null) getSupportActionBar().hide();
@@ -30,12 +31,14 @@ public class MainActivity extends AppCompatActivity {
 
         Button Profile = (Button) findViewById(R.id.button1);
         Button SendReport = (Button) findViewById(R.id.button3);
+        System.out.println(user.getDiscount());
         Profile.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity.this, ClientProfile.class);
             intent.putExtra("username", user.getUsername());
             intent.putExtra("email", user.getEmail());
             intent.putExtra("phone", user.getPhone());
             intent.putExtra("password", user.getPassword());
+            intent.putExtra("discount", user.getDiscount());
             startActivity(intent);
         });
         SendReport.setOnClickListener(v -> {

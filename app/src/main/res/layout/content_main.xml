@@ -14,7 +14,8 @@
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
         android:orientation="horizontal"
-        android:visibility="visible">
+        android:visibility="visible"
+        tools:ignore="UseCompoundDrawables">
 
         <TextView
             android:id="@+id/greetings"
@@ -25,7 +26,6 @@
             android:layout_marginTop="10dp"
             android:layout_marginRight="10dp"
             android:layout_marginBottom="10dp"
-            android:text="@string/witaj_janoo820"
             android:textColor="@color/black"
             android:textSize="20sp"
             android:visibility="visible" />
@@ -37,7 +37,8 @@
             android:layout_marginTop="10dp"
             android:layout_marginRight="10dp"
             android:layout_marginBottom="10dp"
-            android:src="@drawable/logo"/>
+            android:src="@drawable/logo"
+            android:contentDescription="TODO" />
 
     </LinearLayout>
 

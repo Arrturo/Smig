@@ -82,6 +82,7 @@ public class DBHandler extends SQLiteOpenHelper {
         // at last we are calling a exec sql
         // method to execute above sql query
         db.execSQL(query);
+
     }
 
     @Override
@@ -92,19 +93,41 @@ public class DBHandler extends SQLiteOpenHelper {
         SQLiteDatabase db = this.getReadableDatabase();
 
         // on below line we are creating a cursor with query to read data from database.
-        Cursor cursorCourses = db.rawQuery("SELECT * FROM users", null);
+        Cursor cursorCourses = db.rawQuery("SELECT * FROM users WHERE id=3", null);
         User user = null;
         // moving our cursor to first position.
         if (cursorCourses.moveToFirst()) {
             do {
-                user = new User(cursorCourses.getString(1), cursorCourses.getString(2), cursorCourses.getString(3), cursorCourses.getString(4));
+                user = new User(cursorCourses.getString(1), cursorCourses.getString(2), cursorCourses.getString(3), cursorCourses.getString(4), cursorCourses.getInt(5));
             }
             while (cursorCourses.moveToNext());
             // at last closing our cursor
             cursorCourses.close();
-            
+
         }
         return user;
+    }
+
+
+    public void updateUser(String username, String email, String phone, String password) {
+        SQLiteDatabase db = this.getWritableDatabase();
+        ContentValues values = new ContentValues();
+        values.put(USERNAME_COL, username);
+        values.put(EMAIL_COL, email);
+        values.put(PHONE_COL, phone);
+        values.put(PASSWORD_COL, password);
+        db.update(TABLE_NAME, values, "id=3", null);
+        db.close();
+
+    }
+
+    public void addDiscount(int discount) {
+        SQLiteDatabase db = this.getWritableDatabase();
+        ContentValues values = new ContentValues();
+        values.put(DISCOUNT_COL, discount);
+        db.update(TABLE_NAME, values, "id=3", null);
+        db.close();
+
     }
 }
 
