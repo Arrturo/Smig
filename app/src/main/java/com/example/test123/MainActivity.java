@@ -10,31 +10,31 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
 
-    private final String username = "Ewa";
-    private final String email = "EwaStonoga@gmail.com";
-    private final String phone = "123323789";
-    private final String password = "123456789";
+
+    private User user;
 
     @SuppressLint("SetTextI18n")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        DBHandler dbHandler = new DBHandler(MainActivity.this);
+        user = dbHandler.getUser();
 
         // delete header
         if (getSupportActionBar() != null) getSupportActionBar().hide();
         setContentView(R.layout.activity_main);
 
         TextView greetings = findViewById(R.id.greetings);
-        greetings.setText("Witaj, " + username + "!");
+        greetings.setText("Witaj, " + user.getUsername() + "!");
 
         Button Profile = (Button) findViewById(R.id.button1);
         Button SendReport = (Button) findViewById(R.id.button3);
         Profile.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity.this, ClientProfile.class);
-            intent.putExtra("username", username);
-            intent.putExtra("email", email);
-            intent.putExtra("phone", phone);
-            intent.putExtra("password", password);
+            intent.putExtra("username", user.getUsername());
+            intent.putExtra("email", user.getEmail());
+            intent.putExtra("phone", user.getPhone());
+            intent.putExtra("password", user.getPassword());
             startActivity(intent);
         });
         SendReport.setOnClickListener(v -> {
