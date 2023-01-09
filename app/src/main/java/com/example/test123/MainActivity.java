@@ -27,8 +27,9 @@ public class MainActivity extends AppCompatActivity {
         TextView greetings = findViewById(R.id.greetings);
         greetings.setText("Witaj, " + username + "!");
 
-        Button Profile = (Button) findViewById(R.id.button1);
-        Button SendReport = (Button) findViewById(R.id.button3);
+        Button Profile = (Button) findViewById(R.id.Client_profile);
+        Button BuyTicket = (Button) findViewById(R.id.Buy_ticket);
+        Button SendReport = (Button) findViewById(R.id.Create_report);
         Profile.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity.this, ClientProfile.class);
             intent.putExtra("username", username);
