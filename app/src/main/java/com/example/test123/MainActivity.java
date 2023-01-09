@@ -11,15 +11,16 @@ import androidx.appcompat.app.AppCompatActivity;
 public class MainActivity extends AppCompatActivity {
 
 
-    private User user;
+    public User user;
     public DBHandler dbHandler;
 
     @SuppressLint("SetTextI18n")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
         dbHandler = new DBHandler(MainActivity.this);
         user = dbHandler.getUser();
+        super.onCreate(savedInstanceState);
+
 
         // delete header
         if (getSupportActionBar() != null) getSupportActionBar().hide();
@@ -28,16 +29,24 @@ public class MainActivity extends AppCompatActivity {
         TextView greetings = findViewById(R.id.greetings);
         greetings.setText("Witaj, " + user.getUsername() + "!");
 
-        Button Profile = (Button) findViewById(R.id.button1);
-        Button SendReport = (Button) findViewById(R.id.button3);
+        Button buyTicket = findViewById(R.id.buy_ticket);
+        buyTicket.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, BuyTicketActivity.class);
+            startActivity(intent);
+        });
+
+        Button Profile = findViewById(R.id.client_profile);
         Profile.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity.this, ClientProfile.class);
             intent.putExtra("username", user.getUsername());
             intent.putExtra("email", user.getEmail());
             intent.putExtra("phone", user.getPhone());
             intent.putExtra("password", user.getPassword());
+            intent.putExtra("discount", user.getDiscount());
             startActivity(intent);
         });
+
+        Button SendReport = findViewById(R.id.create_report);
         SendReport.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity.this, ReportActivity.class);
             startActivity(intent);
