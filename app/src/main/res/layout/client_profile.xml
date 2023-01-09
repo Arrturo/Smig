@@ -9,7 +9,6 @@
 
     <include layout="@layout/header" />
 
-
     <Button
         android:id="@+id/add_discount"
         android:layout_width="150dp"
@@ -24,7 +23,6 @@
         android:textColor="#8C8C8C"
         android:textAllCaps="false"
         />
-
     <LinearLayout
         android:layout_width="300dp"
         android:layout_height="60dp"
@@ -140,7 +138,6 @@
         android:textAllCaps="false"
         android:textStyle="bold"
         />
-
 
 </LinearLayout>
 
