@@ -16,7 +16,7 @@ public class DiscountActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         //DELETE HEADER
         if (getSupportActionBar() != null) getSupportActionBar().hide();
-        setContentView(R.layout.add_discount);
+        setContentView(R.layout.client_add_discount);
 
         DBHandler dbHandler = new DBHandler(DiscountActivity.this);
 

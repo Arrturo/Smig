@@ -76,4 +76,6 @@ public class ClientProfile extends AppCompatActivity {
         });
     }
 
+    public void GetDataToTextView(View view) {
+    }
 }
