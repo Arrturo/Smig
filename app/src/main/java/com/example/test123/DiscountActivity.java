@@ -43,16 +43,16 @@ public class DiscountActivity extends AppCompatActivity {
                     dbHandler.addDiscount(30);
                     break;
                 case 1:
-                    dbHandler.addDiscount(50);
+                    dbHandler.addDiscount(70);
                     break;
                 case 2:
-                    dbHandler.addDiscount(60);
+                    dbHandler.addDiscount(95);
                     break;
                 case 3:
-                    dbHandler.addDiscount(90);
+                    dbHandler.addDiscount(37);
                     break;
                 case 4:
-                    dbHandler.addDiscount(70);
+                    dbHandler.addDiscount(100);
                     break;
             }
             finish();

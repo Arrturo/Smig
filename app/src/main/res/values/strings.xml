@@ -1,12 +1,5 @@
 <resources>
     <string name="app_name">TEST123</string>
-    <string name="hello_world">Hello, World!</string>
-    <string name="todo">TODO</string>
-    <string name="test">Test</string>
-    <string name="test2">Test</string>
-    <string name="test3">Test</string>
-    <string name="test4">Test</string>
-    <string name="welcome_to_the_app">Welcome to the app!</string>
     <string name="witaj_janoo820">Witaj, Janoo820!</string>
     <string name="poka_profil">Pokaż Profil</string>
     <string name="kup_bilet">Kup Bilet</string>
@@ -15,16 +8,37 @@
     <string name="utw_rz_zg_oszenie">Utwórz zgłoszenie</string>
     <string name="mandaty">Mandaty</string>
     <string name="wyloguj">Wyloguj</string>
-    <string name="todo123">TODO</string>
     <string name="profil">Profil</string>
     <string name="profil123">Profil</string>
     <string name="zaloguj_si">Zaloguj się</string>
+    <string name="dodaj_ulge">Dodaj Ulgę</string>
+    <string name="rodzaj_ulgi">Rodzaj ulgi</string>
+    <string name="Numer_ID">Numer ID dokumentu</string>
+    <string name="Wyslij">Wyślij</string>
+    <string name="Jednorazowy">Bilet jednorazowy</string>
+    <string name="Krotkookresowy">Bilet krótkookresowy</string>
+    <string name="Miesieczny">Bilet miesięczny</string>
+    <string name="Trzymiesieczny">Bilet trzymiesięczny</string>
+    <string name="Roczny">Bilet roczny</string>
+    <string name="Bilet_normalny">Jednoliniowy Normalny</string>
+    <string name="Bilet_ulgowy">Jednoliniowy Ulgowy</string>
+    <string name="Bilet_30_normalny">30-minutowy Normalny</string>
+    <string name="Bilet_30_ulgowy">30-minutowy Ulgowy</string>
+    <string name="Bilet_60_normalny">60-minutowy Normalny</string>
+    <string name="Bilet_60_ulogwy">60-minutowy Ulgowy</string>
+    <string name="Tickets_amout">Ilość Biletów</string>
+    <string name="Ticket_line_number">Nr lini</string>
+    <string name="Ticket_type">Rodzaj biletu</string>
+    <string name="Ticket_price_amout">Kwota</string>
+    <string name="Button_pay">Opłać</string>
+
+    <string name="todo">idk co to</string>
     <string-array name="discounts">
         <item>Student(30%)</item>
-        <item>Niewidomy(50%)</item>
-        <item>Honorowy Dawca Krwi(60%)</item>
-        <item>Pracownik(90%)</item>
-        <item>Inwalida wojenny(70%)</item>
+        <item>Weteran(70%)</item>
+        <item>Senior(95%)</item>
+        <item>Uczeń(37%)</item>
+        <item>Opiekun(100%)</item>
     </string-array>
     <string-array name="reports_types">
         <item>Problem z kierowcą</item>

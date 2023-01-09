@@ -27,6 +27,7 @@
         <activity android:name=".ClientProfile" />
         <activity android:name=".DiscountActivity" />
         <activity android:name=".ReportActivity" />
+        <activity android:name=".BuyTicketActivity" />
     </application>
 
 </manifest>

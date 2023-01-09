@@ -60,7 +60,7 @@ public class ClientProfile extends AppCompatActivity {
                 String Password = passwordTV.getText().toString();
 
                 // validating if the text fields are empty or not.
-                if (Username.isEmpty() || Email.isEmpty() || Phone.isEmpty() || Password.isEmpty() || Password.length() < 8 || Phone.length() < 9) {
+                if (Username.isEmpty() || Email.isEmpty() || Phone.isEmpty() || Password.isEmpty() || Password.length() < 8 || Phone.length() != 9) {
                     Toast.makeText(ClientProfile.this, "Niepoprawne uzupełnione dane!!", Toast.LENGTH_SHORT).show();
                     return;
                 }

@@ -25,7 +25,8 @@
             android:layout_width="130dp"
             android:layout_height="20dp"
             android:textColor="@color/black"
-            android:text="Rodzaj zgłoszenia:">
+            android:text="Rodzaj zgłoszenia"
+            android:textStyle="bold">
 
         </TextView>
 
@@ -33,7 +34,7 @@
             android:id="@+id/report_spinner"
             android:layout_width="fill_parent"
             android:layout_height="40dp"
-            android:background="@drawable/btn_shape_round"/>
+            android:background="@drawable/input_shape_round"/>
 
     </LinearLayout>
 
@@ -48,15 +49,18 @@
             android:layout_width="300dp"
             android:layout_height="20dp"
             android:textColor="@color/black"
-            android:text="Treść:" />
+            android:text="Treść"
+            android:textStyle="bold"/>
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/email"
-            android:layout_width="300dp"
+            android:layout_width="290dp"
             android:layout_height="160dp"
+            android:layout_marginHorizontal="5dp"
             android:ems="10"
             android:textColor="@color/black"
+            android:padding="8dp"
             android:layout_margin="2dp"
-            android:background="@drawable/btn_shape_round"
+            android:background="@drawable/input_shape_round"
             android:gravity="start|top"
             android:imeOptions="actionDone"
             android:inputType="textMultiLine|textCapSentences"/>
@@ -66,11 +70,13 @@
 
     <Button
         android:id="@+id/send_discount"
-        android:layout_width="wrap_content"
+        android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_margin="8dp"
-        android:background="@drawable/btn_shape_round"
+        android:background="@drawable/client_profile_btn_edit"
+        android:textColor="@color/white"
+        android:textStyle="bold"
         android:gravity="center"
         android:text="Wyślij zgłoszenie"
         android:textAlignment="center"
