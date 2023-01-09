@@ -16,11 +16,13 @@
         android:orientation="vertical"
         android:layout_gravity="center"
         android:layout_margin="8dp">
+
         <TextView
             android:layout_width="130dp"
             android:layout_height="20dp"
             android:textColor="@color/black"
-            android:text="Rodzaj ulgi:">
+            android:text="@string/rodzaj_ulgi"
+            android:textStyle="bold">
 
         </TextView>
 
@@ -28,7 +30,7 @@
             android:id="@+id/discount_spinner"
             android:layout_width="fill_parent"
             android:layout_height="40dp"
-            android:background="@drawable/main_menu_btn"/>
+            android:background="@drawable/input_shape_round"/>
 
     </LinearLayout>
 
@@ -43,28 +45,31 @@
             android:layout_width="300dp"
             android:layout_height="20dp"
             android:textColor="@color/black"
-            android:text="Numer ID dokumentu:" />
+            android:text="@string/Numer_ID"
+            android:textStyle="bold"/>
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/email"
             android:layout_width="300dp"
             android:layout_height="40dp"
             android:ems="10"
             android:textColor="@color/black"
-            android:background="@drawable/main_menu_btn" />
+            android:background="@drawable/input_shape_round" />
     </LinearLayout>
 
 
     <Button
         android:id="@+id/send_discount"
-        android:layout_width="wrap_content"
+        android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_margin="8dp"
-        android:background="@drawable/main_menu_btn"
+        android:background="@drawable/client_profile_btn_edit"
         android:gravity="center"
-        android:text="Wyślij"
+        android:text="@string/Wyslij"
         android:textAlignment="center"
-        android:textSize="16sp" />
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"/>
 
 
 </LinearLayout>

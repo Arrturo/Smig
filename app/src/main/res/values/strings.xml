@@ -12,6 +12,26 @@
     <string name="profil123">Profil</string>
     <string name="zaloguj_si">Zaloguj się</string>
     <string name="dodaj_ulge">Dodaj Ulgę</string>
+    <string name="rodzaj_ulgi">Rodzaj ulgi</string>
+    <string name="Numer_ID">Numer ID dokumentu</string>
+    <string name="Wyslij">Wyślij</string>
+    <string name="Jednorazowy">Bilet jednorazowy</string>
+    <string name="Krotkookresowy">Bilet krótkookresowy</string>
+    <string name="Miesieczny">Bilet miesięczny</string>
+    <string name="Trzymiesieczny">Bilet trzymiesięczny</string>
+    <string name="Roczny">Bilet roczny</string>
+    <string name="Bilet_normalny">Jednoliniowy Normalny</string>
+    <string name="Bilet_ulgowy">Jednoliniowy Ulgowy</string>
+    <string name="Bilet_30_normalny">30-minutowy Normalny</string>
+    <string name="Bilet_30_ulgowy">30-minutowy Ulgowy</string>
+    <string name="Bilet_60_normalny">60-minutowy Normalny</string>
+    <string name="Bilet_60_ulogwy">60-minutowy Ulgowy</string>
+    <string name="Tickets_amout">Ilość Biletów</string>
+    <string name="Ticket_line_number">Nr lini</string>
+    <string name="Ticket_type">Rodzaj biletu</string>
+    <string name="Ticket_price_amout">Kwota</string>
+    <string name="Button_pay">Opłać</string>
+
     <string name="todo">idk co to</string>
     <string-array name="discounts">
         <item>Student(30%)</item>
