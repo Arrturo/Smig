@@ -12,23 +12,20 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class ClientProfile extends AppCompatActivity {
-    TextView username;
-    TextView email;
-    TextView phone;
-    TextView password;
-    private DBHandler dbHandler;
+    TextView usernameTV, emailTV, phoneTV, passwordTV;
+    DBHandler dbHandler;
 
     @SuppressLint("SetTextI18n")
     public void GetDataToTextView() {
-        username = findViewById(R.id.username);
-        email = findViewById(R.id.email);
-        phone = findViewById(R.id.phone);
-        password = findViewById(R.id.password);
+        usernameTV = findViewById(R.id.username);
+        emailTV = findViewById(R.id.email);
+        phoneTV = findViewById(R.id.phone);
+        passwordTV = findViewById(R.id.password);
 
-        username.setText(getIntent().getStringExtra("username"));
-        email.setText(getIntent().getStringExtra("email"));
-        phone.setText(getIntent().getStringExtra("phone"));
-        password.setText(getIntent().getStringExtra("password"));
+        usernameTV.setText(getIntent().getStringExtra("username"));
+        emailTV.setText(getIntent().getStringExtra("email"));
+        phoneTV.setText(getIntent().getStringExtra("phone"));
+        passwordTV.setText(getIntent().getStringExtra("password"));
     }
 
     @Override
@@ -43,6 +40,8 @@ public class ClientProfile extends AppCompatActivity {
             finish();
         });
 
+        dbHandler = new DBHandler(ClientProfile.this);
+
         Button addDiscount = findViewById(R.id.add_discount);
         addDiscount.setOnClickListener(v -> {
             Intent intent = new Intent(ClientProfile.this, DiscountActivity.class);
@@ -52,10 +51,10 @@ public class ClientProfile extends AppCompatActivity {
         Button edit_profile = findViewById(R.id.edit_profile);
         edit_profile.setOnClickListener(v -> {
                 // below line is to get data from all edit text fields.
-                String Username = username.getText().toString();
-                String Email = email.getText().toString();
-                String Phone = phone.getText().toString();
-                String Password = password.getText().toString();
+                String Username = usernameTV.getText().toString();
+                String Email = emailTV.getText().toString();
+                String Phone = phoneTV.getText().toString();
+                String Password = passwordTV.getText().toString();
 
                 // validating if the text fields are empty or not.
                 if (Username.isEmpty() && Email.isEmpty() && Phone.isEmpty() && Password.isEmpty()) {

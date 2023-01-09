@@ -12,12 +12,13 @@ public class MainActivity extends AppCompatActivity {
 
 
     private User user;
+    public DBHandler dbHandler;
 
     @SuppressLint("SetTextI18n")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        DBHandler dbHandler = new DBHandler(MainActivity.this);
+        dbHandler = new DBHandler(MainActivity.this);
         user = dbHandler.getUser();
 
         // delete header

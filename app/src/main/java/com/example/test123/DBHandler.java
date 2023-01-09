@@ -92,7 +92,7 @@ public class DBHandler extends SQLiteOpenHelper {
         SQLiteDatabase db = this.getReadableDatabase();
 
         // on below line we are creating a cursor with query to read data from database.
-        Cursor cursorCourses = db.rawQuery("SELECT * FROM users where id=3", null);
+        Cursor cursorCourses = db.rawQuery("SELECT * FROM users", null);
         User user = null;
         // moving our cursor to first position.
         if (cursorCourses.moveToFirst()) {
