@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">TEST123</string>
+    <string name="witaj_janoo820">Witaj, Janoo820!</string>
+    <string name="poka_profil">Pokaż Profil</string>
+    <string name="kup_bilet">Kup Bilet</string>
+    <string name="historia_bilet_w">Historia biletów</string>
+    <string name="rozk_ad_jazdy">Rozkład jazdy</string>
+    <string name="utw_rz_zg_oszenie">Utwórz zgłoszenie</string>
+    <string name="mandaty">Mandaty</string>
+    <string name="wyloguj">Wyloguj</string>
+    <string name="profil">Profil</string>
+    <string name="profil123">Profil</string>
+    <string name="zaloguj_si">Zaloguj się</string>
+    <string name="dodaj_ulge">Dodaj Ulgę</string>
+    <string name="todo">idk co to</string>
+    <string-array name="discounts">
+        <item>Student(30%)</item>
+        <item>Weteran(70%)</item>
+        <item>Senior(95%)</item>
+        <item>Uczeń(37%)</item>
+        <item>Opiekun(100%)</item>
+    </string-array>
+    <string-array name="reports_types">
+        <item>Problem z kierowcą</item>
+        <item>Usterka</item>
+        <item>Inne</item>
+    </string-array>
+</resources>
