@@ -11,16 +11,18 @@
 
     <Button
         android:id="@+id/add_discount"
-        android:layout_width="wrap_content"
-        android:layout_height="48dp"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_margin="8dp"
-        android:background="@drawable/btn_shape_round"
+        android:background="@drawable/client_profile_btn_reduction"
         android:gravity="center"
-        android:text="Dodaj Ulgę"
-        android:textSize="16sp" />
-
-
+        android:text="@string/dodaj_ulge"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:textColor="#8C8C8C"
+        android:textAllCaps="false"
+        />
     <LinearLayout
         android:layout_width="300dp"
         android:layout_height="60dp"
@@ -31,7 +33,9 @@
             android:layout_width="130dp"
             android:layout_height="20dp"
             android:textColor="@color/black"
-            android:text="Nazwa użytkownika:">
+            android:text="Nazwa użytkownika"
+            android:textStyle="bold">
+
 
         </TextView>
 
@@ -39,7 +43,7 @@
             android:id="@+id/username"
             android:layout_width="300dp"
             android:layout_height="40dp"
-            android:background="@drawable/btn_shape_round"
+            android:background="@drawable/input_shape_round"
             android:ems="10"
             android:padding="8dp"
             android:textColor="@color/black"
@@ -58,7 +62,8 @@
             android:layout_width="300dp"
             android:layout_height="20dp"
             android:textColor="@color/black"
-            android:text="Email:" />
+            android:text="Email"
+            android:textStyle="bold"/>
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/email"
             android:layout_width="300dp"
@@ -66,7 +71,7 @@
             android:ems="10"
             android:padding="8dp"
             android:textColor="@color/black"
-            android:background="@drawable/btn_shape_round"
+            android:background="@drawable/input_shape_round"
             android:inputType="textEmailAddress" />
             </LinearLayout>
 
@@ -80,7 +85,8 @@
                     android:layout_width="300dp"
                     android:layout_height="20dp"
                     android:textColor="@color/black"
-                    android:text="Numer telefonu:" />
+                    android:text="Numer telefonu"
+                    android:textStyle="bold"/>
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/phone"
@@ -89,7 +95,7 @@
             android:ems="10"
             android:padding="8dp"
             android:textColor="@color/black"
-            android:background="@drawable/btn_shape_round"
+            android:background="@drawable/input_shape_round"
             android:inputType="textEmailAddress" />
                 </LinearLayout>
 
@@ -103,7 +109,8 @@
             android:layout_width="300dp"
             android:layout_height="20dp"
             android:textColor="@color/black"
-            android:text="Hasło:" />
+            android:text="Hasło"
+            android:textStyle="bold"/>
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/password"
             android:layout_width="300dp"
@@ -111,23 +118,26 @@
             android:ems="10"
             android:padding="8dp"
             android:textColor="@color/black"
-            android:background="@drawable/btn_shape_round"
+            android:background="@drawable/input_shape_round"
             android:inputType="textPassword" />
     </LinearLayout>
 
     <Button
         android:id="@+id/edit_profile"
-        android:layout_width="wrap_content"
+        android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_margin="8dp"
-        android:background="@drawable/btn_shape_round"
+        android:background="@drawable/client_profile_btn_edit"
         android:gravity="center"
         android:onClick="GetDataToTextView"
         android:text="Edytuj"
         android:textAlignment="center"
-        android:textSize="16sp" />
-
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        />
 
 </LinearLayout>
 

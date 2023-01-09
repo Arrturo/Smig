@@ -48,21 +48,20 @@
     android:id="@+id/content"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:layout_below="@id/header"
     android:orientation="vertical"
         tools:ignore="NotSibling">
 
-    <Button
-        android:id="@+id/button1"
-        android:layout_width="fill_parent"
-        android:layout_height="70dp"
-        android:layout_margin="8dp"
-        android:background="@drawable/btn_shape_round"
-        android:text="@string/poka_profil"
-        android:textSize="16sp"
-        android:textAlignment="center"
-        android:layout_gravity="center"
-        android:gravity="center"/>
+        <Button
+            android:id="@+id/Client_profile"
+            android:layout_width="fill_parent"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:layout_margin="8dp"
+            android:background="@drawable/main_menu_btn"
+            android:gravity="center"
+            android:text="@string/poka_profil"
+            android:textAlignment="center"
+            android:textSize="16sp" />
 
     <LinearLayout
         android:layout_width="fill_parent"
@@ -70,11 +69,11 @@
         android:orientation="horizontal">
 
         <Button
-            android:id="@+id/button6"
+            android:id="@+id/Buy_ticket"
             android:layout_width="fill_parent"
             android:layout_height="110dp"
             android:layout_weight="1"
-            android:background="@drawable/btn_shape_round"
+            android:background="@drawable/main_menu_btn"
             android:text="@string/kup_bilet"
             android:layout_margin="8dp"
             android:textSize="16sp"
@@ -84,10 +83,10 @@
 
 
         <Button
-            android:id="@+id/button7"
+            android:id="@+id/Ticket_history"
             android:layout_width="fill_parent"
             android:layout_height="110dp"
-            android:background="@drawable/btn_shape_round"
+            android:background="@drawable/main_menu_btn"
             android:layout_margin="8dp"
             android:layout_weight="1"
             android:text="@string/historia_bilet_w"
@@ -100,11 +99,11 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/Timetable"
         android:layout_width="fill_parent"
         android:layout_height="70dp"
         android:layout_margin="8dp"
-        android:background="@drawable/btn_shape_round"
+        android:background="@drawable/main_menu_btn"
         android:text="@string/rozk_ad_jazdy"
 
         android:textSize="16sp"
@@ -113,11 +112,11 @@
         android:gravity="center"/>
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/Create_report"
         android:layout_width="fill_parent"
         android:layout_height="70dp"
         android:layout_margin="8dp"
-        android:background="@drawable/btn_shape_round"
+        android:background="@drawable/main_menu_btn"
         android:text="@string/utw_rz_zg_oszenie"
         android:textSize="16sp"
         android:textAlignment="center"
@@ -125,11 +124,11 @@
         android:gravity="center" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/Mandates"
         android:layout_width="fill_parent"
         android:layout_height="70dp"
         android:layout_margin="8dp"
-        android:background="@drawable/btn_shape_round"
+        android:background="@drawable/main_menu_btn"
         android:text="@string/mandaty"
 
         android:textSize="16sp"
@@ -138,11 +137,11 @@
         android:gravity="center"/>
 
     <Button
-        android:id="@+id/button5"
+        android:id="@+id/Logout"
         android:layout_width="fill_parent"
         android:layout_height="70dp"
         android:layout_margin="8dp"
-        android:background="@drawable/btn_shape_round"
+        android:background="@drawable/main_menu_btn"
         android:text="@string/wyloguj"
         android:textSize="16sp"
         android:textAlignment="center"
