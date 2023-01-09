@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+    <include layout="@layout/header" />
+    <LinearLayout
+        android:id="@+id/m1"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:background="@drawable/report_shape"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp">
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="20dp"
+                android:textColor="@color/black"
+                android:text="28.01.2022"
+                android:textStyle="bold"
+                android:textAlignment="center">
+            </TextView>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="20dp"
+                android:text="Nr lini 105"
+                android:textColor="@color/black"
+                android:textStyle="normal"
+                android:textAlignment="center">
+
+            </TextView>
+
+        </LinearLayout>
+</LinearLayout>
+        <LinearLayout
+            android:id="@+id/m2"
+            android:layout_width="350dp"
+            android:layout_height="400dp"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:background="@drawable/report_shape"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp">
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="20dp"
+                    android:textColor="@color/black"
+                    android:text="@string/Ticket_type"
+                    android:textStyle="bold">
+                </TextView>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="20dp"
+                    android:text="@string/Bilet_normalny"
+                    android:textColor="@color/black"
+                    android:textStyle="normal">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="20dp"
+                    android:textColor="@color/black"
+                    android:text="@string/Ticket_line_number"
+                    android:textStyle="bold"
+                    android:layout_marginTop="5dp">
+                </TextView>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="20dp"
+                    android:text="105"
+                    android:textColor="@color/black"
+                    android:textStyle="normal">
+                </TextView>
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="20dp"
+                    android:textColor="@color/black"
+                    android:text="@string/Date_as_word"
+                    android:textStyle="bold"
+                    android:layout_marginTop="5dp">
+                </TextView>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="20dp"
+                    android:text="27.01.2022"
+                    android:textColor="@color/black"
+                    android:textStyle="normal">
+                </TextView>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/qr_code">
+
+                </ImageView>
+
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
