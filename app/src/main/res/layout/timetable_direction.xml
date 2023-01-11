@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/header"
+    android:id="@+id/timetable_direction"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:layout_alignParentTop="true"
@@ -13,15 +13,38 @@
         <!-- Content below header and above footer -->
 
     <LinearLayout
-    android:id="@+id/content"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:orientation="vertical"
         tools:ignore="NotSibling">
 
-        <include layout="@layout/timetable_direction_element_btn"/>
+        <Button
+            android:id="@+id/timetable_direction_element_btn_top"
+            android:layout_width="300dp"
+            android:layout_height="150dp"
+            android:layout_weight="1"
+            android:background="@drawable/timetable_btn"
+            android:text="PKP Mokry Ług 03"
+            android:layout_margin="60dp"
+            android:textSize="32sp"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/white"/>
 
-        <include layout="@layout/timetable_direction_element_btn"/>
+        <Button
+            android:id="@+id/timetable_direction_element_btn_bottom"
+            android:layout_width="300dp"
+            android:layout_height="150dp"
+            android:layout_weight="1"
+            android:background="@drawable/timetable_btn"
+            android:text="PKP Mokry Ług 03"
+            android:layout_margin="60dp"
+            android:textSize="32sp"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/white"/>
 
     </LinearLayout>
 </LinearLayout>

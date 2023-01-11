@@ -5,12 +5,12 @@
     android:layout_height="wrap_content">
 
     <Button
-        android:id="@+id/timetable_menu_elements_btn"
+        android:id="@+id/timetable_times_menu_btn_right"
         android:layout_width="150dp"
         android:layout_height="80dp"
         android:layout_weight="1"
         android:background="@drawable/timetable_btn"
-        android:text="102"
+        android:text="06:00"
         android:layout_marginHorizontal="25dp"
         android:textSize="32sp"
         android:textAlignment="center"

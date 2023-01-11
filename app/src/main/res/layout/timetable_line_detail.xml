@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/header"
+    android:id="@+id/timetable_line_detail"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:background="@drawable/background">
@@ -24,15 +24,7 @@
             android:orientation="vertical"
             tools:ignore="NotSibling">
 
-            <include layout="@layout/timetable_line_element_number"/>
 
-            <include layout="@layout/timetable_line_element_direction"/>
-
-            <include layout="@layout/timetable_line_element_start"/>
-
-            <include layout="@layout/timetable_line_element_mid"/>
-
-            <include layout="@layout/timetable_line_element_end"/>
 
         </LinearLayout>
 
