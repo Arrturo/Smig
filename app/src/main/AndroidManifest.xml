@@ -28,6 +28,8 @@
         <activity android:name=".DiscountActivity" />
         <activity android:name=".ReportActivity" />
         <activity android:name=".BuyTicketActivity" />
+        <activity android:name=".TicketDetailsActivity" />
+        <activity android:name=".TicketOnewayActivity" />
     </application>
 
 </manifest>

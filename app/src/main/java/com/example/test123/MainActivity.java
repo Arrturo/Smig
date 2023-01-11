@@ -29,13 +29,13 @@ public class MainActivity extends AppCompatActivity {
         TextView greetings = findViewById(R.id.greetings);
         greetings.setText("Witaj, " + user.getUsername() + "!");
 
-        Button buyTicket = findViewById(R.id.buy_ticket);
+        Button buyTicket = findViewById(R.id.Buy_ticket);
         buyTicket.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity.this, BuyTicketActivity.class);
             startActivity(intent);
         });
 
-        Button Profile = findViewById(R.id.client_profile);
+        Button Profile = findViewById(R.id.Client_profile);
         Profile.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity.this, ClientProfile.class);
             intent.putExtra("username", user.getUsername());
@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
             startActivity(intent);
         });
 
-        Button SendReport = findViewById(R.id.create_report);
+        Button SendReport = findViewById(R.id.Create_report);
         SendReport.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity.this, ReportActivity.class);
             startActivity(intent);
@@ -54,5 +54,3 @@ public class MainActivity extends AppCompatActivity {
 
     }
 }
-
-
