@@ -5,7 +5,7 @@
     android:layout_height="wrap_content">
 
     <Button
-        android:id="@+id/timetable_menu_elements_btn2"
+        android:id="@+id/timetable_menu_elements_left"
         android:layout_width="150dp"
         android:layout_height="80dp"
         android:layout_weight="1"
