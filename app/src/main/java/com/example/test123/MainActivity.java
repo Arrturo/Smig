@@ -27,9 +27,10 @@ public class MainActivity extends AppCompatActivity {
         TextView greetings = findViewById(R.id.greetings);
         greetings.setText("Witaj, " + username + "!");
 
-        Button Profile = (Button) findViewById(R.id.Client_profile);
-        Button BuyTicket = (Button) findViewById(R.id.Buy_ticket);
-        Button SendReport = (Button) findViewById(R.id.Create_report);
+        Button Profile = findViewById(R.id.Client_profile);
+        Button Buy_ticket = findViewById(R.id.Buy_ticket);
+        Button Timetable = findViewById(R.id.timetable);
+        Button SendReport = findViewById(R.id.Create_report);
         Profile.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity.this, ClientProfile.class);
             intent.putExtra("username", username);
@@ -40,6 +41,14 @@ public class MainActivity extends AppCompatActivity {
         });
         SendReport.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity.this, ReportActivity.class);
+            startActivity(intent);
+        });
+        Buy_ticket.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, BuyTicketActivity.class);
+            startActivity(intent);
+        });
+        Timetable.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, TimetableActivity.class);
             startActivity(intent);
         });
 

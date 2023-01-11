@@ -4,7 +4,7 @@ package com.example.test123;
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
+
 import android.widget.Button;
 import android.widget.TextView;
 
@@ -36,6 +36,8 @@ public class ClientProfile extends AppCompatActivity {
         setContentView(R.layout.client_profile);
 
         GetDataToTextView();
+        SQLConnection sqlConnection = new SQLConnection();
+        sqlConnection.connect();
 
         Button previousActivity = findViewById(R.id.previous);
         previousActivity.setOnClickListener(view -> {
@@ -52,6 +54,6 @@ public class ClientProfile extends AppCompatActivity {
         Button edit_profile = findViewById(R.id.edit_profile);
     }
 
-    public void GetDataToTextView(View view) {
+    public static class BuyTicketActivity {
     }
 }

@@ -3,10 +3,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/header"
     android:layout_width="fill_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="fill_parent"
     android:layout_alignParentTop="true"
     android:gravity="center"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@drawable/background">
+
 
     <include layout="@layout/header" />
 
@@ -20,12 +22,12 @@
         tools:ignore="NotSibling">
 
         <Button
-            android:id="@+id/Jednorazowy"
+            android:id="@+id/jednorazowy"
             android:layout_width="fill_parent"
             android:layout_height="50dp"
             android:layout_gravity="center"
             android:layout_margin="8dp"
-            android:background="@drawable/main_menu_btn"
+            android:background="@drawable/app_btn_default"
             android:gravity="center"
             android:text="@string/Jednorazowy"
             android:textAlignment="center"
@@ -34,12 +36,12 @@
             android:textStyle="bold"/>
 
         <Button
-            android:id="@+id/Krotkookresowy"
+            android:id="@+id/krotkookresowy"
             android:layout_width="fill_parent"
             android:layout_height="50dp"
             android:layout_gravity="center"
             android:layout_margin="8dp"
-            android:background="@drawable/main_menu_btn"
+            android:background="@drawable/app_btn_default"
             android:gravity="center"
             android:text="@string/Krotkookresowy"
             android:textAlignment="center"
@@ -48,12 +50,12 @@
             android:textStyle="bold"/>
 
         <Button
-            android:id="@+id/Miesieczny"
+            android:id="@+id/miesieczny"
             android:layout_width="fill_parent"
             android:layout_height="50dp"
             android:layout_gravity="center"
             android:layout_margin="8dp"
-            android:background="@drawable/main_menu_btn"
+            android:background="@drawable/app_btn_default"
             android:gravity="center"
             android:text="@string/Miesieczny"
             android:textAlignment="center"
@@ -62,12 +64,12 @@
             android:textStyle="bold"/>
 
         <Button
-            android:id="@+id/Trzymiesieczny"
+            android:id="@+id/trzymiesieczny"
             android:layout_width="fill_parent"
             android:layout_height="50dp"
             android:layout_gravity="center"
             android:layout_margin="8dp"
-            android:background="@drawable/main_menu_btn"
+            android:background="@drawable/app_btn_default"
             android:gravity="center"
             android:text="@string/Trzymiesieczny"
             android:textAlignment="center"
@@ -76,12 +78,12 @@
             android:textStyle="bold"/>
 
         <Button
-            android:id="@+id/Roczny"
+            android:id="@+id/roczny"
             android:layout_width="fill_parent"
             android:layout_height="50dp"
             android:layout_gravity="center"
             android:layout_margin="8dp"
-            android:background="@drawable/main_menu_btn"
+            android:background="@drawable/app_btn_default"
             android:gravity="center"
             android:text="@string/Roczny"
             android:textAlignment="center"

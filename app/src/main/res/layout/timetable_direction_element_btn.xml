@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/timetable_direction_element_btn_field"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+    <Button
+        android:id="@+id/timetable_direction_element_btn"
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:layout_weight="1"
+        android:background="@drawable/timetable_btn"
+        android:text="PKP Mokry Ług 03"
+        android:layout_margin="60dp"
+        android:textSize="32sp"
+        android:textAlignment="center"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textColor="@color/white"/>
+</LinearLayout>
