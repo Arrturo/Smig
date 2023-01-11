@@ -40,7 +40,6 @@ android {
             version '3.18.1'
         }
     }
-    
     buildToolsVersion '33.0.1'
 }
 
