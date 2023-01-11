@@ -33,7 +33,7 @@
         android:layout_marginTop="40dp">
 
         <Button
-            android:id="@+id/Line_time_1"
+            android:id="@+id/line_time_1"
             android:layout_width="150dp"
             android:layout_height="80dp"
             android:layout_weight="1"

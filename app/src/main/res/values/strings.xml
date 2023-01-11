@@ -32,6 +32,7 @@
     <string name="Ticket_price_amout">Kwota</string>
     <string name="Button_pay">Opłać</string>
     <string name="Date_as_word">Data</string>
+    <string name="Image_desc_start">Image of start line</string>
 
     <string name="todo">idk co to</string>
     <string-array name="discounts">
