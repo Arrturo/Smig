@@ -37,6 +37,8 @@
         <activity android:name=".TicketTemporaryActivity"/>
         <activity android:name=".TicketTemporaryDetailsActivity"/>
         <activity android:name=".TicketLongtermDetailsActivity"/>
+        <activity android:name=".TicketHistoryActivity"/>
+        <activity android:name=".TicketHistoryDetailsActivity"/>
     </application>
 
 </manifest>

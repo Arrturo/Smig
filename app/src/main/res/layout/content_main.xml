@@ -86,7 +86,7 @@
 
 
         <Button
-            android:id="@+id/Ticket_history"
+            android:id="@+id/ticket_history"
             android:layout_width="150dp"
             android:layout_height="150dp"
             android:background="@drawable/app_btn_default"
@@ -116,7 +116,7 @@
         android:gravity="center"/>
 
     <Button
-        android:id="@+id/Create_report"
+        android:id="@+id/create_report"
         android:layout_width="fill_parent"
         android:layout_height="70dp"
         android:layout_margin="10dp"
@@ -129,7 +129,7 @@
         android:gravity="center" />
 
     <Button
-        android:id="@+id/Mandates"
+        android:id="@+id/mandates"
         android:layout_width="fill_parent"
         android:layout_height="70dp"
         android:layout_margin="10dp"
