@@ -10,7 +10,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
 
-
     public User user;
     public DBHandler dbHandler;
     TextView greetings;
@@ -32,11 +31,11 @@ public class MainActivity extends AppCompatActivity {
         greetings.setText("Witaj, " + user.getUsername() + "!");
 
 
-        Button Profile = findViewById(R.id.Client_profile);
+        Button Profile = findViewById(R.id.client_profile);
         Button Buy_ticket = findViewById(R.id.Buy_ticket);
         Button Timetable = findViewById(R.id.timetable);
         Button SendReport = findViewById(R.id.Create_report);
-Profile.setOnClickListener(v -> {
+        Profile.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity.this, ClientProfile.class);
             intent.putExtra("username", user.getUsername());
             intent.putExtra("email", user.getEmail());
@@ -46,7 +45,6 @@ Profile.setOnClickListener(v -> {
             startActivity(intent);
         });
 
-        Button SendReport = findViewById(R.id.Create_report);
         SendReport.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity.this, ReportActivity.class);
             startActivity(intent);

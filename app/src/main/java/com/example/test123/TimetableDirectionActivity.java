@@ -10,10 +10,6 @@ import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class TimetableDirectionActivity extends AppCompatActivity {
-    private final String username = "Ewa";
-    private final String email = "EwaStonoga@gmail.com";
-    private final String phone = "123323789";
-    private final String password = "123456789";
 
     @SuppressLint("SetTextI18n")
     @Override
