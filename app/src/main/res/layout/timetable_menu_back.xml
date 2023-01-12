@@ -12,7 +12,6 @@
         android:gravity="center"
         android:orientation="vertical">
 
-    <include layout="@layout/header" />
 
 
         <!-- Content below header and above footer -->

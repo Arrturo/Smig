@@ -18,10 +18,14 @@ public class TimetableDetailsActivity extends AppCompatActivity {
 
         // delete header
         if (getSupportActionBar() != null) getSupportActionBar().hide();
-        setContentView(R.layout.timetable_line_detail);
+        setContentView(R.layout.timetable_menu_back);
 
         ViewGroup insertPoint = (ViewGroup) findViewById(R.id.content);
         LayoutInflater vi = getLayoutInflater();
+
+        View header = vi.inflate(R.layout.header, insertPoint);
+        TextView headerText = header.findViewById(R.id.header_title);
+        headerText.setText("Rozkład Jazdy");
 
         View lineNumberView = vi.inflate(R.layout.timetable_line_element_number, insertPoint);
         TextView lineNumber = lineNumberView.findViewById(R.id.timetable_line_element_number);
@@ -62,7 +66,7 @@ public class TimetableDetailsActivity extends AppCompatActivity {
             endTime.setText("05:27");
 
 
-            Button previousActivity = findViewById(R.id.previous);
+            Button previousActivity = header.findViewById(R.id.previous);
             previousActivity.setOnClickListener(view -> {
                 // Finish the current activity and return to the previous one
                 finish();

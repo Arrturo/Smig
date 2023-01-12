@@ -15,21 +15,26 @@
         android:orientation="vertical" >
         <LinearLayout
             android:layout_width="300dp"
-            android:layout_height="40dp"
+            android:layout_height="wrap_content"
             android:orientation="vertical"
             android:layout_gravity="center"
             android:layout_marginTop="20dp">
-            <TextView
-                android:layout_width="130dp"
-                android:layout_height="20dp"
-                android:textColor="@color/black"
-                android:text="@string/Ticket_type"
-                android:textStyle="bold">
-            </TextView>
 
             <TextView
                 android:layout_width="wrap_content"
-                android:layout_height="20dp"
+                android:layout_height="wrap_content"
+                android:text="@string/Ticket_type"
+                android:textColor="@color/black"
+                android:textSize="24dp"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
                 android:text="@string/Bilet_30_ulgowy"
                 android:textColor="@color/black"
                 android:textStyle="normal">
@@ -40,38 +45,14 @@
 
 
 
-    <LinearLayout
-        android:layout_width="300dp"
-        android:layout_height="60dp"
-        android:orientation="vertical"
-        android:layout_gravity="center"
-        android:layout_margin="8dp">
-        <TextView
-            android:layout_width="300dp"
-            android:layout_height="20dp"
-            android:textColor="@color/black"
-            android:text="@string/Tickets_amout"
-            android:textStyle="bold"/>
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/Tickets_amount"
-            android:layout_width="290dp"
-            android:layout_height="40dp"
-            android:layout_marginHorizontal="5dp"
-            android:ems="10"
-            android:textColor="@color/black"
-            android:layout_margin="2dp"
-            android:paddingBottom="5dp"
-            android:background="@drawable/input_shape_round"
-            android:gravity="start|top"
-            android:imeOptions="actionDone"
-            android:inputType="textMultiLine|textCapSentences"/>
-    </LinearLayout>
+
 
         <LinearLayout
             android:layout_width="300dp"
             android:layout_height="40dp"
             android:orientation="vertical"
-            android:layout_gravity="center">
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -97,7 +78,7 @@
         android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="30dp"
         android:paddingBottom="5dp"
         android:background="@drawable/pay_button_orange"
         android:textColor="@color/white"
