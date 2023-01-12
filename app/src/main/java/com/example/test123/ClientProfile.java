@@ -53,25 +53,25 @@ public class ClientProfile extends AppCompatActivity {
 
         Button edit_profile = findViewById(R.id.edit_profile);
         edit_profile.setOnClickListener(v -> {
-                // below line is to get data from all edit text fields.
-                String Username = usernameTV.getText().toString();
-                String Email = emailTV.getText().toString();
-                String Phone = phoneTV.getText().toString();
-                String Password = passwordTV.getText().toString();
+            // below line is to get data from all edit text fields.
+            String Username = usernameTV.getText().toString();
+            String Email = emailTV.getText().toString();
+            String Phone = phoneTV.getText().toString();
+            String Password = passwordTV.getText().toString();
 
-                // validating if the text fields are empty or not.
-                if (Username.isEmpty() || Email.isEmpty() || Phone.isEmpty() || Password.isEmpty() || Password.length() < 8 || Phone.length() != 9) {
-                    Toast.makeText(ClientProfile.this, "Niepoprawne uzupełnione dane!!", Toast.LENGTH_SHORT).show();
-                    return;
-                }
+            // validating if the text fields are empty or not.
+            if (Username.isEmpty() || Email.isEmpty() || Phone.isEmpty() || Password.isEmpty() || Password.length() < 8 || Phone.length() != 9) {
+                Toast.makeText(ClientProfile.this, "Niepoprawne uzupełnione dane!!", Toast.LENGTH_SHORT).show();
+                return;
+            }
 
-                // on below line we are calling a method to add new
-                // course to sqlite data and pass all our values to it.
-                dbHandler.updateUser(Username, Email, Phone, Password);
+            // on below line we are calling a method to add new
+            // course to sqlite data and pass all our values to it.
+            dbHandler.updateUser(Username, Email, Phone, Password);
 
-                // after adding the data we are displaying a toast message.
-                Toast.makeText(ClientProfile.this, "Edytowane!", Toast.LENGTH_SHORT).show();
-                finish();
+            // after adding the data we are displaying a toast message.
+            Toast.makeText(ClientProfile.this, "Edytowane!", Toast.LENGTH_SHORT).show();
+            finish();
 
         });
     }
