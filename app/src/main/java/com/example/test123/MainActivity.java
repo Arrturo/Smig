@@ -13,6 +13,7 @@ public class MainActivity extends AppCompatActivity {
 
     public User user;
     public DBHandler dbHandler;
+    TextView greetings;
 
     @SuppressLint("SetTextI18n")
     @Override
@@ -24,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
 
         // delete header
         if (getSupportActionBar() != null) getSupportActionBar().hide();
+
         setContentView(R.layout.activity_main);
 
         TextView greetings = findViewById(R.id.greetings);
@@ -52,6 +54,13 @@ public class MainActivity extends AppCompatActivity {
             startActivity(intent);
         });
 
+
+    }
+    @SuppressLint("SetTextI18n")
+    @Override
+    public void onResume(){
+        super.onResume();
+        user = dbHandler.getUser();
     }
 }
 

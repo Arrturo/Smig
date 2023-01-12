@@ -10,7 +10,7 @@ public class BuyTicketActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         //DELETE HEADER
         if (getSupportActionBar() != null) getSupportActionBar().hide();
-        setContentView(R.layout.ticket_menu);
+        setContentView(R.layout.ticket_buy);
 
         Button previous = findViewById(R.id.previous);
         previous.setOnClickListener(view -> finish());
