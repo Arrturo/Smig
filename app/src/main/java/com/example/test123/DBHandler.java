@@ -36,11 +36,11 @@ public class DBHandler extends SQLiteOpenHelper {
 
     private static final String DISCOUNT_COL = "discount";
 
+
     // creating a constructor for our database handler.
     public DBHandler(Context context) {
         super(context, DB_NAME, null, DB_VERSION);
     }
-
     public void addNewUser(String username, String email, String phone, String password) {
 
         // on below line we are creating a variable for
@@ -91,10 +91,9 @@ public class DBHandler extends SQLiteOpenHelper {
 
     public User getUser() {
         SQLiteDatabase db = this.getReadableDatabase();
-
-        // on below line we are creating a cursor with query to read data from database.
-        Cursor cursorCourses = db.rawQuery("SELECT * FROM users WHERE id=3", null);
         User user = null;
+        // on below line we are creating a cursor with query to read data from database.
+        Cursor cursorCourses = db.rawQuery("SELECT * FROM users WHERE id=2", null);
         // moving our cursor to first position.
         if (cursorCourses.moveToFirst()) {
             do {
@@ -116,18 +115,16 @@ public class DBHandler extends SQLiteOpenHelper {
         values.put(EMAIL_COL, email);
         values.put(PHONE_COL, phone);
         values.put(PASSWORD_COL, password);
-        db.update(TABLE_NAME, values, "id=3", null);
+        db.update(TABLE_NAME, values, "id=2", null);
         db.close();
-
     }
 
     public void addDiscount(int discount) {
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues values = new ContentValues();
         values.put(DISCOUNT_COL, discount);
-        db.update(TABLE_NAME, values, "id=3", null);
+        db.update(TABLE_NAME, values, "id=2", null);
         db.close();
-
     }
 }
 
