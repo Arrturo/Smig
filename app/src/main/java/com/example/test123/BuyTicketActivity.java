@@ -1,9 +1,7 @@
 package com.example.test123;
 
-<<<<<<< HEAD
-=======
+
 import android.annotation.SuppressLint;
->>>>>>> main
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -26,7 +24,6 @@ public class BuyTicketActivity extends AppCompatActivity {
         ViewGroup insertPoint = (ViewGroup) findViewById(R.id.content);
         LayoutInflater vi = getLayoutInflater();
 
-<<<<<<< HEAD
         View header = vi.inflate(R.layout.header, insertPoint);
         TextView headerText = header.findViewById(R.id.header_title);
         headerText.setText("Kup Bilet");
@@ -34,14 +31,10 @@ public class BuyTicketActivity extends AppCompatActivity {
 
 
         Button jednorazowy = contentView.findViewById(R.id.jednorazowy);
-=======
-        Button jednorazowy = findViewById(R.id.jednorazowy);
->>>>>>> main
         jednorazowy.setOnClickListener(v -> {
             Intent intent = new Intent(BuyTicketActivity.this, TicketOnewayActivity.class);
             startActivity(intent);
         });
-<<<<<<< HEAD
         Button krotkookresowy = contentView.findViewById(R.id.krotkookresowy);
         krotkookresowy.setOnClickListener(v -> {
             Intent intent = new Intent(BuyTicketActivity.this, TicketTemporaryActivity.class);
@@ -65,31 +58,7 @@ public class BuyTicketActivity extends AppCompatActivity {
 
 
         Button previous = header.findViewById(R.id.previous);
-=======
-        Button krotkookresowy = findViewById(R.id.krotkookresowy);
-        krotkookresowy.setOnClickListener(v -> {
-            Intent intent = new Intent(BuyTicketActivity.this, TicketOnewayActivity.class);
-            startActivity(intent);
-        });
-        Button miesieczny = findViewById(R.id.miesieczny);
-        miesieczny.setOnClickListener(v -> {
-            Intent intent = new Intent(BuyTicketActivity.this, TicketOnewayActivity.class);
-            startActivity(intent);
-        });
-        Button trzymiesieczny = findViewById(R.id.trzymiesieczny);
-        trzymiesieczny.setOnClickListener(v -> {
-            Intent intent = new Intent(BuyTicketActivity.this, TicketOnewayActivity.class);
-            startActivity(intent);
-        });
-        Button roczny = findViewById(R.id.roczny);
-        roczny.setOnClickListener(v -> {
-            Intent intent = new Intent(BuyTicketActivity.this, TicketOnewayActivity.class);
-            startActivity(intent);
-        });
 
-
-        Button previous = findViewById(R.id.previous);
->>>>>>> main
         previous.setOnClickListener(view -> finish());
 
     }
