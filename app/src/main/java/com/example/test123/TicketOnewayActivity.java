@@ -12,33 +12,33 @@ public class TicketOnewayActivity extends AppCompatActivity {
         if (getSupportActionBar() != null) getSupportActionBar().hide();
         setContentView(R.layout.ticket_oneway_menu);
 
-        Button jednoliniowyUl = findViewById(R.id.Jednoliniowy_ulgowy);
-        jednoliniowyUl.setOnClickListener(v -> {
+        Button jednoliniowy_ul = findViewById(R.id.jednoliniowy_ulgowy);
+        jednoliniowy_ul.setOnClickListener(v -> {
             Intent intent = new Intent(TicketOnewayActivity.this, TicketDetailsActivity.class);
             startActivity(intent);
         });
-        Button jednoliniowy = findViewById(R.id.Jednoliniowy_normalny);
+        Button jednoliniowy = findViewById(R.id.jednoliniowy_normalny);
         jednoliniowy.setOnClickListener(v -> {
             Intent intent = new Intent(TicketOnewayActivity.this, TicketDetailsActivity.class);
             startActivity(intent);
         });
-        Button Ulgowy_30 = findViewById(R.id.Ulgowy_30);
-        Ulgowy_30.setOnClickListener(v -> {
+        Button ulgowy_30 = findViewById(R.id.ulgowy_30);
+        ulgowy_30.setOnClickListener(v -> {
             Intent intent = new Intent(TicketOnewayActivity.this, TicketDetailsActivity.class);
             startActivity(intent);
         });
-        Button Normalny_30 = findViewById(R.id.Normalny_30);
-        Normalny_30.setOnClickListener(v -> {
+        Button normalny_30 = findViewById(R.id.normalny_30);
+        normalny_30.setOnClickListener(v -> {
             Intent intent = new Intent(TicketOnewayActivity.this, TicketDetailsActivity.class);
             startActivity(intent);
         });
-        Button Ulgowy_60 = findViewById(R.id.Ulgowy_60);
-        Ulgowy_60.setOnClickListener(v -> {
+        Button ulgowy_60 = findViewById(R.id.ulgowy_60);
+        ulgowy_60.setOnClickListener(v -> {
             Intent intent = new Intent(TicketOnewayActivity.this, TicketDetailsActivity.class);
             startActivity(intent);
         });
-        Button Normalny_60 = findViewById(R.id.Normalny_60);
-        Normalny_60.setOnClickListener(v -> {
+        Button normalny_60 = findViewById(R.id.normalny_60);
+        normalny_60.setOnClickListener(v -> {
             Intent intent = new Intent(TicketOnewayActivity.this, TicketDetailsActivity.class);
             startActivity(intent);
         });

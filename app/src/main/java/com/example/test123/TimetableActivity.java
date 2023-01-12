@@ -24,7 +24,6 @@ public class TimetableActivity extends AppCompatActivity {
         ViewGroup insertPoint = (ViewGroup) findViewById(R.id.timetable_menu);
         LayoutInflater vi = getLayoutInflater();
         for(int row = 0; row < 12; row++){
-            if(row % 2 == 0){
                 View pair = vi.inflate(R.layout.timetable_menu_elements_pair, insertPoint);
                 pair.setId(row);
                 ViewGroup insertPointOne = (ViewGroup) findViewById(R.id.timetable_menu_elements_pair);
@@ -53,7 +52,6 @@ public class TimetableActivity extends AppCompatActivity {
                     }
 
                 }
-            }
         }
 
         Button previousActivity = findViewById(R.id.previous);

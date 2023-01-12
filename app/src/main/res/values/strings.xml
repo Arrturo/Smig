@@ -34,6 +34,7 @@
     <string name="Date_as_word">Data</string>
     <string name="Image_desc_start">Image of start line</string>
     <string name="todo">idk co to</string>
+    <string name="znizkaString">Masz już zniżkę!</string>
     <string-array name="discounts">
         <item>Student(30%)</item>
         <item>Weteran(70%)</item>
