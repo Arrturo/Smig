@@ -12,6 +12,7 @@
         android:background="@drawable/timetable_btn"
         android:text="06:00"
         android:layout_marginHorizontal="25dp"
+        android:paddingBottom="5dp"
         android:textSize="32sp"
         android:textAlignment="center"
         android:layout_gravity="center"

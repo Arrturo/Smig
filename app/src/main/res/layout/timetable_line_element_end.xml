@@ -28,6 +28,7 @@
             android:id="@+id/timetable_end_element_name"
             android:layout_width="wrap_content"
             android:layout_height="fill_parent"
+            android:paddingTop="3dp"
             android:text="Alekandrów 01"
             android:textAlignment="center"
             android:layout_marginLeft="10dp"

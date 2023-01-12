@@ -6,8 +6,11 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import org.w3c.dom.Text;
 
 public class TimetableActivity extends AppCompatActivity {
 
@@ -18,13 +21,16 @@ public class TimetableActivity extends AppCompatActivity {
 
         // delete header
     if (getSupportActionBar() != null) getSupportActionBar().hide();
-    setContentView(R.layout.timetable_menu);
-            
-// insert into main view
-        ViewGroup insertPoint = (ViewGroup) findViewById(R.id.timetable_menu);
+    setContentView(R.layout.timetable_menu_back);
+
+        ViewGroup insertPoint = (ViewGroup) findViewById(R.id.content);
         LayoutInflater vi = getLayoutInflater();
+
+        View header = vi.inflate(R.layout.header, insertPoint);
+        TextView headerText = header.findViewById(R.id.header_title);
+        headerText.setText("Rozkład Jazdy");
+
         for(int row = 0; row < 12; row++){
-            if(row % 2 == 0){
                 View pair = vi.inflate(R.layout.timetable_menu_elements_pair, insertPoint);
                 pair.setId(row);
                 ViewGroup insertPointOne = (ViewGroup) findViewById(R.id.timetable_menu_elements_pair);
@@ -53,10 +59,9 @@ public class TimetableActivity extends AppCompatActivity {
                     }
 
                 }
-            }
         }
 
-        Button previousActivity = findViewById(R.id.previous);
+        Button previousActivity = header.findViewById(R.id.previous);
         previousActivity.setOnClickListener(view -> {
             // Finish the current activity and return to the previous one
             finish();

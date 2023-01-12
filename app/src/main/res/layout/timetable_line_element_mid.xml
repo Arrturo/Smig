@@ -30,6 +30,7 @@
             android:layout_height="fill_parent"
             android:text="Alekandrów 01"
             android:textAlignment="center"
+            android:paddingTop="3dp"
             android:layout_marginLeft="10dp"
             android:textStyle="bold"
             android:textColor="@color/black"

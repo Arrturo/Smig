@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -28,14 +28,17 @@
         <activity android:name=".DiscountActivity" />
         <activity android:name=".ReportActivity" />
         <activity android:name=".BuyTicketActivity"/>
-        <activity android:name=".BuyTicketOnewayActivity"/>
-        <activity android:name=".BuyTicketOnewayDetailsActivity"/>
-        <activity android:name=".BuyTicketOnewayTemporaryDetailsActivity"/>
         <activity android:name=".TimetableActivity"/>
         <activity android:name=".TimetableDirectionActivity"/>
         <activity android:name=".TimetableTimesMenuActivity"/>
         <activity android:name=".TimetableDetailsActivity"/>
+        <activity android:name=".TicketOnewayActivity"/>
+        <activity android:name=".TicketDetailsActivity"/>
+        <activity android:name=".TicketTemporaryActivity"/>
+        <activity android:name=".TicketTemporaryDetailsActivity"/>
+        <activity android:name=".TicketLongtermDetailsActivity"/>
         <activity android:name=".TicketHistoryActivity"/>
+        <activity android:name=".TicketHistoryDetailsActivity"/>
     </application>
 
 </manifest>

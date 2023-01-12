@@ -56,6 +56,7 @@
             android:layout_width="fill_parent"
             android:layout_height="70dp"
             android:layout_gravity="center"
+            android:paddingBottom="5dp"
             android:layout_margin="8dp"
             android:background="@drawable/app_btn_default"
             android:gravity="center"
@@ -69,7 +70,8 @@
         android:orientation="horizontal">
 
         <Button
-            android:id="@+id/buy_ticket"
+
+            android:id="@+id/Buy_ticket"
             android:layout_width="150dp"
             android:layout_height="150dp"
             android:layout_weight="1"
@@ -77,6 +79,7 @@
             android:text="@string/kup_bilet"
             android:layout_margin="10dp"
             android:textSize="16sp"
+            android:paddingBottom="5dp"
             android:textAlignment="center"
             android:layout_gravity="center"
             android:gravity="center"/>
@@ -91,6 +94,7 @@
             android:layout_weight="1"
             android:text="@string/historia_bilet_w"
             android:textSize="16sp"
+            android:paddingBottom="5dp"
             android:textAlignment="center"
             android:layout_gravity="center"
             android:gravity="center"
@@ -105,20 +109,21 @@
         android:layout_margin="10dp"
         android:background="@drawable/app_btn_default"
         android:text="@string/rozk_ad_jazdy"
-
+        android:paddingBottom="5dp"
         android:textSize="16sp"
         android:textAlignment="center"
         android:layout_gravity="center"
         android:gravity="center"/>
 
     <Button
-        android:id="@+id/Create_report"
+        android:id="@+id/create_report"
         android:layout_width="fill_parent"
         android:layout_height="70dp"
         android:layout_margin="10dp"
         android:background="@drawable/app_btn_default"
         android:text="@string/utw_rz_zg_oszenie"
         android:textSize="16sp"
+        android:paddingBottom="5dp"
         android:textAlignment="center"
         android:layout_gravity="center"
         android:gravity="center" />
@@ -130,8 +135,8 @@
         android:layout_margin="10dp"
         android:background="@drawable/app_btn_default"
         android:text="@string/mandaty"
-
         android:textSize="16sp"
+        android:paddingBottom="5dp"
         android:textAlignment="center"
         android:layout_gravity="center"
         android:gravity="center"/>
@@ -145,6 +150,7 @@
         android:text="@string/wyloguj"
         android:textSize="16sp"
         android:textAlignment="center"
+        android:paddingBottom="5dp"
         android:layout_gravity="center"
         android:gravity="center"
         android:textColor="#FF0000"

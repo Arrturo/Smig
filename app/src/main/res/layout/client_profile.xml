@@ -19,10 +19,22 @@
         android:gravity="center"
         android:text="@string/dodaj_ulge"
         android:textAlignment="center"
+        android:paddingBottom="5dp"
         android:textSize="16sp"
         android:textColor="#8C8C8C"
         android:textAllCaps="false"
         />
+    <TextView
+        android:id="@+id/add_discount_string"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Nie masz ulgi? Dodaj ją!"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        >
+
+    </TextView>
     <LinearLayout
         android:layout_width="300dp"
         android:layout_height="60dp"
@@ -69,7 +81,7 @@
             android:layout_width="300dp"
             android:layout_height="40dp"
             android:ems="10"
-            android:padding="8dp"
+            android:padding="5dp"
             android:textColor="@color/black"
             android:background="@drawable/input_shape_round"
             android:inputType="textEmailAddress" />
@@ -93,7 +105,7 @@
             android:layout_width="300dp"
             android:layout_height="40dp"
             android:ems="10"
-            android:padding="8dp"
+            android:padding="5dp"
             android:textColor="@color/black"
             android:background="@drawable/input_shape_round"
             android:inputType="textEmailAddress" />
@@ -116,7 +128,7 @@
             android:layout_width="300dp"
             android:layout_height="40dp"
             android:ems="10"
-            android:padding="8dp"
+            android:padding="5dp"
             android:textColor="@color/black"
             android:background="@drawable/input_shape_round"
             android:inputType="textPassword" />
@@ -128,6 +140,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_margin="8dp"
+        android:paddingBottom="5dp"
         android:background="@drawable/client_profile_btn_edit"
         android:gravity="center"
         android:onClick="GetDataToTextView"
