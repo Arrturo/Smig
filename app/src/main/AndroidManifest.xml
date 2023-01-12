@@ -35,6 +35,7 @@
         <activity android:name=".TimetableDirectionActivity"/>
         <activity android:name=".TimetableTimesMenuActivity"/>
         <activity android:name=".TimetableDetailsActivity"/>
+        <activity android:name=".TicketHistoryActivity"/>
     </application>
 
 </manifest>
