@@ -103,8 +103,4 @@
             android:textAllCaps="false"
             android:textStyle="bold"/>
 
-<<<<<<< HEAD
-=======
-    </LinearLayout>
->>>>>>> main
 </LinearLayout>
