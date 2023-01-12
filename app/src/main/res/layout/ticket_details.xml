@@ -16,6 +16,7 @@
         android:background="@drawable/report_shape"
         android:orientation="vertical" >
 
+
     <include layout="@layout/ticket_type_field"/>
 
     <include layout="@layout/ticket_line_number_filed"/>

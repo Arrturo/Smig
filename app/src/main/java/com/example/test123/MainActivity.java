@@ -10,35 +10,43 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
 
-    private final String username = "Ewa";
-    private final String email = "EwaStonoga@gmail.com";
-    private final String phone = "123323789";
-    private final String password = "123456789";
+
+    public User user;
+    public DBHandler dbHandler;
+    TextView greetings;
 
     @SuppressLint("SetTextI18n")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        dbHandler = new DBHandler(MainActivity.this);
+        user = dbHandler.getUser();
         super.onCreate(savedInstanceState);
+
 
         // delete header
         if (getSupportActionBar() != null) getSupportActionBar().hide();
+
         setContentView(R.layout.activity_main);
 
         TextView greetings = findViewById(R.id.greetings);
-        greetings.setText("Witaj, " + username + "!");
+        greetings.setText("Witaj, " + user.getUsername() + "!");
+
 
         Button Profile = findViewById(R.id.Client_profile);
         Button Buy_ticket = findViewById(R.id.Buy_ticket);
         Button Timetable = findViewById(R.id.timetable);
         Button SendReport = findViewById(R.id.Create_report);
-        Profile.setOnClickListener(v -> {
+Profile.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity.this, ClientProfile.class);
-            intent.putExtra("username", username);
-            intent.putExtra("email", email);
-            intent.putExtra("phone", phone);
-            intent.putExtra("password", password);
+            intent.putExtra("username", user.getUsername());
+            intent.putExtra("email", user.getEmail());
+            intent.putExtra("phone", user.getPhone());
+            intent.putExtra("password", user.getPassword());
+            intent.putExtra("discount", user.getDiscount());
             startActivity(intent);
         });
+
+        Button SendReport = findViewById(R.id.Create_report);
         SendReport.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity.this, ReportActivity.class);
             startActivity(intent);
@@ -52,7 +60,12 @@ public class MainActivity extends AppCompatActivity {
             startActivity(intent);
         });
 
+
+    }
+    @SuppressLint("SetTextI18n")
+    @Override
+    public void onResume(){
+        super.onResume();
+        user = dbHandler.getUser();
     }
 }
-
-

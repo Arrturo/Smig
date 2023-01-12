@@ -9,7 +9,6 @@
     android:orientation="vertical"
     android:background="@drawable/background">
 
-
     <include layout="@layout/header" />
 
         <!-- Content below header and above footer -->
@@ -22,6 +21,7 @@
         tools:ignore="NotSibling">
 
         <Button
+
             android:id="@+id/jednorazowy"
             android:layout_width="fill_parent"
             android:layout_height="50dp"
@@ -55,6 +55,7 @@
             android:layout_height="50dp"
             android:layout_gravity="center"
             android:layout_margin="8dp"
+
             android:background="@drawable/app_btn_default"
             android:gravity="center"
             android:text="@string/Miesieczny"

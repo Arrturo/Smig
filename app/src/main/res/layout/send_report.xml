@@ -58,6 +58,7 @@
             android:layout_marginHorizontal="5dp"
             android:ems="10"
             android:textColor="@color/black"
+            android:padding="8dp"
             android:layout_margin="2dp"
             android:background="@drawable/input_shape_round"
             android:gravity="start|top"

@@ -22,12 +22,6 @@
     android:orientation="vertical"
         tools:ignore="NotSibling">
 
-
-
-
-
-
-
     </LinearLayout>
     </LinearLayout>
 </ScrollView>
