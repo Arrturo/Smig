@@ -27,9 +27,14 @@
         <activity android:name=".ClientProfile" />
         <activity android:name=".DiscountActivity" />
         <activity android:name=".ReportActivity" />
-        <activity android:name=".BuyTicketActivity" />
-        <activity android:name=".TicketDetailsActivity" />
-        <activity android:name=".TicketOnewayActivity" />
+        <activity android:name=".BuyTicketActivity"/>
+        <activity android:name=".BuyTicketOnewayActivity"/>
+        <activity android:name=".BuyTicketOnewayDetailsActivity"/>
+        <activity android:name=".BuyTicketOnewayTemporaryDetailsActivity"/>
+        <activity android:name=".TimetableActivity"/>
+        <activity android:name=".TimetableDirectionActivity"/>
+        <activity android:name=".TimetableTimesMenuActivity"/>
+        <activity android:name=".TimetableDetailsActivity"/>
     </application>
 
 </manifest>

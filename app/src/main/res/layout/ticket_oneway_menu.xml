@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/header"
+    android:id="@+id/ticket_oneway_menu_field"
     android:layout_width="fill_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="fill_parent"
     android:layout_alignParentTop="true"
     android:gravity="center"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@drawable/background">
 
     <include layout="@layout/header" />
 
@@ -20,12 +21,12 @@
         tools:ignore="NotSibling">
 
         <Button
-            android:id="@+id/Jednoliniowy_normalny"
+            android:id="@+id/jednoliniowy_normalny"
             android:layout_width="fill_parent"
             android:layout_height="50dp"
             android:layout_gravity="center"
             android:layout_margin="8dp"
-            android:background="@drawable/main_menu_btn"
+            android:background="@drawable/app_btn_default"
             android:gravity="center"
             android:text="@string/Bilet_normalny"
             android:textAlignment="center"
@@ -34,12 +35,12 @@
             android:textStyle="bold"/>
 
         <Button
-            android:id="@+id/Jednoliniowy_ulgowy"
+            android:id="@+id/jednoliniowy_ulgowy"
             android:layout_width="fill_parent"
             android:layout_height="50dp"
             android:layout_gravity="center"
             android:layout_margin="8dp"
-            android:background="@drawable/main_menu_btn"
+            android:background="@drawable/app_btn_default"
             android:gravity="center"
             android:text="@string/Bilet_ulgowy"
             android:textAlignment="center"
@@ -48,12 +49,12 @@
             android:textStyle="bold"/>
 
         <Button
-            android:id="@+id/Normalny_30"
+            android:id="@+id/normalny_30"
             android:layout_width="fill_parent"
             android:layout_height="50dp"
             android:layout_gravity="center"
             android:layout_margin="8dp"
-            android:background="@drawable/main_menu_btn"
+            android:background="@drawable/app_btn_default"
             android:gravity="center"
             android:text="@string/Bilet_30_normalny"
             android:textAlignment="center"
@@ -62,12 +63,12 @@
             android:textStyle="bold"/>
 
         <Button
-            android:id="@+id/Ulgowy_30"
+            android:id="@+id/ulgowy_30"
             android:layout_width="fill_parent"
             android:layout_height="50dp"
             android:layout_gravity="center"
             android:layout_margin="8dp"
-            android:background="@drawable/main_menu_btn"
+            android:background="@drawable/app_btn_default"
             android:gravity="center"
             android:text="@string/Bilet_30_ulgowy"
             android:textAlignment="center"
@@ -76,12 +77,12 @@
             android:textStyle="bold"/>
 
         <Button
-            android:id="@+id/Normalny_60"
+            android:id="@+id/normalny_60"
             android:layout_width="fill_parent"
             android:layout_height="50dp"
             android:layout_gravity="center"
             android:layout_margin="8dp"
-            android:background="@drawable/main_menu_btn"
+            android:background="@drawable/app_btn_default"
             android:gravity="center"
             android:text="@string/Bilet_60_normalny"
             android:textAlignment="center"
@@ -90,21 +91,18 @@
             android:textStyle="bold"/>
 
         <Button
-            android:id="@+id/Ulgowy_60"
+            android:id="@+id/ulgowy_60"
             android:layout_width="fill_parent"
             android:layout_height="50dp"
             android:layout_gravity="center"
             android:layout_margin="8dp"
-            android:background="@drawable/main_menu_btn"
+            android:background="@drawable/app_btn_default"
             android:gravity="center"
             android:text="@string/Bilet_60_ulogwy"
             android:textAlignment="center"
             android:textSize="16sp"
             android:textAllCaps="false"
             android:textStyle="bold"/>
-
-
-
 
     </LinearLayout>
 </LinearLayout>

@@ -1,12 +1,16 @@
 package com.example.test123;
 
+import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
-import android.content.Intent;
+import android.widget.TextView;
+
 
 import androidx.appcompat.app.AppCompatActivity;
 
 public class BuyTicketActivity extends AppCompatActivity {
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         //DELETE HEADER

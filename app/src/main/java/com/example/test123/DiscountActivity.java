@@ -18,7 +18,9 @@ public class DiscountActivity extends AppCompatActivity {
         if (getSupportActionBar() != null) getSupportActionBar().hide();
         setContentView(R.layout.client_add_discount);
 
+
         DBHandler dbHandler = new DBHandler(DiscountActivity.this);
+
 
         //SPINNER
         Spinner discounts = findViewById(R.id.discount_spinner);
