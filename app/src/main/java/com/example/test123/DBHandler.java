@@ -37,6 +37,8 @@ public class DBHandler extends SQLiteOpenHelper {
     private static final String DISCOUNT_COL = "discount";
 
 
+
+
     // creating a constructor for our database handler.
     public DBHandler(Context context) {
         super(context, DB_NAME, null, DB_VERSION);
@@ -82,7 +84,6 @@ public class DBHandler extends SQLiteOpenHelper {
         // at last we are calling a exec sql
         // method to execute above sql query
         db.execSQL(query);
-
     }
 
     @Override
@@ -107,7 +108,6 @@ public class DBHandler extends SQLiteOpenHelper {
         return user;
     }
 
-
     public void updateUser(String username, String email, String phone, String password) {
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues values = new ContentValues();
@@ -125,6 +125,10 @@ public class DBHandler extends SQLiteOpenHelper {
         values.put(DISCOUNT_COL, discount);
         db.update(TABLE_NAME, values, "id=2", null);
         db.close();
+    }
+
+    public void addTicket(){
+
     }
 }
 
