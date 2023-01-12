@@ -27,11 +27,13 @@ public class MainActivity extends AppCompatActivity {
         TextView greetings = findViewById(R.id.greetings);
         greetings.setText("Witaj, " + username + "!");
 
-        Button Profile = findViewById(R.id.Client_profile);
-        Button Buy_ticket = findViewById(R.id.Buy_ticket);
-        Button Timetable = findViewById(R.id.timetable);
-        Button SendReport = findViewById(R.id.Create_report);
-        Profile.setOnClickListener(v -> {
+        Button profile = findViewById(R.id.client_profile);
+        Button buyTicket = findViewById(R.id.buy_ticket);
+        Button timetable = findViewById(R.id.timetable);
+        Button sendReport = findViewById(R.id.Create_report);
+        Button ticketHistory = findViewById(R.id.ticket_history);
+
+        profile.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity.this, ClientProfile.class);
             intent.putExtra("username", username);
             intent.putExtra("email", email);
@@ -39,16 +41,20 @@ public class MainActivity extends AppCompatActivity {
             intent.putExtra("password", password);
             startActivity(intent);
         });
-        SendReport.setOnClickListener(v -> {
+        sendReport.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity.this, ReportActivity.class);
             startActivity(intent);
         });
-        Buy_ticket.setOnClickListener(v -> {
+        buyTicket.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity.this, BuyTicketActivity.class);
             startActivity(intent);
         });
-        Timetable.setOnClickListener(v -> {
+        timetable.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity.this, TimetableActivity.class);
+            startActivity(intent);
+        });
+        ticketHistory.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, TicketHistoryActivity.class);
             startActivity(intent);
         });
 

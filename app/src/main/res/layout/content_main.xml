@@ -52,7 +52,7 @@
         tools:ignore="NotSibling">
 
         <Button
-            android:id="@+id/Client_profile"
+            android:id="@+id/client_profile"
             android:layout_width="fill_parent"
             android:layout_height="70dp"
             android:layout_gravity="center"
@@ -69,7 +69,7 @@
         android:orientation="horizontal">
 
         <Button
-            android:id="@+id/Buy_ticket"
+            android:id="@+id/buy_ticket"
             android:layout_width="150dp"
             android:layout_height="150dp"
             android:layout_weight="1"
@@ -83,7 +83,7 @@
 
 
         <Button
-            android:id="@+id/Ticket_history"
+            android:id="@+id/ticket_history"
             android:layout_width="150dp"
             android:layout_height="150dp"
             android:background="@drawable/app_btn_default"
@@ -124,7 +124,7 @@
         android:gravity="center" />
 
     <Button
-        android:id="@+id/Mandates"
+        android:id="@+id/mandates"
         android:layout_width="fill_parent"
         android:layout_height="70dp"
         android:layout_margin="10dp"
@@ -137,7 +137,7 @@
         android:gravity="center"/>
 
     <Button
-        android:id="@+id/Logout"
+        android:id="@+id/logout"
         android:layout_width="fill_parent"
         android:layout_height="70dp"
         android:layout_margin="10dp"

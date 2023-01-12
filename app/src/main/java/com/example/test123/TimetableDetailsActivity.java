@@ -39,7 +39,6 @@ public class TimetableDetailsActivity extends AppCompatActivity {
         startTime.setText("04:20");
 
         for (int row = 0; row < 12; row++) {
-            if (row % 2 == 0) {
                 View pair = vi.inflate(R.layout.timetable_line_detail_pair, insertPoint);
                 pair.setId(row);
                 ViewGroup insertPointOne = (ViewGroup) findViewById(R.id.timetable_line_detail_pair);
@@ -51,7 +50,6 @@ public class TimetableDetailsActivity extends AppCompatActivity {
                 midLocation.setText(valueOfBusStop); // Zamiast ValueOfId nazwa przystanku w stringu
                 TextView midTime = midLocationView.findViewById(R.id.timetable_mid_element_time);
                 midTime.setText("04:20"); // Zamiast ValueOfId godzina odjazdu z przystanku autobusu w stringu
-                }
             }
 
 
