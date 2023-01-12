@@ -1,15 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@drawable/background">
-    <LinearLayout
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:orientation="vertical">
-
-        <LinearLayout
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
             android:id="@+id/m2"
             android:layout_width="350dp"
             android:layout_height="400dp"
@@ -32,6 +22,7 @@
                 </TextView>
 
                 <TextView
+                    android:id="@+id/ticket_history_element_type"
                     android:layout_width="fill_parent"
                     android:layout_height="20dp"
                     android:text="@string/Bilet_normalny"
@@ -50,6 +41,7 @@
                 </TextView>
 
                 <TextView
+                    android:id="@+id/ticket_history_element_line_number"
                     android:layout_width="fill_parent"
                     android:layout_height="20dp"
                     android:text="105"
@@ -66,6 +58,7 @@
                 </TextView>
 
                 <TextView
+                    android:id="@+id/ticket_history_element_date"
                     android:layout_width="fill_parent"
                     android:layout_height="20dp"
                     android:text="27.01.2022"
@@ -80,9 +73,5 @@
                 </ImageView>
 
 
-
             </LinearLayout>
-        </LinearLayout>
-
-    </LinearLayout>
-</ScrollView>
+</LinearLayout>

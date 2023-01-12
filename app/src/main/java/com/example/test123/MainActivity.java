@@ -12,7 +12,10 @@ public class MainActivity extends AppCompatActivity {
 
     public User user;
     public DBHandler dbHandler;
+<<<<<<< HEAD
+=======
     TextView greetings;
+>>>>>>> main
 
     @SuppressLint("SetTextI18n")
     @Override
@@ -32,9 +35,14 @@ public class MainActivity extends AppCompatActivity {
 
 
         Button Profile = findViewById(R.id.client_profile);
+<<<<<<< HEAD
+        Button BuyTicket = findViewById(R.id.Buy_ticket);
+=======
         Button Buy_ticket = findViewById(R.id.Buy_ticket);
+>>>>>>> main
         Button Timetable = findViewById(R.id.timetable);
-        Button SendReport = findViewById(R.id.Create_report);
+        Button SendReport = findViewById(R.id.create_report);
+        Button TicketHistory = findViewById(R.id.ticket_history);
         Profile.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity.this, ClientProfile.class);
             intent.putExtra("username", user.getUsername());
@@ -49,7 +57,7 @@ public class MainActivity extends AppCompatActivity {
             Intent intent = new Intent(MainActivity.this, ReportActivity.class);
             startActivity(intent);
         });
-        Buy_ticket.setOnClickListener(v -> {
+        BuyTicket.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity.this, BuyTicketActivity.class);
             startActivity(intent);
         });
@@ -57,6 +65,13 @@ public class MainActivity extends AppCompatActivity {
             Intent intent = new Intent(MainActivity.this, TimetableActivity.class);
             startActivity(intent);
         });
+<<<<<<< HEAD
+        TicketHistory.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, TicketHistoryActivity.class);
+            startActivity(intent);
+        });
+=======
+>>>>>>> main
 
 
     }

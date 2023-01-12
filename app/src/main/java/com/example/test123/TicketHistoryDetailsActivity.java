@@ -1,26 +1,19 @@
 package com.example.test123;
 
 import android.os.Bundle;
-<<<<<<< HEAD
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.content.Intent;
 import android.widget.TextView;
 
-=======
-import android.widget.Button;
-import android.content.Intent;
->>>>>>> main
 import androidx.appcompat.app.AppCompatActivity;
 
-
-public class TicketDetailsActivity extends AppCompatActivity{
+public class TicketHistoryDetailsActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        //DELETE HEADER
         if (getSupportActionBar() != null) getSupportActionBar().hide();
-<<<<<<< HEAD
         setContentView(R.layout.timetable_menu_back);
 
         ViewGroup insertPoint = (ViewGroup) findViewById(R.id.content);
@@ -29,18 +22,19 @@ public class TicketDetailsActivity extends AppCompatActivity{
         View header = vi.inflate(R.layout.header, insertPoint);
         TextView headerText = header.findViewById(R.id.header_title);
         headerText.setText("Szczegóły biletu");
-        View contentView = vi.inflate(R.layout.ticket_details, insertPoint);
+        View contentView = vi.inflate(R.layout.ticket_history_element_big, insertPoint);
 
+        TextView ticketType = contentView.findViewById(R.id.ticket_history_element_type);
+        TextView ticketNumber = contentView.findViewById(R.id.ticket_history_element_line_number);
+        TextView ticketDate = contentView.findViewById(R.id.ticket_history_element_date);
 
+        ticketType.setText("Dobowy");
+        ticketNumber.setText("303");
+        ticketDate.setText("25-04-2022");
 
         Button previous = header.findViewById(R.id.previous);
-=======
-        setContentView(R.layout.ticket_details);
-
-
-
-        Button previous = findViewById(R.id.previous);
->>>>>>> main
         previous.setOnClickListener(view -> finish());
     }
 }
+
+

@@ -1,22 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/ticket_menu_field"
+    android:id="@+id/header"
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
     android:layout_alignParentTop="true"
     android:gravity="center"
-<<<<<<< HEAD
     android:orientation="vertical">
 
 
-=======
-    android:orientation="vertical"
-    android:background="@drawable/background">
-    
-    <include layout="@layout/header" />
->>>>>>> main
 
         <!-- Content below header and above footer -->
 
@@ -24,7 +16,7 @@
 
         <Button
 
-            android:id="@+id/jednorazowy"
+            android:id="@+id/doba_1"
             android:layout_width="fill_parent"
             android:layout_height="50dp"
             android:layout_gravity="center"
@@ -32,14 +24,14 @@
             android:background="@drawable/app_btn_default"
             android:gravity="center"
             android:paddingBottom="5dp"
-            android:text="@string/Jednorazowy"
+            android:text="@string/doba_1"
             android:textAlignment="center"
             android:textSize="16sp"
             android:textAllCaps="false"
             android:textStyle="bold"/>
 
         <Button
-            android:id="@+id/krotkookresowy"
+            android:id="@+id/doby_2"
             android:layout_width="fill_parent"
             android:layout_height="50dp"
             android:layout_gravity="center"
@@ -47,14 +39,14 @@
             android:paddingBottom="5dp"
             android:background="@drawable/app_btn_default"
             android:gravity="center"
-            android:text="@string/Krotkookresowy"
+            android:text="@string/doba_2"
             android:textAlignment="center"
             android:textSize="16sp"
             android:textAllCaps="false"
             android:textStyle="bold"/>
 
         <Button
-            android:id="@+id/miesieczny"
+            android:id="@+id/doba_3"
             android:layout_width="fill_parent"
             android:layout_height="50dp"
             android:layout_gravity="center"
@@ -62,41 +54,13 @@
             android:paddingBottom="5dp"
             android:background="@drawable/app_btn_default"
             android:gravity="center"
-            android:text="@string/Miesieczny"
+            android:text="@string/doba_3"
             android:textAlignment="center"
             android:textSize="16sp"
             android:textAllCaps="false"
             android:textStyle="bold"/>
 
-        <Button
-            android:id="@+id/trzymiesieczny"
-            android:layout_width="fill_parent"
-            android:layout_height="50dp"
-            android:layout_gravity="center"
-            android:layout_margin="8dp"
-            android:paddingBottom="5dp"
-            android:background="@drawable/app_btn_default"
-            android:gravity="center"
-            android:text="@string/Trzymiesieczny"
-            android:textAlignment="center"
-            android:textSize="16sp"
-            android:textAllCaps="false"
-            android:textStyle="bold"/>
 
-        <Button
-            android:id="@+id/roczny"
-            android:layout_width="fill_parent"
-            android:layout_height="50dp"
-            android:layout_gravity="center"
-            android:layout_margin="8dp"
-            android:paddingBottom="5dp"
-            android:background="@drawable/app_btn_default"
-            android:gravity="center"
-            android:text="@string/Roczny"
-            android:textAlignment="center"
-            android:textSize="16sp"
-            android:textAllCaps="false"
-            android:textStyle="bold"/>
 
 
 

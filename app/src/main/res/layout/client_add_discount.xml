@@ -31,6 +31,7 @@
             android:id="@+id/discount_spinner"
             android:layout_width="fill_parent"
             android:layout_height="40dp"
+            android:paddingBottom="5dp"
             android:background="@drawable/input_shape_round"/>
 
     </LinearLayout>
@@ -52,6 +53,7 @@
             android:id="@+id/email"
             android:layout_width="300dp"
             android:layout_height="40dp"
+            android:paddingBottom="5dp"
             android:ems="10"
             android:textColor="@color/black"
             android:background="@drawable/input_shape_round" />
@@ -69,6 +71,7 @@
         android:gravity="center"
         android:text="@string/Wyslij"
         android:textAlignment="center"
+        android:paddingBottom="5dp"
         android:textSize="16sp"
         android:textColor="@color/white"
         android:textStyle="bold"/>
