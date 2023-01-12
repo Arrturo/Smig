@@ -38,13 +38,13 @@ public class ClientProfile extends AppCompatActivity {
         setContentView(R.layout.client_profile);
         Button addDiscount = findViewById(R.id.add_discount);
         GetDataToTextView();
-
         if (getIntent().getIntExtra("discount", 0) != 0) {
             addDiscount.setEnabled(false);
             TextView discountTV = findViewById(R.id.add_discount_string);
             discountTV.setText("Masz już zniżkę!");
             discountTV.setTextColor(Color.parseColor("#1FFF27"));
         }
+
         System.out.println(getIntent().getIntExtra("discount", 0));
         Button previousActivity = findViewById(R.id.previous);
         previousActivity.setOnClickListener(view -> {

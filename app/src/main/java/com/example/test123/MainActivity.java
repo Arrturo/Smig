@@ -12,7 +12,6 @@ public class MainActivity extends AppCompatActivity {
 
     public User user;
     public DBHandler dbHandler;
-    TextView greetings;
 
     @SuppressLint("SetTextI18n")
     @Override
@@ -20,16 +19,11 @@ public class MainActivity extends AppCompatActivity {
         dbHandler = new DBHandler(MainActivity.this);
         user = dbHandler.getUser();
         super.onCreate(savedInstanceState);
-
-
         // delete header
         if (getSupportActionBar() != null) getSupportActionBar().hide();
-
         setContentView(R.layout.activity_main);
-
         TextView greetings = findViewById(R.id.greetings);
         greetings.setText("Witaj, " + user.getUsername() + "!");
-
 
         Button Profile = findViewById(R.id.client_profile);
         Button Buy_ticket = findViewById(R.id.Buy_ticket);
@@ -52,6 +46,7 @@ public class MainActivity extends AppCompatActivity {
         Buy_ticket.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity.this, BuyTicketActivity.class);
             startActivity(intent);
+            intent.putExtra("discount", user.getDiscount());
         });
         Timetable.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity.this, TimetableActivity.class);
@@ -62,8 +57,8 @@ public class MainActivity extends AppCompatActivity {
     }
     @SuppressLint("SetTextI18n")
     @Override
-    public void onResume(){
+    public void onResume() {
         super.onResume();
         user = dbHandler.getUser();
+      }
     }
-}
