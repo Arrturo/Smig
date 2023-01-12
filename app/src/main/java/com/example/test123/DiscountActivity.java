@@ -18,6 +18,10 @@ public class DiscountActivity extends AppCompatActivity {
         if (getSupportActionBar() != null) getSupportActionBar().hide();
         setContentView(R.layout.client_add_discount);
 
+
+        DBHandler dbHandler = new DBHandler(DiscountActivity.this);
+
+
         //SPINNER
         Spinner discounts = findViewById(R.id.discount_spinner);
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.discounts,
@@ -34,7 +38,27 @@ public class DiscountActivity extends AppCompatActivity {
 
             }
         });
-
+        Button send_discounts = findViewById(R.id.send_discount);
+        send_discounts.setOnClickListener(view -> {
+            switch (discounts.getSelectedItemPosition()) {
+                case 0:
+                    dbHandler.addDiscount(30);
+                    break;
+                case 1:
+                    dbHandler.addDiscount(70);
+                    break;
+                case 2:
+                    dbHandler.addDiscount(95);
+                    break;
+                case 3:
+                    dbHandler.addDiscount(37);
+                    break;
+                case 4:
+                    dbHandler.addDiscount(100);
+                    break;
+            }
+            finish();
+        });
 
         //PREVIOUS ACTIVITY BUTTON
         Button previousActivity = findViewById(R.id.previous);

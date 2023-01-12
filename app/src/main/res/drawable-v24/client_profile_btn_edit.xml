@@ -15,7 +15,9 @@
     <!-- White foreground. -->
     <item android:bottom="3dp" >
         <shape>
+
                 <solid android:color="#171F1D" />
+
                 <corners
                         android:radius="10dp"
                     />

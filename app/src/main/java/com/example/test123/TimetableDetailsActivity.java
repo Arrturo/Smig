@@ -18,10 +18,14 @@ public class TimetableDetailsActivity extends AppCompatActivity {
 
         // delete header
         if (getSupportActionBar() != null) getSupportActionBar().hide();
-        setContentView(R.layout.timetable_line_detail);
+        setContentView(R.layout.timetable_menu_back);
 
         ViewGroup insertPoint = (ViewGroup) findViewById(R.id.content);
         LayoutInflater vi = getLayoutInflater();
+
+        View header = vi.inflate(R.layout.header, insertPoint);
+        TextView headerText = header.findViewById(R.id.header_title);
+        headerText.setText("Rozkład Jazdy");
 
         View lineNumberView = vi.inflate(R.layout.timetable_line_element_number, insertPoint);
         TextView lineNumber = lineNumberView.findViewById(R.id.timetable_line_element_number);
@@ -39,6 +43,7 @@ public class TimetableDetailsActivity extends AppCompatActivity {
         startTime.setText("04:20");
 
         for (int row = 0; row < 12; row++) {
+            if (row % 2 == 0) {
                 View pair = vi.inflate(R.layout.timetable_line_detail_pair, insertPoint);
                 pair.setId(row);
                 ViewGroup insertPointOne = (ViewGroup) findViewById(R.id.timetable_line_detail_pair);
@@ -50,6 +55,7 @@ public class TimetableDetailsActivity extends AppCompatActivity {
                 midLocation.setText(valueOfBusStop); // Zamiast ValueOfId nazwa przystanku w stringu
                 TextView midTime = midLocationView.findViewById(R.id.timetable_mid_element_time);
                 midTime.setText("04:20"); // Zamiast ValueOfId godzina odjazdu z przystanku autobusu w stringu
+                }
             }
 
 
@@ -60,7 +66,7 @@ public class TimetableDetailsActivity extends AppCompatActivity {
             endTime.setText("05:27");
 
 
-            Button previousActivity = findViewById(R.id.previous);
+            Button previousActivity = header.findViewById(R.id.previous);
             previousActivity.setOnClickListener(view -> {
                 // Finish the current activity and return to the previous one
                 finish();

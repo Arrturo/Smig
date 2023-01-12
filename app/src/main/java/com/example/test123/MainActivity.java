@@ -10,55 +10,59 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
 
-    private final String username = "Ewa";
-    private final String email = "EwaStonoga@gmail.com";
-    private final String phone = "123323789";
-    private final String password = "123456789";
+    public User user;
+    public DBHandler dbHandler;
 
     @SuppressLint("SetTextI18n")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        dbHandler = new DBHandler(MainActivity.this);
+        user = dbHandler.getUser();
         super.onCreate(savedInstanceState);
+
 
         // delete header
         if (getSupportActionBar() != null) getSupportActionBar().hide();
+
         setContentView(R.layout.activity_main);
 
         TextView greetings = findViewById(R.id.greetings);
-        greetings.setText("Witaj, " + username + "!");
+        greetings.setText("Witaj, " + user.getUsername() + "!");
 
-        Button profile = findViewById(R.id.client_profile);
-        Button buyTicket = findViewById(R.id.buy_ticket);
-        Button timetable = findViewById(R.id.timetable);
-        Button sendReport = findViewById(R.id.Create_report);
-        Button ticketHistory = findViewById(R.id.ticket_history);
 
-        profile.setOnClickListener(v -> {
+        Button Profile = findViewById(R.id.client_profile);
+        Button Buy_ticket = findViewById(R.id.Buy_ticket);
+        Button Timetable = findViewById(R.id.timetable);
+        Button SendReport = findViewById(R.id.Create_report);
+        Profile.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity.this, ClientProfile.class);
-            intent.putExtra("username", username);
-            intent.putExtra("email", email);
-            intent.putExtra("phone", phone);
-            intent.putExtra("password", password);
+            intent.putExtra("username", user.getUsername());
+            intent.putExtra("email", user.getEmail());
+            intent.putExtra("phone", user.getPhone());
+            intent.putExtra("password", user.getPassword());
+            intent.putExtra("discount", user.getDiscount());
             startActivity(intent);
         });
-        sendReport.setOnClickListener(v -> {
+
+        SendReport.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity.this, ReportActivity.class);
             startActivity(intent);
         });
-        buyTicket.setOnClickListener(v -> {
+        Buy_ticket.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity.this, BuyTicketActivity.class);
             startActivity(intent);
         });
-        timetable.setOnClickListener(v -> {
+        Timetable.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity.this, TimetableActivity.class);
             startActivity(intent);
         });
-        ticketHistory.setOnClickListener(v -> {
-            Intent intent = new Intent(MainActivity.this, TicketHistoryActivity.class);
-            startActivity(intent);
-        });
+
 
     }
+    @SuppressLint("SetTextI18n")
+    @Override
+    public void onResume(){
+        super.onResume();
+        user = dbHandler.getUser();
+    }
 }
-
-

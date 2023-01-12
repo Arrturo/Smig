@@ -2,10 +2,8 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    android:background="@drawable/background"
+    android:layout_height="wrap_content"
     android:orientation="vertical">
-    <include layout="@layout/header" />
 
     <LinearLayout
         android:id="@+id/m1"
@@ -15,6 +13,7 @@
         android:layout_gravity="center"
         android:background="@drawable/report_shape"
         android:orientation="vertical" >
+
 
     <include layout="@layout/ticket_type_field"/>
 
@@ -30,6 +29,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="20dp"
+        android:paddingBottom="5dp"
         android:background="@drawable/pay_button_orange"
         android:textColor="@color/white"
         android:gravity="center"
