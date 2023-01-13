@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ticket_type_filed"
+    android:layout_width="300dp"
+    android:layout_height="40dp"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:layout_marginTop="20dp">
+    <TextView
+        android:layout_width="130dp"
+        android:layout_height="20dp"
+        android:textColor="@color/black"
+        android:text="@string/Ticket_type"
+        android:textStyle="bold">
+    </TextView>
+
+    <TextView
+        android:id="@+id/ticket_type"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:text="@string/Bilet_normalny"
+        android:textColor="@color/black"
+        android:textStyle="normal">
+
+    </TextView>
+
+</LinearLayout>

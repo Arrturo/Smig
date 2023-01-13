@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/m1"
+        android:layout_width="350dp"
+        android:layout_height="360dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:background="@drawable/report_shape"
+        android:orientation="vertical" >
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Ticket_type"
+                android:textColor="@color/black"
+                android:textSize="24dp"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:text="@string/Bilet_30_ulgowy"
+                android:textColor="@color/black"
+                android:textStyle="normal">
+
+            </TextView>
+
+        </LinearLayout>
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="@string/Ticket_price_amout"
+                android:textStyle="bold">
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4,00 PLN"
+                android:textColor="@color/black"
+                android:textStyle="bold">
+
+            </TextView>
+
+        </LinearLayout>
+
+    <Button
+        android:id="@+id/send_discount"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:paddingBottom="5dp"
+        android:background="@drawable/pay_button_orange"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:text="@string/Button_pay"
+        android:textAlignment="center"
+        android:textSize="16sp" />
+
+
+
+</LinearLayout>
+</LinearLayout>
