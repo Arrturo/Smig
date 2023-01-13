@@ -1,0 +1,27 @@
+{
+  "buildFiles": [
+    "C:\\Users\\Pc\\Desktop\\Public-Transport-Mobile-App-main\\app\\src\\main\\cpp\\CMakeLists.txt"
+  ],
+  "cleanCommandsComponents": [
+    [
+      "C:\\Users\\Pc\\AppData\\Local\\Android\\Sdk\\cmake\\3.18.1\\bin\\ninja.exe",
+      "-C",
+      "C:\\Users\\Pc\\Desktop\\Public-Transport-Mobile-App-main\\app\\.cxx\\Debug\\3641595v\\x86_64",
+      "clean"
+    ]
+  ],
+  "buildTargetsCommandComponents": [
+    "C:\\Users\\Pc\\AppData\\Local\\Android\\Sdk\\cmake\\3.18.1\\bin\\ninja.exe",
+    "-C",
+    "C:\\Users\\Pc\\Desktop\\Public-Transport-Mobile-App-main\\app\\.cxx\\Debug\\3641595v\\x86_64",
+    "{LIST_OF_TARGETS_TO_BUILD}"
+  ],
+  "libraries": {
+    "test123::@6890427a1f51a3e7e1df": {
+      "artifactName": "test123",
+      "abi": "x86_64",
+      "output": "C:\\Users\\Pc\\Desktop\\Public-Transport-Mobile-App-main\\app\\build\\intermediates\\cxx\\Debug\\3641595v\\obj\\x86_64\\libtest123.so",
+      "runtimeFiles": []
+    }
+  }
+}

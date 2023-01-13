@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="discounts">
+        <item>Student(30%)</item>
+        <item>Weteran(70%)</item>
+        <item>Senior(95%)</item>
+        <item>Uczeń(37%)</item>
+        <item>Opiekun(100%)</item>
+    </string-array>
+    <string-array name="reports_types">
+        <item>Problem z kierowcą</item>
+        <item>Usterka</item>
+        <item>Inne</item>
+    </string-array>
+    <color name="black">#FF000000</color>
+    <color name="colorAccent">#FFFFFFFF</color>
+    <color name="colorPrimary">#FF9900</color>
+    <color name="colorPrimaryDark">#FF9900</color>
+    <color name="dark_orange">#C88621</color>
+    <color name="green">#1FFF27</color>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="white">#F9F9F9</color>
+    <string name="Bilet_30_normalny">30-minutowy Normalny</string>
+    <string name="Bilet_30_ulgowy">30-minutowy Ulgowy</string>
+    <string name="Bilet_60_normalny">60-minutowy Normalny</string>
+    <string name="Bilet_60_ulogwy">60-minutowy Ulgowy</string>
+    <string name="Bilet_normalny">Jednoliniowy Normalny</string>
+    <string name="Bilet_ulgowy">Jednoliniowy Ulgowy</string>
+    <string name="Button_pay">Opłać</string>
+    <string name="Date_as_word">Data</string>
+    <string name="Image_desc_start">Image of start line</string>
+    <string name="Jednorazowy">Bilet jednorazowy</string>
+    <string name="Krotkookresowy">Bilet krótkookresowy</string>
+    <string name="Miesieczny">Bilet miesięczny</string>
+    <string name="Numer_ID">Numer ID dokumentu</string>
+    <string name="Roczny">Bilet roczny</string>
+    <string name="Ticket_line_number">Nr lini</string>
+    <string name="Ticket_price_amout">Kwota</string>
+    <string name="Ticket_type">Rodzaj biletu</string>
+    <string name="Tickets_amout">Ilość Biletów</string>
+    <string name="Trzymiesieczny">Bilet trzymiesięczny</string>
+    <string name="Wyslij">Wyślij</string>
+    <string name="app_name">TEST123</string>
+    <string name="doba_1">Bilet całodobowy</string>
+    <string name="doba_2">Bilet dwudobowy</string>
+    <string name="doba_3">Bilet trzydobowy</string>
+    <string name="dodaj_ulge">Dodaj Ulgę</string>
+    <string name="historia_bilet_w">Historia biletów</string>
+    <string name="kup_bilet">Kup Bilet</string>
+    <string name="mandaty">Mandaty</string>
+    <string name="poka_profil">Pokaż Profil</string>
+    <string name="profil">Profil</string>
+    <string name="profil123">Profil</string>
+    <string name="rodzaj_ulgi">Rodzaj ulgi</string>
+    <string name="rozk_ad_jazdy">Rozkład jazdy</string>
+    <string name="todo">idk co to</string>
+    <string name="utw_rz_zg_oszenie">Utwórz zgłoszenie</string>
+    <string name="witaj_janoo820">Witaj, Janoo820!</string>
+    <string name="wyloguj">Wyloguj</string>
+    <string name="zaloguj_si">Zaloguj się</string>
+    <string name="znizkaString">Masz już zniżkę!</string>
+    <style name="Theme.TEST123" parent="Theme.AppCompat.DayNight.DarkActionBar">
+        
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimaryVariant">#FF9900</item>
+        <item name="colorOnPrimary">@color/black</item>
+        
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        
+    </style>
+    <style name="Theme.TEST123.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+    <style name="Theme.TEST123.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="Theme.TEST123.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+</resources>

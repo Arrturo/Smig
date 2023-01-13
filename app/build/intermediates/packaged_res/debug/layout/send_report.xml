@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/m1"
+        android:layout_width="350dp"
+        android:layout_height="387dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:background="@drawable/report_shape"
+        android:orientation="vertical" >
+    <LinearLayout
+        android:layout_width="310dp"
+        android:layout_height="60dp"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+
+        android:layout_marginTop="20dp">
+        <TextView
+            android:layout_width="130dp"
+            android:layout_height="20dp"
+            android:textColor="@color/black"
+            android:text="Rodzaj zgłoszenia"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <Spinner
+            android:id="@+id/report_spinner"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:paddingBottom="5dp"
+            android:background="@drawable/input_shape_round"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="310dp"
+        android:layout_height="180dp"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_margin="8dp">
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="20dp"
+            android:textColor="@color/black"
+            android:text="Treść"
+            android:textStyle="bold"/>
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/email"
+            android:layout_width="fill_parent"
+            android:layout_height="160dp"
+            android:background="@drawable/input_shape_round"
+            android:ems="10"
+            android:gravity="start|top"
+            android:imeOptions="actionDone"
+            android:inputType="textMultiLine|textCapSentences"
+            android:padding="8dp"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+
+
+    <Button
+        android:id="@+id/send_discount"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="8dp"
+        android:background="@drawable/client_profile_btn_edit"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:text="Wyślij zgłoszenie"
+        android:textAlignment="center"
+        android:textSize="16sp" />
+
+
+
+</LinearLayout>
+</LinearLayout>
