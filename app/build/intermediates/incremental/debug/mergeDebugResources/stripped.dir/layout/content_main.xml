@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/header"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:gravity="center"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/greetings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="@string/witaj_janoo820"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:visibility="visible" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/logo"/>
+
+    </LinearLayout>
+
+
+        <!-- Content below header and above footer -->
+
+    <LinearLayout
+    android:id="@+id/content"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+        tools:ignore="NotSibling">
+
+        <Button
+            android:id="@+id/client_profile"
+            android:layout_width="fill_parent"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:paddingBottom="5dp"
+            android:layout_margin="8dp"
+            android:background="@drawable/app_btn_default"
+            android:gravity="center"
+            android:text="@string/poka_profil"
+            android:textAlignment="center"
+            android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="180dp"
+        android:orientation="horizontal">
+
+        <Button
+
+            android:id="@+id/Buy_ticket"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_weight="1"
+            android:background="@drawable/app_btn_default"
+            android:text="@string/kup_bilet"
+            android:layout_margin="10dp"
+            android:textSize="16sp"
+            android:paddingBottom="5dp"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:gravity="center"/>
+
+
+        <Button
+            android:id="@+id/ticket_history"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:background="@drawable/app_btn_default"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:text="@string/historia_bilet_w"
+            android:textSize="16sp"
+            android:paddingBottom="5dp"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:gravity="center"
+            />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/timetable"
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/app_btn_default"
+        android:text="@string/rozk_ad_jazdy"
+        android:paddingBottom="5dp"
+        android:textSize="16sp"
+        android:textAlignment="center"
+        android:layout_gravity="center"
+        android:gravity="center"/>
+
+    <Button
+        android:id="@+id/create_report"
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/app_btn_default"
+        android:text="@string/utw_rz_zg_oszenie"
+        android:textSize="16sp"
+        android:paddingBottom="5dp"
+        android:textAlignment="center"
+        android:layout_gravity="center"
+        android:gravity="center" />
+
+    <Button
+        android:id="@+id/mandates"
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/app_btn_default"
+        android:text="@string/mandaty"
+        android:textSize="16sp"
+        android:paddingBottom="5dp"
+        android:textAlignment="center"
+        android:layout_gravity="center"
+        android:gravity="center"/>
+
+    <Button
+        android:id="@+id/logout"
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/app_btn_last"
+        android:text="@string/wyloguj"
+        android:textSize="16sp"
+        android:textAlignment="center"
+        android:paddingBottom="5dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textColor="#FF0000"
+        android:textStyle="bold"/>
+
+    </LinearLayout>
+</LinearLayout>

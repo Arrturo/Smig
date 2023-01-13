@@ -1,0 +1,278 @@
+[
+    {
+        "merged": "com.example.test123.app-merged_res-43:/drawable-v24_report_shape.xml.flat",
+        "source": "com.example.test123.app-main-45:/drawable-v24/report_shape.xml"
+    },
+    {
+        "merged": "com.example.test123.app-merged_res-43:/layout_client_profile.xml.flat",
+        "source": "com.example.test123.app-main-45:/layout/client_profile.xml"
+    },
+    {
+        "merged": "com.example.test123.app-merged_res-43:/layout_ticket_history_element_small.xml.flat",
+        "source": "com.example.test123.app-main-45:/layout/ticket_history_element_small.xml"
+    },
+    {
+        "merged": "com.example.test123.app-merged_res-43:/drawable-v24_main_menu_btn.xml.flat",
+        "source": "com.example.test123.app-main-45:/drawable-v24/main_menu_btn.xml"
+    },
+    {
+        "merged": "com.example.test123.app-merged_res-43:/layout_header.xml.flat",
+        "source": "com.example.test123.app-main-45:/layout/header.xml"
+    },
+    {
+        "merged": "com.example.test123.app-merged_res-43:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "com.example.test123.app-main-45:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "com.example.test123.app-merged_res-43:/layout_ticket_buy.xml.flat",
+        "source": "com.example.test123.app-main-45:/layout/ticket_buy.xml"
+    },
+    {
+        "merged": "com.example.test123.app-merged_res-43:/layout_timetable_menu_back.xml.flat",
+        "source": "com.example.test123.app-main-45:/layout/timetable_menu_back.xml"
+    },
+    {
+        "merged": "com.example.test123.app-merged_res-43:/layout_client_add_discount.xml.flat",
+        "source": "com.example.test123.app-main-45:/layout/client_add_discount.xml"
+    },
+    {
+        "merged": "com.example.test123.app-merged_res-43:/drawable-v24_timetable_btn.xml.flat",
+        "source": "com.example.test123.app-main-45:/drawable-v24/timetable_btn.xml"
+    },
+    {
+        "merged": "com.example.test123.app-merged_res-43:/drawable-v24_ic_launcher_foreground.xml.flat",
+        "source": "com.example.test123.app-main-45:/drawable-v24/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "com.example.test123.app-merged_res-43:/drawable_timetable_square_start.xml.flat",
+        "source": "com.example.test123.app-main-45:/drawable/timetable_square_start.xml"
+    },
+    {
+        "merged": "com.example.test123.app-merged_res-43:/layout_ticket_menu.xml.flat",
+        "source": "com.example.test123.app-main-45:/layout/ticket_menu.xml"
+    },
+    {
+        "merged": "com.example.test123.app-merged_res-43:/drawable_timetable_circle_stop.xml.flat",
+        "source": "com.example.test123.app-main-45:/drawable/timetable_circle_stop.xml"
+    },
+    {
+        "merged": "com.example.test123.app-merged_res-43:/layout_content_main.xml.flat",
+        "source": "com.example.test123.app-main-45:/layout/content_main.xml"
+    },
+    {
+        "merged": "com.example.test123.app-merged_res-43:/xml_data_extraction_rules.xml.flat",
+        "source": "com.example.test123.app-main-45:/xml/data_extraction_rules.xml"
+    },
+    {
+        "merged": "com.example.test123.app-merged_res-43:/layout_ticket_type_field.xml.flat",
+        "source": "com.example.test123.app-main-45:/layout/ticket_type_field.xml"
+    },
+    {
+        "merged": "com.example.test123.app-merged_res-43:/layout_fragment_notifications.xml.flat",
+        "source": "com.example.test123.app-main-45:/layout/fragment_notifications.xml"
+    },
+    {
+        "merged": "com.example.test123.app-merged_res-43:/layout_activity_main.xml.flat",
+        "source": "com.example.test123.app-main-45:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.example.test123.app-merged_res-43:/layout_timetable_times_menu_pair.xml.flat",
+        "source": "com.example.test123.app-main-45:/layout/timetable_times_menu_pair.xml"
+    },
+    {
+        "merged": "com.example.test123.app-merged_res-43:/layout_timetable_times_menu_pair_left.xml.flat",
+        "source": "com.example.test123.app-main-45:/layout/timetable_times_menu_pair_left.xml"
+    },
+    {
+        "merged": "com.example.test123.app-merged_res-43:/layout_timetable_menu_elements_pair.xml.flat",
+        "source": "com.example.test123.app-main-45:/layout/timetable_menu_elements_pair.xml"
+    },
+    {
+        "merged": "com.example.test123.app-merged_res-43:/drawable-v24_timetable_black_line.xml.flat",
+        "source": "com.example.test123.app-main-45:/drawable-v24/timetable_black_line.xml"
+    },
+    {
+        "merged": "com.example.test123.app-merged_res-43:/layout_timetable_menu.xml.flat",
+        "source": "com.example.test123.app-main-45:/layout/timetable_menu.xml"
+    },
+    {
+        "merged": "com.example.test123.app-merged_res-43:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "com.example.test123.app-main-45:/mipmap-mdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.test123.app-merged_res-43:/layout_ticket_temporary_details.xml.flat",
+        "source": "com.example.test123.app-main-45:/layout/ticket_temporary_details.xml"
+    },
+    {
+        "merged": "com.example.test123.app-merged_res-43:/drawable-v24_app_btn_last.xml.flat",
+        "source": "com.example.test123.app-main-45:/drawable-v24/app_btn_last.xml"
+    },
+    {
+        "merged": "com.example.test123.app-merged_res-43:/layout_ticket_oneway_menu.xml.flat",
+        "source": "com.example.test123.app-main-45:/layout/ticket_oneway_menu.xml"
+    },
+    {
+        "merged": "com.example.test123.app-merged_res-43:/layout_ticket_price_field.xml.flat",
+        "source": "com.example.test123.app-main-45:/layout/ticket_price_field.xml"
+    },
+    {
+        "merged": "com.example.test123.app-merged_res-43:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "com.example.test123.app-main-45:/mipmap-xhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.test123.app-merged_res-43:/drawable_timetable_square_end.xml.flat",
+        "source": "com.example.test123.app-main-45:/drawable/timetable_square_end.xml"
+    },
+    {
+        "merged": "com.example.test123.app-merged_res-43:/layout_ticket_longterm_details.xml.flat",
+        "source": "com.example.test123.app-main-45:/layout/ticket_longterm_details.xml"
+    },
+    {
+        "merged": "com.example.test123.app-merged_res-43:/layout_ticket_tickets_amount_filed.xml.flat",
+        "source": "com.example.test123.app-main-45:/layout/ticket_tickets_amount_filed.xml"
+    },
+    {
+        "merged": "com.example.test123.app-merged_res-43:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "com.example.test123.app-main-45:/mipmap-xxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.test123.app-merged_res-43:/layout_send_report.xml.flat",
+        "source": "com.example.test123.app-main-45:/layout/send_report.xml"
+    },
+    {
+        "merged": "com.example.test123.app-merged_res-43:/drawable-v24_arrow.png.flat",
+        "source": "com.example.test123.app-main-45:/drawable-v24/arrow.png"
+    },
+    {
+        "merged": "com.example.test123.app-merged_res-43:/xml_backup_rules.xml.flat",
+        "source": "com.example.test123.app-main-45:/xml/backup_rules.xml"
+    },
+    {
+        "merged": "com.example.test123.app-merged_res-43:/drawable-v24_client_profile_btn_reduction.xml.flat",
+        "source": "com.example.test123.app-main-45:/drawable-v24/client_profile_btn_reduction.xml"
+    },
+    {
+        "merged": "com.example.test123.app-merged_res-43:/drawable_qr_code.png.flat",
+        "source": "com.example.test123.app-main-45:/drawable/qr_code.png"
+    },
+    {
+        "merged": "com.example.test123.app-merged_res-43:/layout_fragment_dashboard.xml.flat",
+        "source": "com.example.test123.app-main-45:/layout/fragment_dashboard.xml"
+    },
+    {
+        "merged": "com.example.test123.app-merged_res-43:/layout_timetable_direction.xml.flat",
+        "source": "com.example.test123.app-main-45:/layout/timetable_direction.xml"
+    },
+    {
+        "merged": "com.example.test123.app-merged_res-43:/layout_timetable_menu_elements_pair_left.xml.flat",
+        "source": "com.example.test123.app-main-45:/layout/timetable_menu_elements_pair_left.xml"
+    },
+    {
+        "merged": "com.example.test123.app-merged_res-43:/layout_timetable_line_element_number.xml.flat",
+        "source": "com.example.test123.app-main-45:/layout/timetable_line_element_number.xml"
+    },
+    {
+        "merged": "com.example.test123.app-merged_res-43:/drawable_pay_button_orange.xml.flat",
+        "source": "com.example.test123.app-main-45:/drawable/pay_button_orange.xml"
+    },
+    {
+        "merged": "com.example.test123.app-merged_res-43:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "com.example.test123.app-main-45:/mipmap-xxxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.test123.app-merged_res-43:/layout_timetable_menu_elements_pair_right.xml.flat",
+        "source": "com.example.test123.app-main-45:/layout/timetable_menu_elements_pair_right.xml"
+    },
+    {
+        "merged": "com.example.test123.app-merged_res-43:/drawable-v24_logo.png.flat",
+        "source": "com.example.test123.app-main-45:/drawable-v24/logo.png"
+    },
+    {
+        "merged": "com.example.test123.app-merged_res-43:/drawable-v24_app_btn_default.xml.flat",
+        "source": "com.example.test123.app-main-45:/drawable-v24/app_btn_default.xml"
+    },
+    {
+        "merged": "com.example.test123.app-merged_res-43:/layout_timetable_line_detail_pair.xml.flat",
+        "source": "com.example.test123.app-main-45:/layout/timetable_line_detail_pair.xml"
+    },
+    {
+        "merged": "com.example.test123.app-merged_res-43:/drawable-v24_btn_shape_round.xml.flat",
+        "source": "com.example.test123.app-main-45:/drawable-v24/btn_shape_round.xml"
+    },
+    {
+        "merged": "com.example.test123.app-merged_res-43:/layout_timetable_detail.xml.flat",
+        "source": "com.example.test123.app-main-45:/layout/timetable_detail.xml"
+    },
+    {
+        "merged": "com.example.test123.app-merged_res-43:/layout_ticket_history_element_big.xml.flat",
+        "source": "com.example.test123.app-main-45:/layout/ticket_history_element_big.xml"
+    },
+    {
+        "merged": "com.example.test123.app-merged_res-43:/layout_timetable_line_element_mid.xml.flat",
+        "source": "com.example.test123.app-main-45:/layout/timetable_line_element_mid.xml"
+    },
+    {
+        "merged": "com.example.test123.app-merged_res-43:/layout_timetable_times_menu.xml.flat",
+        "source": "com.example.test123.app-main-45:/layout/timetable_times_menu.xml"
+    },
+    {
+        "merged": "com.example.test123.app-merged_res-43:/layout_ticket_line_number_filed.xml.flat",
+        "source": "com.example.test123.app-main-45:/layout/ticket_line_number_filed.xml"
+    },
+    {
+        "merged": "com.example.test123.app-merged_res-43:/drawable-v24_background.png.flat",
+        "source": "com.example.test123.app-main-45:/drawable-v24/background.png"
+    },
+    {
+        "merged": "com.example.test123.app-merged_res-43:/drawable-v24_input_shape_round.xml.flat",
+        "source": "com.example.test123.app-main-45:/drawable-v24/input_shape_round.xml"
+    },
+    {
+        "merged": "com.example.test123.app-merged_res-43:/drawable-v24_client_profile_btn_edit.xml.flat",
+        "source": "com.example.test123.app-main-45:/drawable-v24/client_profile_btn_edit.xml"
+    },
+    {
+        "merged": "com.example.test123.app-merged_res-43:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "com.example.test123.app-main-45:/mipmap-hdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.test123.app-merged_res-43:/layout_ticket_temporary_details_.xml.flat",
+        "source": "com.example.test123.app-main-45:/layout/ticket_temporary_details_.xml"
+    },
+    {
+        "merged": "com.example.test123.app-merged_res-43:/layout_timetable_line_element_end.xml.flat",
+        "source": "com.example.test123.app-main-45:/layout/timetable_line_element_end.xml"
+    },
+    {
+        "merged": "com.example.test123.app-merged_res-43:/layout_timetable_line_element_direction.xml.flat",
+        "source": "com.example.test123.app-main-45:/layout/timetable_line_element_direction.xml"
+    },
+    {
+        "merged": "com.example.test123.app-merged_res-43:/layout_ticket_temporary_menu.xml.flat",
+        "source": "com.example.test123.app-main-45:/layout/ticket_temporary_menu.xml"
+    },
+    {
+        "merged": "com.example.test123.app-merged_res-43:/layout_timetable_line_element_start.xml.flat",
+        "source": "com.example.test123.app-main-45:/layout/timetable_line_element_start.xml"
+    },
+    {
+        "merged": "com.example.test123.app-merged_res-43:/layout_ticket_details.xml.flat",
+        "source": "com.example.test123.app-main-45:/layout/ticket_details.xml"
+    },
+    {
+        "merged": "com.example.test123.app-merged_res-43:/layout_ticket_history.xml.flat",
+        "source": "com.example.test123.app-main-45:/layout/ticket_history.xml"
+    },
+    {
+        "merged": "com.example.test123.app-merged_res-43:/drawable_ic_launcher_background.xml.flat",
+        "source": "com.example.test123.app-main-45:/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "com.example.test123.app-merged_res-43:/layout_fragment_home.xml.flat",
+        "source": "com.example.test123.app-main-45:/layout/fragment_home.xml"
+    },
+    {
+        "merged": "com.example.test123.app-merged_res-43:/layout_timetable_times_menu_pair_right.xml.flat",
+        "source": "com.example.test123.app-main-45:/layout/timetable_times_menu_pair_right.xml"
+    }
+]
