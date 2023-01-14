@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Smig"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.TEST123">
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity android:name=".ClientProfile" />
+        <activity android:name=".DiscountActivity" />
+        <activity android:name=".ReportActivity" />
+        <activity android:name=".BuyTicketActivity"/>
+        <activity android:name=".TimetableActivity"/>
+        <activity android:name=".TimetableDirectionActivity"/>
+        <activity android:name=".TimetableTimesMenuActivity"/>
+        <activity android:name=".TimetableDetailsActivity"/>
+        <activity android:name=".TicketOnewayActivity"/>
+        <activity android:name=".TicketDetailsActivity"/>
+        <activity android:name=".TicketTemporaryActivity"/>
+        <activity android:name=".TicketTemporaryDetailsActivity"/>
+        <activity android:name=".TicketLongtermDetailsActivity"/>
+        <activity android:name=".TicketHistoryActivity"/>
+        <activity android:name=".TicketHistoryDetailsActivity"/>
+
+    </application>
+
+</manifest>

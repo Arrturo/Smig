@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/header"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_alignParentTop="true"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/background">
+
+    <include layout="@layout/header" />
+
+        <!-- Content below header and above footer -->
+
+    <LinearLayout
+    android:id="@+id/buy_ticket_menu"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+        tools:ignore="NotSibling">
+
+        <Button
+
+            android:id="@+id/jednorazowy"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_margin="8dp"
+            android:background="@drawable/app_btn_default"
+            android:gravity="center"
+            android:text="@string/Jednorazowy"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            android:textAllCaps="false"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/krotkookresowy"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_margin="8dp"
+            android:background="@drawable/app_btn_default"
+            android:gravity="center"
+            android:text="@string/Krotkookresowy"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            android:textAllCaps="false"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/miesieczny"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_margin="8dp"
+
+            android:background="@drawable/app_btn_default"
+            android:gravity="center"
+            android:text="@string/Miesieczny"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            android:textAllCaps="false"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/trzymiesieczny"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_margin="8dp"
+            android:background="@drawable/app_btn_default"
+            android:gravity="center"
+            android:text="@string/Trzymiesieczny"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            android:textAllCaps="false"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/roczny"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_margin="8dp"
+            android:background="@drawable/app_btn_default"
+            android:gravity="center"
+            android:text="@string/Roczny"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            android:textAllCaps="false"
+            android:textStyle="bold"/>
+
+
+
+
+    </LinearLayout>
+</LinearLayout>
