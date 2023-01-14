@@ -80,12 +80,28 @@
         "source": "com.example.test123.app-main-45:/layout/timetable_times_menu_pair.xml"
     },
     {
+        "merged": "com.example.test123.app-merged_res-43:/layout_login.xml.flat",
+        "source": "com.example.test123.app-main-45:/layout/login.xml"
+    },
+    {
         "merged": "com.example.test123.app-merged_res-43:/layout_timetable_times_menu_pair_left.xml.flat",
         "source": "com.example.test123.app-main-45:/layout/timetable_times_menu_pair_left.xml"
     },
     {
+        "merged": "com.example.test123.app-merged_res-43:/drawable_pay_button_red.xml.flat",
+        "source": "com.example.test123.app-main-45:/drawable/pay_button_red.xml"
+    },
+    {
         "merged": "com.example.test123.app-merged_res-43:/layout_timetable_menu_elements_pair.xml.flat",
         "source": "com.example.test123.app-main-45:/layout/timetable_menu_elements_pair.xml"
+    },
+    {
+        "merged": "com.example.test123.app-merged_res-43:/layout_fine.xml.flat",
+        "source": "com.example.test123.app-main-45:/layout/fine.xml"
+    },
+    {
+        "merged": "com.example.test123.app-merged_res-43:/layout_timetable_line_detail.xml.flat",
+        "source": "com.example.test123.app-main-45:/layout/timetable_line_detail.xml"
     },
     {
         "merged": "com.example.test123.app-merged_res-43:/drawable-v24_timetable_black_line.xml.flat",
@@ -130,6 +146,10 @@
     {
         "merged": "com.example.test123.app-merged_res-43:/layout_ticket_tickets_amount_filed.xml.flat",
         "source": "com.example.test123.app-main-45:/layout/ticket_tickets_amount_filed.xml"
+    },
+    {
+        "merged": "com.example.test123.app-merged_res-43:/drawable_fine_his_white.xml.flat",
+        "source": "com.example.test123.app-main-45:/drawable/fine_his_white.xml"
     },
     {
         "merged": "com.example.test123.app-merged_res-43:/mipmap-xxhdpi_ic_launcher.webp.flat",
@@ -192,6 +212,10 @@
         "source": "com.example.test123.app-main-45:/drawable-v24/app_btn_default.xml"
     },
     {
+        "merged": "com.example.test123.app-merged_res-43:/drawable_fine_his.xml.flat",
+        "source": "com.example.test123.app-main-45:/drawable/fine_his.xml"
+    },
+    {
         "merged": "com.example.test123.app-merged_res-43:/layout_timetable_line_detail_pair.xml.flat",
         "source": "com.example.test123.app-main-45:/layout/timetable_line_detail_pair.xml"
     },
@@ -248,6 +272,10 @@
         "source": "com.example.test123.app-main-45:/layout/timetable_line_element_direction.xml"
     },
     {
+        "merged": "com.example.test123.app-merged_res-43:/layout_fine_pay.xml.flat",
+        "source": "com.example.test123.app-main-45:/layout/fine_pay.xml"
+    },
+    {
         "merged": "com.example.test123.app-merged_res-43:/layout_ticket_temporary_menu.xml.flat",
         "source": "com.example.test123.app-main-45:/layout/ticket_temporary_menu.xml"
     },
@@ -270,6 +298,10 @@
     {
         "merged": "com.example.test123.app-merged_res-43:/layout_fragment_home.xml.flat",
         "source": "com.example.test123.app-main-45:/layout/fragment_home.xml"
+    },
+    {
+        "merged": "com.example.test123.app-merged_res-43:/layout_fine_history.xml.flat",
+        "source": "com.example.test123.app-main-45:/layout/fine_history.xml"
     },
     {
         "merged": "com.example.test123.app-merged_res-43:/layout_timetable_times_menu_pair_right.xml.flat",

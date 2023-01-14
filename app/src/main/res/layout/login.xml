@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    android:paddingTop="40dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:orientation="vertical"
+        android:gravity="center">
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="64dp"
+            android:contentDescription="@string/todo"
+            android:src="@drawable/logo"
+            android:paddingBottom="30dp"/>
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:layout_margin="8dp">
+
+            <TextView
+                android:layout_width="130dp"
+                android:layout_height="20dp"
+                android:textColor="@color/black"
+                android:text="Nazwa użytkownika"
+                android:textStyle="bold">
+
+
+            </TextView>
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/username"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:background="@drawable/input_shape_round"
+                android:ems="10"
+                android:padding="8dp"
+                android:textColor="@color/black"
+                tools:ignore="TouchTargetSizeCheck"
+                android:inputType="textPersonName" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:layout_margin="8dp">
+            <TextView
+                android:layout_width="130dp"
+                android:layout_height="20dp"
+                android:textColor="@color/black"
+                android:text="Hasło"
+                android:textStyle="bold">
+
+
+            </TextView>
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/password"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:background="@drawable/input_shape_round"
+                android:ems="10"
+                android:padding="8dp"
+                android:textColor="@color/black"
+                tools:ignore="TouchTargetSizeCheck"
+                android:inputType="textPersonName" />
+        </LinearLayout>
+        <Button
+            android:id="@+id/lgowanie"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:paddingBottom="5dp"
+            android:background="@drawable/pay_button_orange"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:text="@string/zaloguj"
+            android:textAlignment="center"
+            android:textSize="16sp" />
+    </LinearLayout>
+</LinearLayout>

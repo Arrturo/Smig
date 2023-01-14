@@ -15,6 +15,7 @@ public class TicketOnewayActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         //DELETE HEADER
         if (getSupportActionBar() != null) getSupportActionBar().hide();
+
         setContentView(R.layout.timetable_menu_back);
 
         ViewGroup insertPoint = (ViewGroup) findViewById(R.id.content);
@@ -26,12 +27,13 @@ public class TicketOnewayActivity extends AppCompatActivity {
         View contentView = vi.inflate(R.layout.ticket_oneway_menu, insertPoint);
 
         Button jednoliniowy_ul = contentView.findViewById(R.id.jednoliniowy_ulgowy);
-        
+
         jednoliniowy_ul.setOnClickListener(v -> {
             Intent intent = new Intent(TicketOnewayActivity.this, TicketDetailsActivity.class);
             startActivity(intent);
         });
         Button jednoliniowy = contentView.findViewById(R.id.jednoliniowy_normalny);
+
         jednoliniowy.setOnClickListener(v -> {
             Intent intent = new Intent(TicketOnewayActivity.this, TicketDetailsActivity.class);
             startActivity(intent);
@@ -54,11 +56,16 @@ public class TicketOnewayActivity extends AppCompatActivity {
         Button normalny_60 = contentView.findViewById(R.id.normalny_60);
         normalny_60.setOnClickListener(v -> {
             Intent intent = new Intent(TicketOnewayActivity.this, TicketTemporaryDetailsActivity.class);
+
             startActivity(intent);
         });
 
 
+
+
         Button previous = header.findViewById(R.id.previous);
+
+
         previous.setOnClickListener(view -> finish());
     }
 }

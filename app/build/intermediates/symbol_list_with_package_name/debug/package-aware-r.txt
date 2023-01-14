@@ -1879,6 +1879,7 @@ color primary_text_disabled_material_light
 color purple_200
 color purple_500
 color purple_700
+color red
 color ripple_material_dark
 color ripple_material_light
 color secondary_text_default_material_dark
@@ -2617,6 +2618,8 @@ drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
+drawable fine_his
+drawable fine_his_white
 drawable ic_clock_black_24dp
 drawable ic_keyboard_black_24dp
 drawable ic_launcher_background
@@ -2700,6 +2703,7 @@ drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
 drawable pay_button_orange
+drawable pay_button_red
 drawable qr_code
 drawable report_shape
 drawable test_level_drawable
@@ -2909,6 +2913,7 @@ id fill
 id fill_horizontal
 id fill_vertical
 id filled
+id fine_pay
 id fitCenter
 id fitEnd
 id fitStart
@@ -2934,6 +2939,7 @@ id guideline
 id header
 id header_title
 id hideable
+id historia_mandatów
 id home
 id homeAsUp
 id honorRequest
@@ -2964,6 +2970,7 @@ id layout
 id left
 id leftToRight
 id legacy
+id lgowanie
 id line1
 id line3
 id linear
@@ -2974,7 +2981,10 @@ id logout
 id ltr
 id m1
 id m2
+id m3
+id m4
 id mandates
+id mandaty
 id marquee
 id masked
 id match_constraint
@@ -3058,6 +3068,7 @@ id notification_main_column_container
 id off
 id on
 id onInterceptTouchReturnSwipe
+id oplac_mandat
 id outline
 id outward
 id overshoot
@@ -3418,10 +3429,14 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
+layout fine
+layout fine_history
+layout fine_pay
 layout fragment_dashboard
 layout fragment_home
 layout fragment_notifications
 layout header
+layout login
 layout m3_alert_dialog
 layout m3_alert_dialog_actions
 layout m3_alert_dialog_title
@@ -3498,6 +3513,7 @@ layout ticket_tickets_amount_filed
 layout ticket_type_field
 layout timetable_detail
 layout timetable_direction
+layout timetable_line_detail
 layout timetable_line_detail_pair
 layout timetable_line_element_direction
 layout timetable_line_element_end
@@ -3586,6 +3602,7 @@ string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
 string hide_bottom_view_on_scroll_behavior
 string historia_bilet_w
+string historia_mandatów
 string icon_content_description
 string item_view_role_description
 string kup_bilet
@@ -3679,6 +3696,7 @@ string mtrl_timepicker_cancel
 string mtrl_timepicker_confirm
 string nav_app_bar_navigate_up_description
 string nav_app_bar_open_drawer_description
+string oplac_mandat
 string password_toggle_content_description
 string path_password_eye
 string path_password_eye_mask_strike_through
@@ -3695,6 +3713,7 @@ string todo
 string utw_rz_zg_oszenie
 string witaj_janoo820
 string wyloguj
+string zaloguj
 string zaloguj_si
 string znizkaString
 style AlertDialog_AppCompat

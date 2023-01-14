@@ -12,6 +12,7 @@ public class MainActivity extends AppCompatActivity {
 
     public User user;
     public DBHandler dbHandler;
+
     TextView greetings;
 
     @SuppressLint("SetTextI18n")
@@ -58,10 +59,12 @@ public class MainActivity extends AppCompatActivity {
             Intent intent = new Intent(MainActivity.this, TimetableActivity.class);
             startActivity(intent);
         });
+
         TicketHistory.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity.this, TicketHistoryActivity.class);
             startActivity(intent);
         });
+
 
 
     }
@@ -71,4 +74,7 @@ public class MainActivity extends AppCompatActivity {
         super.onResume();
         user = dbHandler.getUser();
     }
+
 }
+
+
