@@ -2,6 +2,7 @@ package com.example.test123;
 
 
 import android.annotation.SuppressLint;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -24,6 +25,7 @@ public class BuyTicketActivity extends AppCompatActivity {
         ViewGroup insertPoint = (ViewGroup) findViewById(R.id.content);
         LayoutInflater vi = getLayoutInflater();
 
+
         View header = vi.inflate(R.layout.header, insertPoint);
         TextView headerText = header.findViewById(R.id.header_title);
         headerText.setText("Kup Bilet");
@@ -31,10 +33,12 @@ public class BuyTicketActivity extends AppCompatActivity {
 
 
         Button jednorazowy = contentView.findViewById(R.id.jednorazowy);
+
         jednorazowy.setOnClickListener(v -> {
             Intent intent = new Intent(BuyTicketActivity.this, TicketOnewayActivity.class);
             startActivity(intent);
         });
+
         Button krotkookresowy = contentView.findViewById(R.id.krotkookresowy);
         krotkookresowy.setOnClickListener(v -> {
             Intent intent = new Intent(BuyTicketActivity.this, TicketTemporaryActivity.class);
@@ -58,7 +62,6 @@ public class BuyTicketActivity extends AppCompatActivity {
 
 
         Button previous = header.findViewById(R.id.previous);
-
         previous.setOnClickListener(view -> finish());
 
     }
