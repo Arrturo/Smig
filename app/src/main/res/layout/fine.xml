@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical">
+
+
+    <include layout="@layout/header" />
+
+    <LinearLayout
+        android:id="@+id/mandaty"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:paddingTop="40dp"
+        tools:ignore="NotSibling">
+
+        <Button
+            android:id="@+id/historia_mandatów"
+            android:layout_width="fill_parent"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:layout_margin="8dp"
+            android:background="@drawable/app_btn_default"
+            android:gravity="center"
+            android:text="@string/historia_mandatów"
+            android:textAlignment="center"
+            android:textSize="16sp" />
+
+
+        <Button
+            android:id="@+id/oplac_mandat"
+            android:layout_width="fill_parent"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:layout_margin="8dp"
+            android:background="@drawable/app_btn_default"
+            android:gravity="center"
+            android:text="@string/oplac_mandat"
+            android:textAlignment="center"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+</LinearLayout>

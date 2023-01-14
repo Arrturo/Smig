@@ -12,10 +12,8 @@ public class MainActivity extends AppCompatActivity {
 
     public User user;
     public DBHandler dbHandler;
-<<<<<<< HEAD
-=======
+
     TextView greetings;
->>>>>>> main
 
     @SuppressLint("SetTextI18n")
     @Override
@@ -35,11 +33,7 @@ public class MainActivity extends AppCompatActivity {
 
 
         Button Profile = findViewById(R.id.client_profile);
-<<<<<<< HEAD
         Button BuyTicket = findViewById(R.id.Buy_ticket);
-=======
-        Button Buy_ticket = findViewById(R.id.Buy_ticket);
->>>>>>> main
         Button Timetable = findViewById(R.id.timetable);
         Button SendReport = findViewById(R.id.create_report);
         Button TicketHistory = findViewById(R.id.ticket_history);
@@ -65,13 +59,12 @@ public class MainActivity extends AppCompatActivity {
             Intent intent = new Intent(MainActivity.this, TimetableActivity.class);
             startActivity(intent);
         });
-<<<<<<< HEAD
+
         TicketHistory.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity.this, TicketHistoryActivity.class);
             startActivity(intent);
         });
-=======
->>>>>>> main
+
 
 
     }
@@ -81,4 +74,6 @@ public class MainActivity extends AppCompatActivity {
         super.onResume();
         user = dbHandler.getUser();
     }
+
 }
+

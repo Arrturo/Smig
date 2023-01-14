@@ -1,7 +1,6 @@
 package com.example.test123;
 
 import android.os.Bundle;
-<<<<<<< HEAD
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -9,10 +8,9 @@ import android.widget.Button;
 import android.content.Intent;
 import android.widget.TextView;
 
-=======
 import android.widget.Button;
 import android.content.Intent;
->>>>>>> main
+
 import androidx.appcompat.app.AppCompatActivity;
 
 public class TicketOnewayActivity extends AppCompatActivity {
@@ -20,7 +18,7 @@ public class TicketOnewayActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         //DELETE HEADER
         if (getSupportActionBar() != null) getSupportActionBar().hide();
-<<<<<<< HEAD
+
         setContentView(R.layout.timetable_menu_back);
 
         ViewGroup insertPoint = (ViewGroup) findViewById(R.id.content);
@@ -32,25 +30,21 @@ public class TicketOnewayActivity extends AppCompatActivity {
         View contentView = vi.inflate(R.layout.ticket_oneway_menu, insertPoint);
 
         Button jednoliniowy_ul = contentView.findViewById(R.id.jednoliniowy_ulgowy);
-=======
+
         setContentView(R.layout.ticket_oneway_menu);
 
         Button jednoliniowy_ul = findViewById(R.id.jednoliniowy_ulgowy);
->>>>>>> main
+
         jednoliniowy_ul.setOnClickListener(v -> {
             Intent intent = new Intent(TicketOnewayActivity.this, TicketDetailsActivity.class);
             startActivity(intent);
         });
-<<<<<<< HEAD
         Button jednoliniowy = contentView.findViewById(R.id.jednoliniowy_normalny);
-=======
-        Button jednoliniowy = findViewById(R.id.jednoliniowy_normalny);
->>>>>>> main
+
         jednoliniowy.setOnClickListener(v -> {
             Intent intent = new Intent(TicketOnewayActivity.this, TicketDetailsActivity.class);
             startActivity(intent);
         });
-<<<<<<< HEAD
         Button ulgowy_30 = contentView.findViewById(R.id.ulgowy_30);
         ulgowy_30.setOnClickListener(v -> {
             Intent intent = new Intent(TicketOnewayActivity.this, TicketTemporaryDetailsActivity.class);
@@ -69,35 +63,14 @@ public class TicketOnewayActivity extends AppCompatActivity {
         Button normalny_60 = contentView.findViewById(R.id.normalny_60);
         normalny_60.setOnClickListener(v -> {
             Intent intent = new Intent(TicketOnewayActivity.this, TicketTemporaryDetailsActivity.class);
-=======
-        Button ulgowy_30 = findViewById(R.id.ulgowy_30);
-        ulgowy_30.setOnClickListener(v -> {
-            Intent intent = new Intent(TicketOnewayActivity.this, TicketDetailsActivity.class);
-            startActivity(intent);
-        });
-        Button normalny_30 = findViewById(R.id.normalny_30);
-        normalny_30.setOnClickListener(v -> {
-            Intent intent = new Intent(TicketOnewayActivity.this, TicketDetailsActivity.class);
-            startActivity(intent);
-        });
-        Button ulgowy_60 = findViewById(R.id.ulgowy_60);
-        ulgowy_60.setOnClickListener(v -> {
-            Intent intent = new Intent(TicketOnewayActivity.this, TicketDetailsActivity.class);
-            startActivity(intent);
-        });
-        Button normalny_60 = findViewById(R.id.normalny_60);
-        normalny_60.setOnClickListener(v -> {
-            Intent intent = new Intent(TicketOnewayActivity.this, TicketDetailsActivity.class);
->>>>>>> main
+
             startActivity(intent);
         });
 
 
-<<<<<<< HEAD
+
         Button previous = header.findViewById(R.id.previous);
-=======
-        Button previous = findViewById(R.id.previous);
->>>>>>> main
+
         previous.setOnClickListener(view -> finish());
     }
 }

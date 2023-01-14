@@ -21,6 +21,7 @@
     <color name="purple_200">#FFBB86FC</color>
     <color name="purple_500">#FF6200EE</color>
     <color name="purple_700">#FF3700B3</color>
+    <color name="red">#FF0000</color>
     <color name="teal_200">#FF03DAC5</color>
     <color name="teal_700">#FF018786</color>
     <color name="white">#F9F9F9</color>
@@ -50,8 +51,10 @@
     <string name="doba_3">Bilet trzydobowy</string>
     <string name="dodaj_ulge">Dodaj Ulgę</string>
     <string name="historia_bilet_w">Historia biletów</string>
+    <string name="historia_mandatów">Historia mandatów</string>
     <string name="kup_bilet">Kup Bilet</string>
     <string name="mandaty">Mandaty</string>
+    <string name="oplac_mandat">Opłać mandat</string>
     <string name="poka_profil">Pokaż Profil</string>
     <string name="profil">Profil</string>
     <string name="profil123">Profil</string>
@@ -61,6 +64,7 @@
     <string name="utw_rz_zg_oszenie">Utwórz zgłoszenie</string>
     <string name="witaj_janoo820">Witaj, Janoo820!</string>
     <string name="wyloguj">Wyloguj</string>
+    <string name="zaloguj">Zaloguj się</string>
     <string name="zaloguj_si">Zaloguj się</string>
     <string name="znizkaString">Masz już zniżkę!</string>
     <style name="Theme.TEST123" parent="Theme.AppCompat.DayNight.DarkActionBar">

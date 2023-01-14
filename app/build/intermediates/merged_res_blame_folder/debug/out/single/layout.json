@@ -8,6 +8,10 @@
         "source": "com.example.test123.app-main-45:/layout/activity_main.xml"
     },
     {
+        "merged": "com.example.test123.app-mergeDebugResources-42:/layout/fine_history.xml",
+        "source": "com.example.test123.app-main-45:/layout/fine_history.xml"
+    },
+    {
         "merged": "com.example.test123.app-mergeDebugResources-42:/layout/timetable_menu_elements_pair.xml",
         "source": "com.example.test123.app-main-45:/layout/timetable_menu_elements_pair.xml"
     },
@@ -34,6 +38,14 @@
     {
         "merged": "com.example.test123.app-mergeDebugResources-42:/layout/ticket_temporary_details_.xml",
         "source": "com.example.test123.app-main-45:/layout/ticket_temporary_details_.xml"
+    },
+    {
+        "merged": "com.example.test123.app-mergeDebugResources-42:/layout/timetable_line_detail.xml",
+        "source": "com.example.test123.app-main-45:/layout/timetable_line_detail.xml"
+    },
+    {
+        "merged": "com.example.test123.app-mergeDebugResources-42:/layout/fine_pay.xml",
+        "source": "com.example.test123.app-main-45:/layout/fine_pay.xml"
     },
     {
         "merged": "com.example.test123.app-mergeDebugResources-42:/layout/timetable_line_element_start.xml",
@@ -128,6 +140,10 @@
         "source": "com.example.test123.app-main-45:/layout/header.xml"
     },
     {
+        "merged": "com.example.test123.app-mergeDebugResources-42:/layout/login.xml",
+        "source": "com.example.test123.app-main-45:/layout/login.xml"
+    },
+    {
         "merged": "com.example.test123.app-mergeDebugResources-42:/layout/timetable_times_menu_pair.xml",
         "source": "com.example.test123.app-main-45:/layout/timetable_times_menu_pair.xml"
     },
@@ -146,6 +162,10 @@
     {
         "merged": "com.example.test123.app-mergeDebugResources-42:/layout/ticket_line_number_filed.xml",
         "source": "com.example.test123.app-main-45:/layout/ticket_line_number_filed.xml"
+    },
+    {
+        "merged": "com.example.test123.app-mergeDebugResources-42:/layout/fine.xml",
+        "source": "com.example.test123.app-main-45:/layout/fine.xml"
     },
     {
         "merged": "com.example.test123.app-mergeDebugResources-42:/layout/ticket_price_field.xml",
