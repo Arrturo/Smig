@@ -62,6 +62,7 @@ public class BuyTicketActivity extends AppCompatActivity {
 
 
         Button previous = header.findViewById(R.id.previous);
+
         previous.setOnClickListener(view -> finish());
 
     }

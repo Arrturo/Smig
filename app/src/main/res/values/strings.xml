@@ -41,6 +41,7 @@
     <string name="oplac_mandat">Opłać mandat</string>
     <string name="historia_mandatów">Historia mandatów</string>
     <string name="zaloguj">Zaloguj się</string>
+
     <string-array name="discounts">
         <item>Student(30%)</item>
         <item>Weteran(70%)</item>
@@ -54,4 +55,3 @@
         <item>Inne</item>
     </string-array>
 </resources>
-

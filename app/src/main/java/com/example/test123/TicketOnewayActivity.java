@@ -8,9 +8,6 @@ import android.widget.Button;
 import android.content.Intent;
 import android.widget.TextView;
 
-import android.widget.Button;
-import android.content.Intent;
-
 import androidx.appcompat.app.AppCompatActivity;
 
 public class TicketOnewayActivity extends AppCompatActivity {
@@ -30,10 +27,6 @@ public class TicketOnewayActivity extends AppCompatActivity {
         View contentView = vi.inflate(R.layout.ticket_oneway_menu, insertPoint);
 
         Button jednoliniowy_ul = contentView.findViewById(R.id.jednoliniowy_ulgowy);
-
-        setContentView(R.layout.ticket_oneway_menu);
-
-        Button jednoliniowy_ul = findViewById(R.id.jednoliniowy_ulgowy);
 
         jednoliniowy_ul.setOnClickListener(v -> {
             Intent intent = new Intent(TicketOnewayActivity.this, TicketDetailsActivity.class);
@@ -69,7 +62,9 @@ public class TicketOnewayActivity extends AppCompatActivity {
 
 
 
+
         Button previous = header.findViewById(R.id.previous);
+
 
         previous.setOnClickListener(view -> finish());
     }
