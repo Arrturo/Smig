@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
         Button Profile = findViewById(R.id.client_profile);
         Button Buy_ticket = findViewById(R.id.Buy_ticket);
         Button Timetable = findViewById(R.id.timetable);
-        Button SendReport = findViewById(R.id.Create_report);
+        Button SendReport = findViewById(R.id.create_report);
         Profile.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity.this, ClientProfile.class);
             intent.putExtra("username", user.getUsername());

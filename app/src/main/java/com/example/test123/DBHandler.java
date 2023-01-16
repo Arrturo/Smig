@@ -5,7 +5,9 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
-
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.concurrent.TimeUnit;
 
 
 public class DBHandler extends SQLiteOpenHelper {
@@ -155,6 +157,20 @@ public class DBHandler extends SQLiteOpenHelper {
         db.insert("report", null, values);
     }
     public void createTable(){
+    }
+    public void buyTicket(String rodzaj, float cena, int ilosc, int linia){
+        SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
+        Date date = new Date();
+        SQLiteDatabase db = this.getWritableDatabase();
+        ContentValues values = new ContentValues();
+        values.put("rodzaj", rodzaj);
+        values.put("cena", cena);
+        values.put("data_zakupu", formatter.format(date));
+        values.put("linia", linia);
+        values.put("id_klienta", USER_ID);
+        values.put("data_wygasniecia", formatter.format(date.getTime() + 3600000));
+        values.put("ilosc", ilosc);
+        db.insert("user_ticket", null, values);
     }
 }
 

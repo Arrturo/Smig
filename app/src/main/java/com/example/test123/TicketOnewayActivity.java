@@ -3,6 +3,8 @@ package com.example.test123;
 import android.os.Bundle;
 import android.widget.Button;
 import android.content.Intent;
+import android.widget.TextView;
+
 import androidx.appcompat.app.AppCompatActivity;
 
 public class TicketOnewayActivity extends AppCompatActivity {
@@ -14,7 +16,10 @@ public class TicketOnewayActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         //DELETE HEADER
         if (getSupportActionBar() != null) getSupportActionBar().hide();
-        setContentView(R.layout.ticket_oneway_menu);
+        setContentView(R.layout.ticket_one_way);
+        TextView header_title = findViewById(R.id.header_title);
+        header_title.setText("Kup bilet");
+
         System.out.println(discount);
         Button jednoliniowy_ul = findViewById(R.id.jednoliniowy_ulgowy);
         jednoliniowy_ul.setOnClickListener(v -> {
