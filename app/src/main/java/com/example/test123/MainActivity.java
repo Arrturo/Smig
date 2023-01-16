@@ -36,6 +36,7 @@ public class MainActivity extends AppCompatActivity {
         Button Timetable = findViewById(R.id.timetable);
         Button SendReport = findViewById(R.id.create_report);
         Button TicketHistory = findViewById(R.id.ticket_history);
+        Button FineHistory = findViewById(R.id.fine);
         Profile.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity.this, ClientProfile.class);
             intent.putExtra("username", user.getUsername());
@@ -60,6 +61,10 @@ public class MainActivity extends AppCompatActivity {
         });
         TicketHistory.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity.this, TicketHistoryActivity.class);
+            startActivity(intent);
+        });
+        FineHistory.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, FineMenuActivitiy.class);
             startActivity(intent);
         });
 

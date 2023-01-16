@@ -2913,7 +2913,18 @@ id fill
 id fill_horizontal
 id fill_vertical
 id filled
-id fine_pay
+id fine
+id fine_element_date
+id fine_element_kontroler_id
+id fine_element_reason
+id fine_element_value
+id fine_history_element
+id fine_history_element_big
+id fine_pay_button
+id fine_pay_date
+id fine_pay_kontrolerID
+id fine_pay_reason
+id fine_pay_value
 id fitCenter
 id fitEnd
 id fitStart
@@ -2939,7 +2950,7 @@ id guideline
 id header
 id header_title
 id hideable
-id historia_mandatów
+id historia_mandatow
 id home
 id homeAsUp
 id honorRequest
@@ -2983,7 +2994,6 @@ id m1
 id m2
 id m3
 id m4
-id mandates
 id mandaty
 id marquee
 id masked
@@ -3431,6 +3441,8 @@ layout design_text_input_end_icon
 layout design_text_input_start_icon
 layout fine
 layout fine_history
+layout fine_history_element_big
+layout fine_history_element_small
 layout fine_pay
 layout fragment_dashboard
 layout fragment_home

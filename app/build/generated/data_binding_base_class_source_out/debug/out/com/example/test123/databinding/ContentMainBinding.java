@@ -33,6 +33,9 @@ public final class ContentMainBinding implements ViewBinding {
   public final Button createReport;
 
   @NonNull
+  public final Button fine;
+
+  @NonNull
   public final TextView greetings;
 
   @NonNull
@@ -42,9 +45,6 @@ public final class ContentMainBinding implements ViewBinding {
   public final Button logout;
 
   @NonNull
-  public final Button mandates;
-
-  @NonNull
   public final Button ticketHistory;
 
   @NonNull
@@ -52,17 +52,17 @@ public final class ContentMainBinding implements ViewBinding {
 
   private ContentMainBinding(@NonNull LinearLayout rootView, @NonNull Button BuyTicket,
       @NonNull Button clientProfile, @NonNull LinearLayout content, @NonNull Button createReport,
-      @NonNull TextView greetings, @NonNull LinearLayout header, @NonNull Button logout,
-      @NonNull Button mandates, @NonNull Button ticketHistory, @NonNull Button timetable) {
+      @NonNull Button fine, @NonNull TextView greetings, @NonNull LinearLayout header,
+      @NonNull Button logout, @NonNull Button ticketHistory, @NonNull Button timetable) {
     this.rootView = rootView;
     this.BuyTicket = BuyTicket;
     this.clientProfile = clientProfile;
     this.content = content;
     this.createReport = createReport;
+    this.fine = fine;
     this.greetings = greetings;
     this.header = header;
     this.logout = logout;
-    this.mandates = mandates;
     this.ticketHistory = ticketHistory;
     this.timetable = timetable;
   }
@@ -118,6 +118,12 @@ public final class ContentMainBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.fine;
+      Button fine = ViewBindings.findChildViewById(rootView, id);
+      if (fine == null) {
+        break missingId;
+      }
+
       id = R.id.greetings;
       TextView greetings = ViewBindings.findChildViewById(rootView, id);
       if (greetings == null) {
@@ -129,12 +135,6 @@ public final class ContentMainBinding implements ViewBinding {
       id = R.id.logout;
       Button logout = ViewBindings.findChildViewById(rootView, id);
       if (logout == null) {
-        break missingId;
-      }
-
-      id = R.id.mandates;
-      Button mandates = ViewBindings.findChildViewById(rootView, id);
-      if (mandates == null) {
         break missingId;
       }
 
@@ -151,7 +151,7 @@ public final class ContentMainBinding implements ViewBinding {
       }
 
       return new ContentMainBinding((LinearLayout) rootView, BuyTicket, clientProfile, content,
-          createReport, greetings, header, logout, mandates, ticketHistory, timetable);
+          createReport, fine, greetings, header, logout, ticketHistory, timetable);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
