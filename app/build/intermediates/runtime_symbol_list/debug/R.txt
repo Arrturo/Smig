@@ -2912,7 +2912,18 @@ int id fill 0x7f0900c3
 int id fill_horizontal 0x7f0900c4
 int id fill_vertical 0x7f0900c5
 int id filled 0x7f0900c6
-int id fine_pay 0x7f0900c7
+int id fine 0x7f09023c
+int id fine_element_date 0x7f09023d
+int id fine_element_kontroler_id 0x7f09023e
+int id fine_element_reason 0x7f09023f
+int id fine_element_value 0x7f090240
+int id fine_history_element 0x7f090241
+int id fine_history_element_big 0x7f090242
+int id fine_pay_button 0x7f090243
+int id fine_pay_date 0x7f090244
+int id fine_pay_kontrolerID 0x7f090245
+int id fine_pay_reason 0x7f090246
+int id fine_pay_value 0x7f090247
 int id fitCenter 0x7f0900c8
 int id fitEnd 0x7f0900c9
 int id fitStart 0x7f0900ca
@@ -2938,7 +2949,7 @@ int id guideline 0x7f0900dd
 int id header 0x7f0900de
 int id header_title 0x7f0900df
 int id hideable 0x7f0900e0
-int id historia_mandatów 0x7f0900e1
+int id historia_mandatow 0x7f090248
 int id home 0x7f0900e2
 int id homeAsUp 0x7f0900e3
 int id honorRequest 0x7f0900e4
@@ -2982,7 +2993,6 @@ int id m1 0x7f090109
 int id m2 0x7f09010a
 int id m3 0x7f09010b
 int id m4 0x7f09010c
-int id mandates 0x7f09010d
 int id mandaty 0x7f09010e
 int id marquee 0x7f09010f
 int id masked 0x7f090110
@@ -3430,6 +3440,8 @@ int layout design_text_input_end_icon 0x7f0c002e
 int layout design_text_input_start_icon 0x7f0c002f
 int layout fine 0x7f0c0030
 int layout fine_history 0x7f0c0031
+int layout fine_history_element_big 0x7f0c0094
+int layout fine_history_element_small 0x7f0c0095
 int layout fine_pay 0x7f0c0032
 int layout fragment_dashboard 0x7f0c0033
 int layout fragment_home 0x7f0c0034

@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\studia\Public-Transport-Mobile-App-main\app\src\main\AndroidManifest.xml:2:1-45:12
-INJECTED from D:\studia\Public-Transport-Mobile-App-main\app\src\main\AndroidManifest.xml:2:1-45:12
-INJECTED from D:\studia\Public-Transport-Mobile-App-main\app\src\main\AndroidManifest.xml:2:1-45:12
-INJECTED from D:\studia\Public-Transport-Mobile-App-main\app\src\main\AndroidManifest.xml:2:1-45:12
+ADDED from D:\studia\app_zapas\app\src\main\AndroidManifest.xml:2:1-49:12
+INJECTED from D:\studia\app_zapas\app\src\main\AndroidManifest.xml:2:1-49:12
+INJECTED from D:\studia\app_zapas\app\src\main\AndroidManifest.xml:2:1-49:12
+INJECTED from D:\studia\app_zapas\app\src\main\AndroidManifest.xml:2:1-49:12
 MERGED from [androidx.databinding:viewbinding:7.3.1] C:\Users\Pc\.gradle\caches\transforms-3\98f2e3f01cb1b33b1c6ac055c4816f75\transformed\viewbinding-7.3.1\AndroidManifest.xml:2:1-9:12
 MERGED from [androidx.navigation:navigation-ui:2.5.3] C:\Users\Pc\.gradle\caches\transforms-3\88442b52181f3fa4317809c14ce9014b\transformed\navigation-ui-2.5.3\AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.material:material:1.7.0] C:\Users\Pc\.gradle\caches\transforms-3\459731560744495d36c7572f4eaf1462\transformed\material-1.7.0\AndroidManifest.xml:17:1-26:12
@@ -58,37 +58,37 @@ MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\Pc\.gradle\cache
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\Pc\.gradle\caches\transforms-3\5c31521eb266c26ef211a1f53b56b07e\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.print:print:1.0.0] C:\Users\Pc\.gradle\caches\transforms-3\66860c319137074465b1f3af9d4ca7e4\transformed\print-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\Pc\.gradle\caches\transforms-3\d1b81e9b9294b0bc78ebcbc0700bfe58\transformed\annotation-experimental-1.1.0\AndroidManifest.xml:17:1-24:12
-INJECTED from D:\studia\Public-Transport-Mobile-App-main\app\src\main\AndroidManifest.xml:2:1-45:12
-INJECTED from D:\studia\Public-Transport-Mobile-App-main\app\src\main\AndroidManifest.xml:2:1-45:12
-INJECTED from D:\studia\Public-Transport-Mobile-App-main\app\src\main\AndroidManifest.xml:2:1-45:12
+INJECTED from D:\studia\app_zapas\app\src\main\AndroidManifest.xml:2:1-49:12
+INJECTED from D:\studia\app_zapas\app\src\main\AndroidManifest.xml:2:1-49:12
+INJECTED from D:\studia\app_zapas\app\src\main\AndroidManifest.xml:2:1-49:12
 	package
-		INJECTED from D:\studia\Public-Transport-Mobile-App-main\app\src\main\AndroidManifest.xml
-		ADDED from D:\studia\Public-Transport-Mobile-App-main\app\src\main\AndroidManifest.xml:2:1-45:12
-		INJECTED from D:\studia\Public-Transport-Mobile-App-main\app\src\main\AndroidManifest.xml
+		INJECTED from D:\studia\app_zapas\app\src\main\AndroidManifest.xml
+		ADDED from D:\studia\app_zapas\app\src\main\AndroidManifest.xml:2:1-49:12
+		INJECTED from D:\studia\app_zapas\app\src\main\AndroidManifest.xml
 	android:versionName
-		INJECTED from D:\studia\Public-Transport-Mobile-App-main\app\src\main\AndroidManifest.xml
-		ADDED from D:\studia\Public-Transport-Mobile-App-main\app\src\main\AndroidManifest.xml:2:1-45:12
-		INJECTED from D:\studia\Public-Transport-Mobile-App-main\app\src\main\AndroidManifest.xml
+		INJECTED from D:\studia\app_zapas\app\src\main\AndroidManifest.xml
+		ADDED from D:\studia\app_zapas\app\src\main\AndroidManifest.xml:2:1-49:12
+		INJECTED from D:\studia\app_zapas\app\src\main\AndroidManifest.xml
 	android:versionCode
-		INJECTED from D:\studia\Public-Transport-Mobile-App-main\app\src\main\AndroidManifest.xml
-		ADDED from D:\studia\Public-Transport-Mobile-App-main\app\src\main\AndroidManifest.xml:2:1-45:12
-		INJECTED from D:\studia\Public-Transport-Mobile-App-main\app\src\main\AndroidManifest.xml
+		INJECTED from D:\studia\app_zapas\app\src\main\AndroidManifest.xml
+		ADDED from D:\studia\app_zapas\app\src\main\AndroidManifest.xml:2:1-49:12
+		INJECTED from D:\studia\app_zapas\app\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from D:\studia\Public-Transport-Mobile-App-main\app\src\main\AndroidManifest.xml:2:11-69
+		ADDED from D:\studia\app_zapas\app\src\main\AndroidManifest.xml:2:11-69
 uses-permission#android.permission.INTERNET
-ADDED from D:\studia\Public-Transport-Mobile-App-main\app\src\main\AndroidManifest.xml:3:5-67
+ADDED from D:\studia\app_zapas\app\src\main\AndroidManifest.xml:3:5-67
 	android:name
-		ADDED from D:\studia\Public-Transport-Mobile-App-main\app\src\main\AndroidManifest.xml:3:22-64
+		ADDED from D:\studia\app_zapas\app\src\main\AndroidManifest.xml:3:22-64
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from D:\studia\Public-Transport-Mobile-App-main\app\src\main\AndroidManifest.xml:4:5-79
+ADDED from D:\studia\app_zapas\app\src\main\AndroidManifest.xml:4:5-79
 	android:name
-		ADDED from D:\studia\Public-Transport-Mobile-App-main\app\src\main\AndroidManifest.xml:4:22-76
+		ADDED from D:\studia\app_zapas\app\src\main\AndroidManifest.xml:4:22-76
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
-ADDED from D:\studia\Public-Transport-Mobile-App-main\app\src\main\AndroidManifest.xml:5:5-80
+ADDED from D:\studia\app_zapas\app\src\main\AndroidManifest.xml:5:5-80
 	android:name
-		ADDED from D:\studia\Public-Transport-Mobile-App-main\app\src\main\AndroidManifest.xml:5:22-77
+		ADDED from D:\studia\app_zapas\app\src\main\AndroidManifest.xml:5:22-77
 application
-ADDED from D:\studia\Public-Transport-Mobile-App-main\app\src\main\AndroidManifest.xml:6:5-43:19
+ADDED from D:\studia\app_zapas\app\src\main\AndroidManifest.xml:6:5-47:19
 MERGED from [com.google.android.material:material:1.7.0] C:\Users\Pc\.gradle\caches\transforms-3\459731560744495d36c7572f4eaf1462\transformed\material-1.7.0\AndroidManifest.xml:24:5-20
 MERGED from [com.google.android.material:material:1.7.0] C:\Users\Pc\.gradle\caches\transforms-3\459731560744495d36c7572f4eaf1462\transformed\material-1.7.0\AndroidManifest.xml:24:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\Pc\.gradle\caches\transforms-3\229612c218d9fe79705dc19c7f400585\transformed\constraintlayout-2.1.4\AndroidManifest.xml:9:5-20
@@ -108,105 +108,121 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\Pc
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.8.0] C:\Users\Pc\.gradle\caches\transforms-3\87a796fe63836d99a2198ac6a6284cb3\transformed\core-1.8.0\AndroidManifest.xml:24:18-86
 	android:supportsRtl
-		ADDED from D:\studia\Public-Transport-Mobile-App-main\app\src\main\AndroidManifest.xml:12:9-35
+		ADDED from D:\studia\app_zapas\app\src\main\AndroidManifest.xml:12:9-35
 	android:label
-		ADDED from D:\studia\Public-Transport-Mobile-App-main\app\src\main\AndroidManifest.xml:11:9-29
+		ADDED from D:\studia\app_zapas\app\src\main\AndroidManifest.xml:11:9-29
 	android:fullBackupContent
-		ADDED from D:\studia\Public-Transport-Mobile-App-main\app\src\main\AndroidManifest.xml:9:9-54
+		ADDED from D:\studia\app_zapas\app\src\main\AndroidManifest.xml:9:9-54
 	android:icon
-		ADDED from D:\studia\Public-Transport-Mobile-App-main\app\src\main\AndroidManifest.xml:10:9-43
+		ADDED from D:\studia\app_zapas\app\src\main\AndroidManifest.xml:10:9-43
 	android:allowBackup
-		ADDED from D:\studia\Public-Transport-Mobile-App-main\app\src\main\AndroidManifest.xml:7:9-35
+		ADDED from D:\studia\app_zapas\app\src\main\AndroidManifest.xml:7:9-35
 	android:theme
-		ADDED from D:\studia\Public-Transport-Mobile-App-main\app\src\main\AndroidManifest.xml:13:9-45
+		ADDED from D:\studia\app_zapas\app\src\main\AndroidManifest.xml:13:9-45
 	android:dataExtractionRules
-		ADDED from D:\studia\Public-Transport-Mobile-App-main\app\src\main\AndroidManifest.xml:8:9-65
+		ADDED from D:\studia\app_zapas\app\src\main\AndroidManifest.xml:8:9-65
 activity#com.example.test123.MainActivity
-ADDED from D:\studia\Public-Transport-Mobile-App-main\app\src\main\AndroidManifest.xml:14:9-26:20
+ADDED from D:\studia\app_zapas\app\src\main\AndroidManifest.xml:14:9-26:20
 	android:exported
-		ADDED from D:\studia\Public-Transport-Mobile-App-main\app\src\main\AndroidManifest.xml:16:13-36
+		ADDED from D:\studia\app_zapas\app\src\main\AndroidManifest.xml:16:13-36
 	android:name
-		ADDED from D:\studia\Public-Transport-Mobile-App-main\app\src\main\AndroidManifest.xml:15:13-41
+		ADDED from D:\studia\app_zapas\app\src\main\AndroidManifest.xml:15:13-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from D:\studia\Public-Transport-Mobile-App-main\app\src\main\AndroidManifest.xml:17:13-21:29
+ADDED from D:\studia\app_zapas\app\src\main\AndroidManifest.xml:17:13-21:29
 action#android.intent.action.MAIN
-ADDED from D:\studia\Public-Transport-Mobile-App-main\app\src\main\AndroidManifest.xml:18:17-69
+ADDED from D:\studia\app_zapas\app\src\main\AndroidManifest.xml:18:17-69
 	android:name
-		ADDED from D:\studia\Public-Transport-Mobile-App-main\app\src\main\AndroidManifest.xml:18:25-66
+		ADDED from D:\studia\app_zapas\app\src\main\AndroidManifest.xml:18:25-66
 category#android.intent.category.LAUNCHER
-ADDED from D:\studia\Public-Transport-Mobile-App-main\app\src\main\AndroidManifest.xml:20:17-77
+ADDED from D:\studia\app_zapas\app\src\main\AndroidManifest.xml:20:17-77
 	android:name
-		ADDED from D:\studia\Public-Transport-Mobile-App-main\app\src\main\AndroidManifest.xml:20:27-74
+		ADDED from D:\studia\app_zapas\app\src\main\AndroidManifest.xml:20:27-74
 meta-data#android.app.lib_name
-ADDED from D:\studia\Public-Transport-Mobile-App-main\app\src\main\AndroidManifest.xml:23:13-25:36
+ADDED from D:\studia\app_zapas\app\src\main\AndroidManifest.xml:23:13-25:36
 	android:value
-		ADDED from D:\studia\Public-Transport-Mobile-App-main\app\src\main\AndroidManifest.xml:25:17-33
+		ADDED from D:\studia\app_zapas\app\src\main\AndroidManifest.xml:25:17-33
 	android:name
-		ADDED from D:\studia\Public-Transport-Mobile-App-main\app\src\main\AndroidManifest.xml:24:17-52
+		ADDED from D:\studia\app_zapas\app\src\main\AndroidManifest.xml:24:17-52
 activity#com.example.test123.ClientProfile
-ADDED from D:\studia\Public-Transport-Mobile-App-main\app\src\main\AndroidManifest.xml:27:9-51
+ADDED from D:\studia\app_zapas\app\src\main\AndroidManifest.xml:27:9-51
 	android:name
-		ADDED from D:\studia\Public-Transport-Mobile-App-main\app\src\main\AndroidManifest.xml:27:19-48
+		ADDED from D:\studia\app_zapas\app\src\main\AndroidManifest.xml:27:19-48
 activity#com.example.test123.DiscountActivity
-ADDED from D:\studia\Public-Transport-Mobile-App-main\app\src\main\AndroidManifest.xml:28:9-54
+ADDED from D:\studia\app_zapas\app\src\main\AndroidManifest.xml:28:9-54
 	android:name
-		ADDED from D:\studia\Public-Transport-Mobile-App-main\app\src\main\AndroidManifest.xml:28:19-51
+		ADDED from D:\studia\app_zapas\app\src\main\AndroidManifest.xml:28:19-51
 activity#com.example.test123.ReportActivity
-ADDED from D:\studia\Public-Transport-Mobile-App-main\app\src\main\AndroidManifest.xml:29:9-52
+ADDED from D:\studia\app_zapas\app\src\main\AndroidManifest.xml:29:9-52
 	android:name
-		ADDED from D:\studia\Public-Transport-Mobile-App-main\app\src\main\AndroidManifest.xml:29:19-49
+		ADDED from D:\studia\app_zapas\app\src\main\AndroidManifest.xml:29:19-49
 activity#com.example.test123.BuyTicketActivity
-ADDED from D:\studia\Public-Transport-Mobile-App-main\app\src\main\AndroidManifest.xml:30:9-54
+ADDED from D:\studia\app_zapas\app\src\main\AndroidManifest.xml:30:9-54
 	android:name
-		ADDED from D:\studia\Public-Transport-Mobile-App-main\app\src\main\AndroidManifest.xml:30:19-52
+		ADDED from D:\studia\app_zapas\app\src\main\AndroidManifest.xml:30:19-52
 activity#com.example.test123.TimetableActivity
-ADDED from D:\studia\Public-Transport-Mobile-App-main\app\src\main\AndroidManifest.xml:31:9-54
+ADDED from D:\studia\app_zapas\app\src\main\AndroidManifest.xml:31:9-54
 	android:name
-		ADDED from D:\studia\Public-Transport-Mobile-App-main\app\src\main\AndroidManifest.xml:31:19-52
+		ADDED from D:\studia\app_zapas\app\src\main\AndroidManifest.xml:31:19-52
 activity#com.example.test123.TimetableDirectionActivity
-ADDED from D:\studia\Public-Transport-Mobile-App-main\app\src\main\AndroidManifest.xml:32:9-63
+ADDED from D:\studia\app_zapas\app\src\main\AndroidManifest.xml:32:9-63
 	android:name
-		ADDED from D:\studia\Public-Transport-Mobile-App-main\app\src\main\AndroidManifest.xml:32:19-61
+		ADDED from D:\studia\app_zapas\app\src\main\AndroidManifest.xml:32:19-61
 activity#com.example.test123.TimetableTimesMenuActivity
-ADDED from D:\studia\Public-Transport-Mobile-App-main\app\src\main\AndroidManifest.xml:33:9-63
+ADDED from D:\studia\app_zapas\app\src\main\AndroidManifest.xml:33:9-63
 	android:name
-		ADDED from D:\studia\Public-Transport-Mobile-App-main\app\src\main\AndroidManifest.xml:33:19-61
+		ADDED from D:\studia\app_zapas\app\src\main\AndroidManifest.xml:33:19-61
 activity#com.example.test123.TimetableDetailsActivity
-ADDED from D:\studia\Public-Transport-Mobile-App-main\app\src\main\AndroidManifest.xml:34:9-61
+ADDED from D:\studia\app_zapas\app\src\main\AndroidManifest.xml:34:9-61
 	android:name
-		ADDED from D:\studia\Public-Transport-Mobile-App-main\app\src\main\AndroidManifest.xml:34:19-59
+		ADDED from D:\studia\app_zapas\app\src\main\AndroidManifest.xml:34:19-59
 activity#com.example.test123.TicketOnewayActivity
-ADDED from D:\studia\Public-Transport-Mobile-App-main\app\src\main\AndroidManifest.xml:35:9-57
+ADDED from D:\studia\app_zapas\app\src\main\AndroidManifest.xml:35:9-57
 	android:name
-		ADDED from D:\studia\Public-Transport-Mobile-App-main\app\src\main\AndroidManifest.xml:35:19-55
+		ADDED from D:\studia\app_zapas\app\src\main\AndroidManifest.xml:35:19-55
 activity#com.example.test123.TicketDetailsActivity
-ADDED from D:\studia\Public-Transport-Mobile-App-main\app\src\main\AndroidManifest.xml:36:9-58
+ADDED from D:\studia\app_zapas\app\src\main\AndroidManifest.xml:36:9-58
 	android:name
-		ADDED from D:\studia\Public-Transport-Mobile-App-main\app\src\main\AndroidManifest.xml:36:19-56
+		ADDED from D:\studia\app_zapas\app\src\main\AndroidManifest.xml:36:19-56
 activity#com.example.test123.TicketTemporaryActivity
-ADDED from D:\studia\Public-Transport-Mobile-App-main\app\src\main\AndroidManifest.xml:37:9-60
+ADDED from D:\studia\app_zapas\app\src\main\AndroidManifest.xml:37:9-60
 	android:name
-		ADDED from D:\studia\Public-Transport-Mobile-App-main\app\src\main\AndroidManifest.xml:37:19-58
+		ADDED from D:\studia\app_zapas\app\src\main\AndroidManifest.xml:37:19-58
 activity#com.example.test123.TicketTemporaryDetailsActivity
-ADDED from D:\studia\Public-Transport-Mobile-App-main\app\src\main\AndroidManifest.xml:38:9-67
+ADDED from D:\studia\app_zapas\app\src\main\AndroidManifest.xml:38:9-67
 	android:name
-		ADDED from D:\studia\Public-Transport-Mobile-App-main\app\src\main\AndroidManifest.xml:38:19-65
+		ADDED from D:\studia\app_zapas\app\src\main\AndroidManifest.xml:38:19-65
 activity#com.example.test123.TicketLongtermDetailsActivity
-ADDED from D:\studia\Public-Transport-Mobile-App-main\app\src\main\AndroidManifest.xml:39:9-66
+ADDED from D:\studia\app_zapas\app\src\main\AndroidManifest.xml:39:9-66
 	android:name
-		ADDED from D:\studia\Public-Transport-Mobile-App-main\app\src\main\AndroidManifest.xml:39:19-64
+		ADDED from D:\studia\app_zapas\app\src\main\AndroidManifest.xml:39:19-64
 activity#com.example.test123.TicketHistoryActivity
-ADDED from D:\studia\Public-Transport-Mobile-App-main\app\src\main\AndroidManifest.xml:40:9-58
+ADDED from D:\studia\app_zapas\app\src\main\AndroidManifest.xml:40:9-58
 	android:name
-		ADDED from D:\studia\Public-Transport-Mobile-App-main\app\src\main\AndroidManifest.xml:40:19-56
+		ADDED from D:\studia\app_zapas\app\src\main\AndroidManifest.xml:40:19-56
 activity#com.example.test123.TicketHistoryDetailsActivity
-ADDED from D:\studia\Public-Transport-Mobile-App-main\app\src\main\AndroidManifest.xml:41:9-65
+ADDED from D:\studia\app_zapas\app\src\main\AndroidManifest.xml:41:9-65
 	android:name
-		ADDED from D:\studia\Public-Transport-Mobile-App-main\app\src\main\AndroidManifest.xml:41:19-63
+		ADDED from D:\studia\app_zapas\app\src\main\AndroidManifest.xml:41:19-63
+activity#com.example.test123.FineMenuActivitiy
+ADDED from D:\studia\app_zapas\app\src\main\AndroidManifest.xml:42:9-54
+	android:name
+		ADDED from D:\studia\app_zapas\app\src\main\AndroidManifest.xml:42:19-52
+activity#com.example.test123.FineHistoryActivity
+ADDED from D:\studia\app_zapas\app\src\main\AndroidManifest.xml:43:9-56
+	android:name
+		ADDED from D:\studia\app_zapas\app\src\main\AndroidManifest.xml:43:19-54
+activity#com.example.test123.FineHistoryDetailsActivity
+ADDED from D:\studia\app_zapas\app\src\main\AndroidManifest.xml:44:9-63
+	android:name
+		ADDED from D:\studia\app_zapas\app\src\main\AndroidManifest.xml:44:19-61
+activity#com.example.test123.FinePayDetailsActivity
+ADDED from D:\studia\app_zapas\app\src\main\AndroidManifest.xml:45:9-59
+	android:name
+		ADDED from D:\studia\app_zapas\app\src\main\AndroidManifest.xml:45:19-57
 uses-sdk
-INJECTED from D:\studia\Public-Transport-Mobile-App-main\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from D:\studia\Public-Transport-Mobile-App-main\app\src\main\AndroidManifest.xml
-INJECTED from D:\studia\Public-Transport-Mobile-App-main\app\src\main\AndroidManifest.xml
+INJECTED from D:\studia\app_zapas\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from D:\studia\app_zapas\app\src\main\AndroidManifest.xml
+INJECTED from D:\studia\app_zapas\app\src\main\AndroidManifest.xml
 MERGED from [androidx.databinding:viewbinding:7.3.1] C:\Users\Pc\.gradle\caches\transforms-3\98f2e3f01cb1b33b1c6ac055c4816f75\transformed\viewbinding-7.3.1\AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.databinding:viewbinding:7.3.1] C:\Users\Pc\.gradle\caches\transforms-3\98f2e3f01cb1b33b1c6ac055c4816f75\transformed\viewbinding-7.3.1\AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.navigation:navigation-ui:2.5.3] C:\Users\Pc\.gradle\caches\transforms-3\88442b52181f3fa4317809c14ce9014b\transformed\navigation-ui-2.5.3\AndroidManifest.xml:20:5-22:41
@@ -315,16 +331,16 @@ MERGED from [androidx.print:print:1.0.0] C:\Users\Pc\.gradle\caches\transforms-3
 MERGED from [androidx.print:print:1.0.0] C:\Users\Pc\.gradle\caches\transforms-3\66860c319137074465b1f3af9d4ca7e4\transformed\print-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\Pc\.gradle\caches\transforms-3\d1b81e9b9294b0bc78ebcbc0700bfe58\transformed\annotation-experimental-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\Pc\.gradle\caches\transforms-3\d1b81e9b9294b0bc78ebcbc0700bfe58\transformed\annotation-experimental-1.1.0\AndroidManifest.xml:20:5-22:41
-INJECTED from D:\studia\Public-Transport-Mobile-App-main\app\src\main\AndroidManifest.xml
-INJECTED from D:\studia\Public-Transport-Mobile-App-main\app\src\main\AndroidManifest.xml
+INJECTED from D:\studia\app_zapas\app\src\main\AndroidManifest.xml
+INJECTED from D:\studia\app_zapas\app\src\main\AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from D:\studia\Public-Transport-Mobile-App-main\app\src\main\AndroidManifest.xml
-		ADDED from D:\studia\Public-Transport-Mobile-App-main\app\src\main\AndroidManifest.xml
-		INJECTED from D:\studia\Public-Transport-Mobile-App-main\app\src\main\AndroidManifest.xml
+		INJECTED from D:\studia\app_zapas\app\src\main\AndroidManifest.xml
+		ADDED from D:\studia\app_zapas\app\src\main\AndroidManifest.xml
+		INJECTED from D:\studia\app_zapas\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from D:\studia\Public-Transport-Mobile-App-main\app\src\main\AndroidManifest.xml
-		ADDED from D:\studia\Public-Transport-Mobile-App-main\app\src\main\AndroidManifest.xml
-		INJECTED from D:\studia\Public-Transport-Mobile-App-main\app\src\main\AndroidManifest.xml
+		INJECTED from D:\studia\app_zapas\app\src\main\AndroidManifest.xml
+		ADDED from D:\studia\app_zapas\app\src\main\AndroidManifest.xml
+		INJECTED from D:\studia\app_zapas\app\src\main\AndroidManifest.xml
 provider#androidx.startup.InitializationProvider
 ADDED from [androidx.emoji2:emoji2:1.2.0] C:\Users\Pc\.gradle\caches\transforms-3\c03fa7bc00a04a375204b573f0966d9f\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
 MERGED from [androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Pc\.gradle\caches\transforms-3\0ce9e5f033589fdf0ab757f82f7808ec\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:26:9-34:20
