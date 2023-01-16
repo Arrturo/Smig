@@ -129,7 +129,7 @@
         android:gravity="center" />
 
     <Button
-        android:id="@+id/mandates"
+        android:id="@+id/fine"
         android:layout_width="fill_parent"
         android:layout_height="70dp"
         android:layout_margin="10dp"

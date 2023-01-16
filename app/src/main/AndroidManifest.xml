@@ -39,6 +39,10 @@
         <activity android:name=".TicketLongtermDetailsActivity"/>
         <activity android:name=".TicketHistoryActivity"/>
         <activity android:name=".TicketHistoryDetailsActivity"/>
+        <activity android:name=".FineMenuActivitiy"/>
+        <activity android:name=".FineHistoryActivity"/>
+        <activity android:name=".FineHistoryDetailsActivity"/>
+        <activity android:name=".FinePayDetailsActivity"/>
 
     </application>
 

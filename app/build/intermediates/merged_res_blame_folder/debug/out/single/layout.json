@@ -1,186 +1,214 @@
 [
     {
-        "merged": "com.example.test123.app-mergeDebugResources-42:/layout/timetable_menu_back.xml",
-        "source": "com.example.test123.app-main-45:/layout/timetable_menu_back.xml"
-    },
-    {
-        "merged": "com.example.test123.app-mergeDebugResources-42:/layout/activity_main.xml",
-        "source": "com.example.test123.app-main-45:/layout/activity_main.xml"
+        "merged": "C:\\Users\\Pc\\.gradle\\daemon\\7.4\\com.example.test123.app-mergeDebugResources-42:\\layout\\fine.xml",
+        "source": "C:\\Users\\Pc\\.gradle\\daemon\\7.4\\com.example.test123.app-main-45:\\layout\\fine.xml"
     },
     {
         "merged": "com.example.test123.app-mergeDebugResources-42:/layout/fine_history.xml",
         "source": "com.example.test123.app-main-45:/layout/fine_history.xml"
     },
     {
-        "merged": "com.example.test123.app-mergeDebugResources-42:/layout/timetable_menu_elements_pair.xml",
-        "source": "com.example.test123.app-main-45:/layout/timetable_menu_elements_pair.xml"
+        "merged": "C:\\Users\\Pc\\.gradle\\daemon\\7.4\\com.example.test123.app-mergeDebugResources-42:\\layout\\ticket_details.xml",
+        "source": "C:\\Users\\Pc\\.gradle\\daemon\\7.4\\com.example.test123.app-main-45:\\layout\\ticket_details.xml"
     },
     {
-        "merged": "com.example.test123.app-mergeDebugResources-42:/layout/ticket_menu.xml",
-        "source": "com.example.test123.app-main-45:/layout/ticket_menu.xml"
+        "merged": "C:\\Users\\Pc\\.gradle\\daemon\\7.4\\com.example.test123.app-mergeDebugResources-42:\\layout\\ticket_history_element_small.xml",
+        "source": "C:\\Users\\Pc\\.gradle\\daemon\\7.4\\com.example.test123.app-main-45:\\layout\\ticket_history_element_small.xml"
     },
     {
-        "merged": "com.example.test123.app-mergeDebugResources-42:/layout/timetable_menu_elements_pair_right.xml",
-        "source": "com.example.test123.app-main-45:/layout/timetable_menu_elements_pair_right.xml"
+        "merged": "C:\\Users\\Pc\\.gradle\\daemon\\7.4\\com.example.test123.app-mergeDebugResources-42:\\layout\\ticket_temporary_details_.xml",
+        "source": "C:\\Users\\Pc\\.gradle\\daemon\\7.4\\com.example.test123.app-main-45:\\layout\\ticket_temporary_details_.xml"
     },
     {
-        "merged": "com.example.test123.app-mergeDebugResources-42:/layout/ticket_oneway_menu.xml",
-        "source": "com.example.test123.app-main-45:/layout/ticket_oneway_menu.xml"
+        "merged": "C:\\Users\\Pc\\.gradle\\daemon\\7.4\\com.example.test123.app-mergeDebugResources-42:\\layout\\timetable_menu_elements_pair_right.xml",
+        "source": "C:\\Users\\Pc\\.gradle\\daemon\\7.4\\com.example.test123.app-main-45:\\layout\\timetable_menu_elements_pair_right.xml"
     },
     {
-        "merged": "com.example.test123.app-mergeDebugResources-42:/layout/ticket_temporary_details.xml",
-        "source": "com.example.test123.app-main-45:/layout/ticket_temporary_details.xml"
+        "merged": "C:\\Users\\Pc\\.gradle\\daemon\\7.4\\com.example.test123.app-mergeDebugResources-42:\\layout\\activity_main.xml",
+        "source": "C:\\Users\\Pc\\.gradle\\daemon\\7.4\\com.example.test123.app-main-45:\\layout\\activity_main.xml"
     },
     {
-        "merged": "com.example.test123.app-mergeDebugResources-42:/layout/client_profile.xml",
-        "source": "com.example.test123.app-main-45:/layout/client_profile.xml"
+        "merged": "C:\\Users\\Pc\\.gradle\\daemon\\7.4\\com.example.test123.app-mergeDebugResources-42:\\layout\\timetable_line_element_direction.xml",
+        "source": "C:\\Users\\Pc\\.gradle\\daemon\\7.4\\com.example.test123.app-main-45:\\layout\\timetable_line_element_direction.xml"
     },
     {
-        "merged": "com.example.test123.app-mergeDebugResources-42:/layout/ticket_temporary_details_.xml",
-        "source": "com.example.test123.app-main-45:/layout/ticket_temporary_details_.xml"
+        "merged": "C:\\Users\\Pc\\.gradle\\daemon\\7.4\\com.example.test123.app-mergeDebugResources-42:\\layout\\timetable_menu_back.xml",
+        "source": "C:\\Users\\Pc\\.gradle\\daemon\\7.4\\com.example.test123.app-main-45:\\layout\\timetable_menu_back.xml"
     },
     {
-        "merged": "com.example.test123.app-mergeDebugResources-42:/layout/timetable_line_detail.xml",
-        "source": "com.example.test123.app-main-45:/layout/timetable_line_detail.xml"
+        "merged": "C:\\Users\\Pc\\.gradle\\daemon\\7.4\\com.example.test123.app-mergeDebugResources-42:\\layout\\ticket_line_number_filed.xml",
+        "source": "C:\\Users\\Pc\\.gradle\\daemon\\7.4\\com.example.test123.app-main-45:\\layout\\ticket_line_number_filed.xml"
+    },
+    {
+        "merged": "C:\\Users\\Pc\\.gradle\\daemon\\7.4\\com.example.test123.app-mergeDebugResources-42:\\layout\\fragment_dashboard.xml",
+        "source": "C:\\Users\\Pc\\.gradle\\daemon\\7.4\\com.example.test123.app-main-45:\\layout\\fragment_dashboard.xml"
+    },
+    {
+        "merged": "C:\\Users\\Pc\\.gradle\\daemon\\7.4\\com.example.test123.app-mergeDebugResources-42:\\layout\\timetable_menu.xml",
+        "source": "C:\\Users\\Pc\\.gradle\\daemon\\7.4\\com.example.test123.app-main-45:\\layout\\timetable_menu.xml"
     },
     {
         "merged": "com.example.test123.app-mergeDebugResources-42:/layout/fine_pay.xml",
         "source": "com.example.test123.app-main-45:/layout/fine_pay.xml"
     },
     {
-        "merged": "com.example.test123.app-mergeDebugResources-42:/layout/timetable_line_element_start.xml",
-        "source": "com.example.test123.app-main-45:/layout/timetable_line_element_start.xml"
+        "merged": "C:\\Users\\Pc\\.gradle\\daemon\\7.4\\com.example.test123.app-mergeDebugResources-42:\\layout\\timetable_times_menu_pair_left.xml",
+        "source": "C:\\Users\\Pc\\.gradle\\daemon\\7.4\\com.example.test123.app-main-45:\\layout\\timetable_times_menu_pair_left.xml"
     },
     {
-        "merged": "com.example.test123.app-mergeDebugResources-42:/layout/fragment_notifications.xml",
-        "source": "com.example.test123.app-main-45:/layout/fragment_notifications.xml"
+        "merged": "C:\\Users\\Pc\\.gradle\\daemon\\7.4\\com.example.test123.app-mergeDebugResources-42:\\layout\\timetable_line_element_mid.xml",
+        "source": "C:\\Users\\Pc\\.gradle\\daemon\\7.4\\com.example.test123.app-main-45:\\layout\\timetable_line_element_mid.xml"
     },
     {
-        "merged": "com.example.test123.app-mergeDebugResources-42:/layout/fragment_dashboard.xml",
-        "source": "com.example.test123.app-main-45:/layout/fragment_dashboard.xml"
+        "merged": "C:\\Users\\Pc\\.gradle\\daemon\\7.4\\com.example.test123.app-mergeDebugResources-42:\\layout\\fragment_notifications.xml",
+        "source": "C:\\Users\\Pc\\.gradle\\daemon\\7.4\\com.example.test123.app-main-45:\\layout\\fragment_notifications.xml"
     },
     {
-        "merged": "com.example.test123.app-mergeDebugResources-42:/layout/timetable_line_detail_pair.xml",
-        "source": "com.example.test123.app-main-45:/layout/timetable_line_detail_pair.xml"
+        "merged": "C:\\Users\\Pc\\.gradle\\daemon\\7.4\\com.example.test123.app-mergeDebugResources-42:\\layout\\ticket_menu.xml",
+        "source": "C:\\Users\\Pc\\.gradle\\daemon\\7.4\\com.example.test123.app-main-45:\\layout\\ticket_menu.xml"
     },
     {
-        "merged": "com.example.test123.app-mergeDebugResources-42:/layout/timetable_menu.xml",
-        "source": "com.example.test123.app-main-45:/layout/timetable_menu.xml"
+        "merged": "C:\\Users\\Pc\\.gradle\\daemon\\7.4\\com.example.test123.app-mergeDebugResources-42:\\layout\\ticket_buy.xml",
+        "source": "C:\\Users\\Pc\\.gradle\\daemon\\7.4\\com.example.test123.app-main-45:\\layout\\ticket_buy.xml"
     },
     {
-        "merged": "com.example.test123.app-mergeDebugResources-42:/layout/timetable_line_element_mid.xml",
-        "source": "com.example.test123.app-main-45:/layout/timetable_line_element_mid.xml"
+        "merged": "C:\\Users\\Pc\\.gradle\\daemon\\7.4\\com.example.test123.app-mergeDebugResources-42:\\layout\\timetable_direction.xml",
+        "source": "C:\\Users\\Pc\\.gradle\\daemon\\7.4\\com.example.test123.app-main-45:\\layout\\timetable_direction.xml"
     },
     {
-        "merged": "com.example.test123.app-mergeDebugResources-42:/layout/ticket_type_field.xml",
-        "source": "com.example.test123.app-main-45:/layout/ticket_type_field.xml"
-    },
-    {
-        "merged": "com.example.test123.app-mergeDebugResources-42:/layout/timetable_line_element_end.xml",
-        "source": "com.example.test123.app-main-45:/layout/timetable_line_element_end.xml"
-    },
-    {
-        "merged": "com.example.test123.app-mergeDebugResources-42:/layout/ticket_history_element_small.xml",
-        "source": "com.example.test123.app-main-45:/layout/ticket_history_element_small.xml"
+        "merged": "C:\\Users\\Pc\\.gradle\\daemon\\7.4\\com.example.test123.app-mergeDebugResources-42:\\layout\\timetable_line_element_number.xml",
+        "source": "C:\\Users\\Pc\\.gradle\\daemon\\7.4\\com.example.test123.app-main-45:\\layout\\timetable_line_element_number.xml"
     },
     {
         "merged": "com.example.test123.app-mergeDebugResources-42:/layout/content_main.xml",
         "source": "com.example.test123.app-main-45:/layout/content_main.xml"
     },
     {
-        "merged": "com.example.test123.app-mergeDebugResources-42:/layout/timetable_line_element_number.xml",
-        "source": "com.example.test123.app-main-45:/layout/timetable_line_element_number.xml"
-    },
-    {
-        "merged": "com.example.test123.app-mergeDebugResources-42:/layout/timetable_times_menu.xml",
-        "source": "com.example.test123.app-main-45:/layout/timetable_times_menu.xml"
-    },
-    {
-        "merged": "com.example.test123.app-mergeDebugResources-42:/layout/timetable_times_menu_pair_left.xml",
-        "source": "com.example.test123.app-main-45:/layout/timetable_times_menu_pair_left.xml"
-    },
-    {
-        "merged": "com.example.test123.app-mergeDebugResources-42:/layout/timetable_line_element_direction.xml",
-        "source": "com.example.test123.app-main-45:/layout/timetable_line_element_direction.xml"
-    },
-    {
-        "merged": "com.example.test123.app-mergeDebugResources-42:/layout/ticket_tickets_amount_filed.xml",
-        "source": "com.example.test123.app-main-45:/layout/ticket_tickets_amount_filed.xml"
-    },
-    {
-        "merged": "com.example.test123.app-mergeDebugResources-42:/layout/ticket_history_element_big.xml",
-        "source": "com.example.test123.app-main-45:/layout/ticket_history_element_big.xml"
-    },
-    {
-        "merged": "com.example.test123.app-mergeDebugResources-42:/layout/timetable_direction.xml",
-        "source": "com.example.test123.app-main-45:/layout/timetable_direction.xml"
-    },
-    {
-        "merged": "com.example.test123.app-mergeDebugResources-42:/layout/ticket_longterm_details.xml",
-        "source": "com.example.test123.app-main-45:/layout/ticket_longterm_details.xml"
-    },
-    {
-        "merged": "com.example.test123.app-mergeDebugResources-42:/layout/send_report.xml",
-        "source": "com.example.test123.app-main-45:/layout/send_report.xml"
-    },
-    {
-        "merged": "com.example.test123.app-mergeDebugResources-42:/layout/ticket_buy.xml",
-        "source": "com.example.test123.app-main-45:/layout/ticket_buy.xml"
-    },
-    {
-        "merged": "com.example.test123.app-mergeDebugResources-42:/layout/ticket_temporary_menu.xml",
-        "source": "com.example.test123.app-main-45:/layout/ticket_temporary_menu.xml"
-    },
-    {
-        "merged": "com.example.test123.app-mergeDebugResources-42:/layout/timetable_menu_elements_pair_left.xml",
-        "source": "com.example.test123.app-main-45:/layout/timetable_menu_elements_pair_left.xml"
-    },
-    {
-        "merged": "com.example.test123.app-mergeDebugResources-42:/layout/header.xml",
-        "source": "com.example.test123.app-main-45:/layout/header.xml"
+        "merged": "C:\\Users\\Pc\\.gradle\\daemon\\7.4\\com.example.test123.app-mergeDebugResources-42:\\layout\\ticket_price_field.xml",
+        "source": "C:\\Users\\Pc\\.gradle\\daemon\\7.4\\com.example.test123.app-main-45:\\layout\\ticket_price_field.xml"
     },
     {
         "merged": "com.example.test123.app-mergeDebugResources-42:/layout/login.xml",
         "source": "com.example.test123.app-main-45:/layout/login.xml"
     },
     {
-        "merged": "com.example.test123.app-mergeDebugResources-42:/layout/timetable_times_menu_pair.xml",
-        "source": "com.example.test123.app-main-45:/layout/timetable_times_menu_pair.xml"
+        "merged": "C:\\Users\\Pc\\.gradle\\daemon\\7.4\\com.example.test123.app-mergeDebugResources-42:\\layout\\fine_pay.xml",
+        "source": "C:\\Users\\Pc\\.gradle\\daemon\\7.4\\com.example.test123.app-main-45:\\layout\\fine_pay.xml"
     },
     {
-        "merged": "com.example.test123.app-mergeDebugResources-42:/layout/timetable_times_menu_pair_right.xml",
-        "source": "com.example.test123.app-main-45:/layout/timetable_times_menu_pair_right.xml"
+        "merged": "com.example.test123.app-mergeDebugResources-42:/layout/fine_history_element_big.xml",
+        "source": "com.example.test123.app-main-45:/layout/fine_history_element_big.xml"
     },
     {
-        "merged": "com.example.test123.app-mergeDebugResources-42:/layout/ticket_history.xml",
-        "source": "com.example.test123.app-main-45:/layout/ticket_history.xml"
-    },
-    {
-        "merged": "com.example.test123.app-mergeDebugResources-42:/layout/timetable_detail.xml",
-        "source": "com.example.test123.app-main-45:/layout/timetable_detail.xml"
-    },
-    {
-        "merged": "com.example.test123.app-mergeDebugResources-42:/layout/ticket_line_number_filed.xml",
-        "source": "com.example.test123.app-main-45:/layout/ticket_line_number_filed.xml"
+        "merged": "C:\\Users\\Pc\\.gradle\\daemon\\7.4\\com.example.test123.app-mergeDebugResources-42:\\layout\\client_profile.xml",
+        "source": "C:\\Users\\Pc\\.gradle\\daemon\\7.4\\com.example.test123.app-main-45:\\layout\\client_profile.xml"
     },
     {
         "merged": "com.example.test123.app-mergeDebugResources-42:/layout/fine.xml",
         "source": "com.example.test123.app-main-45:/layout/fine.xml"
     },
     {
-        "merged": "com.example.test123.app-mergeDebugResources-42:/layout/ticket_price_field.xml",
-        "source": "com.example.test123.app-main-45:/layout/ticket_price_field.xml"
+        "merged": "C:\\Users\\Pc\\.gradle\\daemon\\7.4\\com.example.test123.app-mergeDebugResources-42:\\layout\\ticket_temporary_details.xml",
+        "source": "C:\\Users\\Pc\\.gradle\\daemon\\7.4\\com.example.test123.app-main-45:\\layout\\ticket_temporary_details.xml"
     },
     {
-        "merged": "com.example.test123.app-mergeDebugResources-42:/layout/ticket_details.xml",
-        "source": "com.example.test123.app-main-45:/layout/ticket_details.xml"
+        "merged": "C:\\Users\\Pc\\.gradle\\daemon\\7.4\\com.example.test123.app-mergeDebugResources-42:\\layout\\timetable_line_detail.xml",
+        "source": "C:\\Users\\Pc\\.gradle\\daemon\\7.4\\com.example.test123.app-main-45:\\layout\\timetable_line_detail.xml"
     },
     {
-        "merged": "com.example.test123.app-mergeDebugResources-42:/layout/fragment_home.xml",
-        "source": "com.example.test123.app-main-45:/layout/fragment_home.xml"
+        "merged": "C:\\Users\\Pc\\.gradle\\daemon\\7.4\\com.example.test123.app-mergeDebugResources-42:\\layout\\timetable_times_menu_pair_right.xml",
+        "source": "C:\\Users\\Pc\\.gradle\\daemon\\7.4\\com.example.test123.app-main-45:\\layout\\timetable_times_menu_pair_right.xml"
     },
     {
-        "merged": "com.example.test123.app-mergeDebugResources-42:/layout/client_add_discount.xml",
-        "source": "com.example.test123.app-main-45:/layout/client_add_discount.xml"
+        "merged": "C:\\Users\\Pc\\.gradle\\daemon\\7.4\\com.example.test123.app-mergeDebugResources-42:\\layout\\client_add_discount.xml",
+        "source": "C:\\Users\\Pc\\.gradle\\daemon\\7.4\\com.example.test123.app-main-45:\\layout\\client_add_discount.xml"
+    },
+    {
+        "merged": "C:\\Users\\Pc\\.gradle\\daemon\\7.4\\com.example.test123.app-mergeDebugResources-42:\\layout\\ticket_oneway_menu.xml",
+        "source": "C:\\Users\\Pc\\.gradle\\daemon\\7.4\\com.example.test123.app-main-45:\\layout\\ticket_oneway_menu.xml"
+    },
+    {
+        "merged": "C:\\Users\\Pc\\.gradle\\daemon\\7.4\\com.example.test123.app-mergeDebugResources-42:\\layout\\timetable_line_detail_pair.xml",
+        "source": "C:\\Users\\Pc\\.gradle\\daemon\\7.4\\com.example.test123.app-main-45:\\layout\\timetable_line_detail_pair.xml"
+    },
+    {
+        "merged": "C:\\Users\\Pc\\.gradle\\daemon\\7.4\\com.example.test123.app-mergeDebugResources-42:\\layout\\fine_history.xml",
+        "source": "C:\\Users\\Pc\\.gradle\\daemon\\7.4\\com.example.test123.app-main-45:\\layout\\fine_history.xml"
+    },
+    {
+        "merged": "C:\\Users\\Pc\\.gradle\\daemon\\7.4\\com.example.test123.app-mergeDebugResources-42:\\layout\\content_main.xml",
+        "source": "C:\\Users\\Pc\\.gradle\\daemon\\7.4\\com.example.test123.app-main-45:\\layout\\content_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\Pc\\.gradle\\daemon\\7.4\\com.example.test123.app-mergeDebugResources-42:\\layout\\send_report.xml",
+        "source": "C:\\Users\\Pc\\.gradle\\daemon\\7.4\\com.example.test123.app-main-45:\\layout\\send_report.xml"
+    },
+    {
+        "merged": "C:\\Users\\Pc\\.gradle\\daemon\\7.4\\com.example.test123.app-mergeDebugResources-42:\\layout\\ticket_temporary_menu.xml",
+        "source": "C:\\Users\\Pc\\.gradle\\daemon\\7.4\\com.example.test123.app-main-45:\\layout\\ticket_temporary_menu.xml"
+    },
+    {
+        "merged": "com.example.test123.app-mergeDebugResources-42:/layout/fine_history_element_small.xml",
+        "source": "com.example.test123.app-main-45:/layout/fine_history_element_small.xml"
+    },
+    {
+        "merged": "C:\\Users\\Pc\\.gradle\\daemon\\7.4\\com.example.test123.app-mergeDebugResources-42:\\layout\\timetable_detail.xml",
+        "source": "C:\\Users\\Pc\\.gradle\\daemon\\7.4\\com.example.test123.app-main-45:\\layout\\timetable_detail.xml"
+    },
+    {
+        "merged": "C:\\Users\\Pc\\.gradle\\daemon\\7.4\\com.example.test123.app-mergeDebugResources-42:\\layout\\ticket_history_element_big.xml",
+        "source": "C:\\Users\\Pc\\.gradle\\daemon\\7.4\\com.example.test123.app-main-45:\\layout\\ticket_history_element_big.xml"
+    },
+    {
+        "merged": "C:\\Users\\Pc\\.gradle\\daemon\\7.4\\com.example.test123.app-mergeDebugResources-42:\\layout\\ticket_history.xml",
+        "source": "C:\\Users\\Pc\\.gradle\\daemon\\7.4\\com.example.test123.app-main-45:\\layout\\ticket_history.xml"
+    },
+    {
+        "merged": "C:\\Users\\Pc\\.gradle\\daemon\\7.4\\com.example.test123.app-mergeDebugResources-42:\\layout\\timetable_times_menu.xml",
+        "source": "C:\\Users\\Pc\\.gradle\\daemon\\7.4\\com.example.test123.app-main-45:\\layout\\timetable_times_menu.xml"
+    },
+    {
+        "merged": "C:\\Users\\Pc\\.gradle\\daemon\\7.4\\com.example.test123.app-mergeDebugResources-42:\\layout\\ticket_type_field.xml",
+        "source": "C:\\Users\\Pc\\.gradle\\daemon\\7.4\\com.example.test123.app-main-45:\\layout\\ticket_type_field.xml"
+    },
+    {
+        "merged": "C:\\Users\\Pc\\.gradle\\daemon\\7.4\\com.example.test123.app-mergeDebugResources-42:\\layout\\timetable_menu_elements_pair.xml",
+        "source": "C:\\Users\\Pc\\.gradle\\daemon\\7.4\\com.example.test123.app-main-45:\\layout\\timetable_menu_elements_pair.xml"
+    },
+    {
+        "merged": "C:\\Users\\Pc\\.gradle\\daemon\\7.4\\com.example.test123.app-mergeDebugResources-42:\\layout\\timetable_line_element_end.xml",
+        "source": "C:\\Users\\Pc\\.gradle\\daemon\\7.4\\com.example.test123.app-main-45:\\layout\\timetable_line_element_end.xml"
+    },
+    {
+        "merged": "C:\\Users\\Pc\\.gradle\\daemon\\7.4\\com.example.test123.app-mergeDebugResources-42:\\layout\\login.xml",
+        "source": "C:\\Users\\Pc\\.gradle\\daemon\\7.4\\com.example.test123.app-main-45:\\layout\\login.xml"
+    },
+    {
+        "merged": "C:\\Users\\Pc\\.gradle\\daemon\\7.4\\com.example.test123.app-mergeDebugResources-42:\\layout\\timetable_times_menu_pair.xml",
+        "source": "C:\\Users\\Pc\\.gradle\\daemon\\7.4\\com.example.test123.app-main-45:\\layout\\timetable_times_menu_pair.xml"
+    },
+    {
+        "merged": "C:\\Users\\Pc\\.gradle\\daemon\\7.4\\com.example.test123.app-mergeDebugResources-42:\\layout\\timetable_line_element_start.xml",
+        "source": "C:\\Users\\Pc\\.gradle\\daemon\\7.4\\com.example.test123.app-main-45:\\layout\\timetable_line_element_start.xml"
+    },
+    {
+        "merged": "C:\\Users\\Pc\\.gradle\\daemon\\7.4\\com.example.test123.app-mergeDebugResources-42:\\layout\\timetable_menu_elements_pair_left.xml",
+        "source": "C:\\Users\\Pc\\.gradle\\daemon\\7.4\\com.example.test123.app-main-45:\\layout\\timetable_menu_elements_pair_left.xml"
+    },
+    {
+        "merged": "C:\\Users\\Pc\\.gradle\\daemon\\7.4\\com.example.test123.app-mergeDebugResources-42:\\layout\\ticket_longterm_details.xml",
+        "source": "C:\\Users\\Pc\\.gradle\\daemon\\7.4\\com.example.test123.app-main-45:\\layout\\ticket_longterm_details.xml"
+    },
+    {
+        "merged": "C:\\Users\\Pc\\.gradle\\daemon\\7.4\\com.example.test123.app-mergeDebugResources-42:\\layout\\header.xml",
+        "source": "C:\\Users\\Pc\\.gradle\\daemon\\7.4\\com.example.test123.app-main-45:\\layout\\header.xml"
+    },
+    {
+        "merged": "C:\\Users\\Pc\\.gradle\\daemon\\7.4\\com.example.test123.app-mergeDebugResources-42:\\layout\\fragment_home.xml",
+        "source": "C:\\Users\\Pc\\.gradle\\daemon\\7.4\\com.example.test123.app-main-45:\\layout\\fragment_home.xml"
+    },
+    {
+        "merged": "C:\\Users\\Pc\\.gradle\\daemon\\7.4\\com.example.test123.app-mergeDebugResources-42:\\layout\\ticket_tickets_amount_filed.xml",
+        "source": "C:\\Users\\Pc\\.gradle\\daemon\\7.4\\com.example.test123.app-main-45:\\layout\\ticket_tickets_amount_filed.xml"
     }
 ]

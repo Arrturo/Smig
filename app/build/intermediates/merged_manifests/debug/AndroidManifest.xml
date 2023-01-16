@@ -52,6 +52,10 @@
         <activity android:name="com.example.test123.TicketLongtermDetailsActivity" />
         <activity android:name="com.example.test123.TicketHistoryActivity" />
         <activity android:name="com.example.test123.TicketHistoryDetailsActivity" />
+        <activity android:name="com.example.test123.FineMenuActivitiy" />
+        <activity android:name="com.example.test123.FineHistoryActivity" />
+        <activity android:name="com.example.test123.FineHistoryDetailsActivity" />
+        <activity android:name="com.example.test123.FinePayDetailsActivity" />
 
         <provider
             android:name="androidx.startup.InitializationProvider"

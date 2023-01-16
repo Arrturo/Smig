@@ -20,7 +20,7 @@ public final class FineBinding implements ViewBinding {
   private final LinearLayout rootView;
 
   @NonNull
-  public final Button historiaMandatW;
+  public final Button historiaMandatow;
 
   @NonNull
   public final LinearLayout mandaty;
@@ -28,10 +28,10 @@ public final class FineBinding implements ViewBinding {
   @NonNull
   public final Button oplacMandat;
 
-  private FineBinding(@NonNull LinearLayout rootView, @NonNull Button historiaMandatW,
+  private FineBinding(@NonNull LinearLayout rootView, @NonNull Button historiaMandatow,
       @NonNull LinearLayout mandaty, @NonNull Button oplacMandat) {
     this.rootView = rootView;
-    this.historiaMandatW = historiaMandatW;
+    this.historiaMandatow = historiaMandatow;
     this.mandaty = mandaty;
     this.oplacMandat = oplacMandat;
   }
@@ -63,9 +63,9 @@ public final class FineBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.historia_mandatów;
-      Button historiaMandatW = ViewBindings.findChildViewById(rootView, id);
-      if (historiaMandatW == null) {
+      id = R.id.historia_mandatow;
+      Button historiaMandatow = ViewBindings.findChildViewById(rootView, id);
+      if (historiaMandatow == null) {
         break missingId;
       }
 
@@ -81,7 +81,7 @@ public final class FineBinding implements ViewBinding {
         break missingId;
       }
 
-      return new FineBinding((LinearLayout) rootView, historiaMandatW, mandaty, oplacMandat);
+      return new FineBinding((LinearLayout) rootView, historiaMandatow, mandaty, oplacMandat);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
