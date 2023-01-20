@@ -1,13 +1,20 @@
 package com.example.test123;
 import android.annotation.SuppressLint;
+import android.app.ActionBar;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.LinearLayout;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
 
 public class TimetableDirectionActivity extends AppCompatActivity {
 
@@ -15,20 +22,32 @@ public class TimetableDirectionActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        DBHandler db = new DBHandler(this);
+        System.out.println((getIntent().getStringExtra("busNumber")));
+        /*not quite good solution, but it works
+        will be changed in the future*/
+        Integer id = db.getCurrentId(getIntent().getStringExtra("busNumber"));
+        ArrayList<String> route = db.getAllRoutes(id);
 
         // delete header
         if (getSupportActionBar() != null) getSupportActionBar().hide();
-        setContentView(R.layout.timetable_direction);
+        setContentView(R.layout.timetable_menu_back);
 
-        ViewGroup insertPoint = (ViewGroup) findViewById(R.id.timetable_direction);
+        ViewGroup insertPoint = (ViewGroup) findViewById(R.id.content);
 
         LayoutInflater vi = getLayoutInflater();
+
+        View header = vi.inflate(R.layout.header, insertPoint);
+        TextView headerText = header.findViewById(R.id.header_title);
+        headerText.setText("Rozkład Jazdy");
         View directionsView = vi.inflate(R.layout.timetable_direction, insertPoint);
 
         Button btnTop = directionsView.findViewById(R.id.timetable_direction_element_btn_top);
         btnTop.setText("Pierwszy Kierunek");
         btnTop.setOnClickListener(v -> {
             Intent intent = new Intent(TimetableDirectionActivity.this, TimetableTimesMenuActivity.class);
+            intent.putExtra("id", id);
+            intent.putExtra("route", route);
             startActivity(intent);
         });
 
@@ -36,10 +55,13 @@ public class TimetableDirectionActivity extends AppCompatActivity {
         btnBottom.setText("Drugi Kierunek");
         btnBottom.setOnClickListener(v -> {
             Intent intent = new Intent(TimetableDirectionActivity.this, TimetableTimesMenuActivity.class);
+            Collections.reverse(route);
+            intent.putExtra("id", id);
+            intent.putExtra("route", route);
             startActivity(intent);
         });
 
-        Button previousActivity = findViewById(R.id.previous);
+        Button previousActivity = header.findViewById(R.id.previous);
         previousActivity.setOnClickListener(view -> {
             // Finish the current activity and return to the previous one
             finish();

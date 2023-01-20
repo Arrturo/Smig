@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ticket_price_field"
+    android:layout_width="300dp"
+    android:layout_height="40dp"
+    android:orientation="vertical"
+    android:layout_gravity="center">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="@string/Ticket_price_amout"
+        android:textStyle="bold">
+    </TextView>
+
+    <TextView
+        android:id="@+id/ticket_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="4,00 PLN"
+        android:textColor="@color/black"
+        android:textStyle="bold">
+
+    </TextView>
+
+</LinearLayout>

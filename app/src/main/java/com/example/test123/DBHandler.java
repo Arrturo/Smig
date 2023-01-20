@@ -5,6 +5,7 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+import java.util.ArrayList;
 
 
 
@@ -155,6 +156,91 @@ public class DBHandler extends SQLiteOpenHelper {
         db.insert("report", null, values);
     }
     public void createTable(){
+    }
+//    get all bus numbers from database
+    public ArrayList<String> getAllBusNumbers(){
+        ArrayList<String> busNumbers = new ArrayList<>();
+        SQLiteDatabase db = this.getReadableDatabase();
+        Cursor cursor = db.rawQuery("SELECT * FROM timetable", null);
+        if (cursor.moveToFirst()) {
+            do {
+                busNumbers.add(cursor.getString(1));
+            }
+            while (cursor.moveToNext());
+            cursor.close();
+        }
+        return busNumbers;
+    }
+
+    public ArrayList<String> getBusNumber(int id){
+        ArrayList<String> busNumbers = new ArrayList<>();
+        SQLiteDatabase db = this.getReadableDatabase();
+        Cursor cursor = db.rawQuery("SELECT * FROM timetable WHERE id="+id, null);
+        if (cursor.moveToFirst()) {
+            do {
+                busNumbers.add(cursor.getString(1));
+            }
+            while (cursor.moveToNext());
+            cursor.close();
+        }
+        return busNumbers;
+    }
+
+
+    public ArrayList<String> getAllRoutes(int id){
+        ArrayList<String> routes = new ArrayList<>();
+        SQLiteDatabase db = this.getReadableDatabase();
+        Cursor cursor = db.rawQuery("SELECT * FROM timetable WHERE id=" + id, null);
+//        ArrayList<String> routesList = new ArrayList<String>(Arrays.asList(routes.split(",")));
+        if (cursor.moveToFirst()) {
+            do {
+                String[] routesList = cursor.getString(2).split(",");
+                for (String route : routesList) {
+                    if (!routes.contains(route)) {
+                        routes.add(route);
+                    }
+                }
+            }
+            while (cursor.moveToNext());
+            cursor.close();
+        }
+        return routes;
+    }
+
+    //get all time from timetable table
+    public ArrayList<String> getAllTime(int id){
+        ArrayList<String> times = new ArrayList<>();
+        SQLiteDatabase db = this.getReadableDatabase();
+        Cursor cursor = db.rawQuery("SELECT * FROM timetable WHERE id=" + id, null);
+//        ArrayList<String> routesList = new ArrayList<String>(Arrays.asList(routes.split(",")));
+        if (cursor.moveToFirst()) {
+            do {
+                String[] routesList = cursor.getString(3).split(",");
+                for (String route : routesList) {
+                    if (!times.contains(route)) {
+                        times.add(route);
+                    }
+                }
+            }
+            while (cursor.moveToNext());
+            cursor.close();
+        }
+        return times;
+    }
+
+    //get current id from timetable table
+    public int getCurrentId(String busNumber){
+        int id = 0;
+        SQLiteDatabase db = this.getReadableDatabase();
+        Cursor cursor = db.rawQuery("SELECT * FROM timetable WHERE bus_number='" + busNumber + "'", null);
+        if (cursor.moveToFirst()) {
+            do {
+                id = cursor.getInt(0);
+            }
+            while (cursor.moveToNext());
+            cursor.close();
+        }
+        return id;
     }
 }
 

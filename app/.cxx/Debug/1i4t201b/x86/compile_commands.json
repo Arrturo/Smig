@@ -1,0 +1,7 @@
+[
+{
+  "directory": "D:/studia/Public-Transport-Mobile-App-main/app/.cxx/Debug/1i4t201b/x86",
+  "command": "C:\\Users\\Pc\\AppData\\Local\\Android\\Sdk\\ndk\\23.1.7779620\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe --target=i686-none-linux-android31 --gcc-toolchain=C:/Users/Pc/AppData/Local/Android/Sdk/ndk/23.1.7779620/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/Pc/AppData/Local/Android/Sdk/ndk/23.1.7779620/toolchains/llvm/prebuilt/windows-x86_64/sysroot -Dtest123_EXPORTS -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -fno-limit-debug-info  -fPIC -o CMakeFiles\\test123.dir\\test123.cpp.o -c D:\\studia\\Public-Transport-Mobile-App-main\\app\\src\\main\\cpp\\test123.cpp",
+  "file": "D:\\studia\\Public-Transport-Mobile-App-main\\app\\src\\main\\cpp\\test123.cpp"
+}
+]

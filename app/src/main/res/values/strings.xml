@@ -34,7 +34,14 @@
     <string name="Date_as_word">Data</string>
     <string name="Image_desc_start">Image of start line</string>
     <string name="todo">idk co to</string>
-    <string name="znizkaString">Masz już zniżkę!</string>
+    <string name="znizkaString">Masz już zniżkę!</string> 
+    <string name="doba_1">Bilet całodobowy</string>
+    <string name="doba_2">Bilet dwudobowy</string>
+    <string name="doba_3">Bilet trzydobowy</string>
+    <string name="oplac_mandat">Opłać mandat</string>
+    <string name="historia_mandatów">Historia mandatów</string>
+    <string name="zaloguj">Zaloguj się</string>
+
     <string-array name="discounts">
         <item>Student(30%)</item>
         <item>Weteran(70%)</item>
