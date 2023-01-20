@@ -12,12 +12,22 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
+
 public class TimetableDirectionActivity extends AppCompatActivity {
 
     @SuppressLint("SetTextI18n")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        DBHandler db = new DBHandler(this);
+        System.out.println((getIntent().getStringExtra("busNumber")));
+        /*not quite good solution, but it works
+        will be changed in the future*/
+        Integer id = db.getCurrentId(getIntent().getStringExtra("busNumber"));
+        ArrayList<String> route = db.getAllRoutes(id);
 
         // delete header
         if (getSupportActionBar() != null) getSupportActionBar().hide();
@@ -30,14 +40,14 @@ public class TimetableDirectionActivity extends AppCompatActivity {
         View header = vi.inflate(R.layout.header, insertPoint);
         TextView headerText = header.findViewById(R.id.header_title);
         headerText.setText("Rozkład Jazdy");
-
-
         View directionsView = vi.inflate(R.layout.timetable_direction, insertPoint);
 
         Button btnTop = directionsView.findViewById(R.id.timetable_direction_element_btn_top);
         btnTop.setText("Pierwszy Kierunek");
         btnTop.setOnClickListener(v -> {
             Intent intent = new Intent(TimetableDirectionActivity.this, TimetableTimesMenuActivity.class);
+            intent.putExtra("id", id);
+            intent.putExtra("route", route);
             startActivity(intent);
         });
 
@@ -45,6 +55,9 @@ public class TimetableDirectionActivity extends AppCompatActivity {
         btnBottom.setText("Drugi Kierunek");
         btnBottom.setOnClickListener(v -> {
             Intent intent = new Intent(TimetableDirectionActivity.this, TimetableTimesMenuActivity.class);
+            Collections.reverse(route);
+            intent.putExtra("id", id);
+            intent.putExtra("route", route);
             startActivity(intent);
         });
 
