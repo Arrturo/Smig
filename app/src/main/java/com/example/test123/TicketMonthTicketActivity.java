@@ -8,16 +8,15 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
-import java.util.Locale;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.ArrayList;
 
-public class TicketTemporaryActivity extends AppCompatActivity {
+public class TicketMonthTicketActivity extends AppCompatActivity {
     @SuppressLint("SetTextI18n")
     protected void onCreate(Bundle savedInstanceState) {
-        DBHandler dbHandler = new DBHandler(TicketTemporaryActivity.this);
+        DBHandler dbHandler = new DBHandler(TicketMonthTicketActivity.this);
         double discount = 1 - dbHandler.getDiscount() / 100.0;
         super.onCreate(savedInstanceState);
         //DELETE HEADER
@@ -35,7 +34,7 @@ public class TicketTemporaryActivity extends AppCompatActivity {
         TextView headerText = header.findViewById(R.id.header_title);
         headerText.setText("Kup bilet");
 
-        ArrayList<TicketInOffer> tickets = dbHandler.TicketsOffer(3601, 259200);
+        ArrayList<TicketInOffer> tickets = dbHandler.TicketsOffer(2628000, 2628000);
         for (int row = 0; row < tickets.size(); row++) {
             System.out.println("Ticket: " + tickets.get(row).getType());
             View pair = vi.inflate(R.layout.timetable_line_detail_pair, insertPoint);
@@ -47,7 +46,7 @@ public class TicketTemporaryActivity extends AppCompatActivity {
 
             ticketName.setText(tickets.get(row).getType());
             TicketOffer.setOnClickListener(v -> {
-                Intent intent = new Intent(TicketTemporaryActivity.this,TicketDetailsActivity.class);
+                Intent intent = new Intent(TicketMonthTicketActivity.this,TicketDetailsActivity.class);
                 intent.putExtra("ticketType", tickets.get(v.getId()).getType());
                 intent.putExtra("price", tickets.get(v.getId()).getPrice() * 1.0);
                 intent.putExtra("time", tickets.get(v.getId()).getTime());
@@ -61,7 +60,7 @@ public class TicketTemporaryActivity extends AppCompatActivity {
             TextView ticketNameReduced = TicketOfferReduced.findViewById(R.id.ticket_type);
             ticketNameReduced.setText(tickets.get(row).getType() + " Ulgowy");
             TicketOfferReduced.setOnClickListener(v -> {
-                Intent intentReduced = new Intent(TicketTemporaryActivity.this,TicketDetailsActivity.class);
+                Intent intentReduced = new Intent(TicketMonthTicketActivity.this,TicketDetailsActivity.class);
                 intentReduced.putExtra("ticketType", tickets.get(v.getId()).getType() + " ulgowy");
                 intentReduced.putExtra("price", tickets.get(v.getId()).getPrice() * discount);
                 intentReduced.putExtra("time", tickets.get(v.getId()).getTime());
@@ -72,5 +71,3 @@ public class TicketTemporaryActivity extends AppCompatActivity {
         previous.setOnClickListener(view -> finish());
     }
 }
-
-

@@ -1,10 +1,8 @@
 package com.example.test123;
 
-import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
-import android.widget.TextView;
 
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -27,25 +25,25 @@ public class BuyTicketActivity extends AppCompatActivity {
         });
         Button krotkookresowy = findViewById(R.id.krotkookresowy);
         krotkookresowy.setOnClickListener(v -> {
-            Intent intent = new Intent(BuyTicketActivity.this, TicketOnewayActivity.class);
+            Intent intent = new Intent(BuyTicketActivity.this, TicketTemporaryActivity.class);
             intent.putExtra("discount", getIntent().getStringExtra("discount"));
             startActivity(intent);
         });
         Button miesieczny = findViewById(R.id.miesieczny);
         miesieczny.setOnClickListener(v -> {
-            Intent intent = new Intent(BuyTicketActivity.this, TicketOnewayActivity.class);
+            Intent intent = new Intent(BuyTicketActivity.this, TicketMonthTicketActivity.class);
             intent.putExtra("discount",getIntent().getStringExtra("discount"));
             startActivity(intent);
         });
         Button trzymiesieczny = findViewById(R.id.trzymiesieczny);
         trzymiesieczny.setOnClickListener(v -> {
-            Intent intent = new Intent(BuyTicketActivity.this, TicketOnewayActivity.class);
+            Intent intent = new Intent(BuyTicketActivity.this, ThreeMonthTicketActivity.class);
             intent.putExtra("discount", getIntent().getStringExtra("discount"));
             startActivity(intent);
         });
         Button roczny = findViewById(R.id.roczny);
         roczny.setOnClickListener(v -> {
-            Intent intent = new Intent(BuyTicketActivity.this, TicketOnewayActivity.class);
+            Intent intent = new Intent(BuyTicketActivity.this, YearTicketActivity.class);
             intent.putExtra("discount", getIntent().getStringExtra("discount"));
             startActivity(intent);
         });

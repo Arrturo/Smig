@@ -6,6 +6,7 @@ import android.text.Editable;
 import android.text.TextWatcher;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -18,7 +19,7 @@ public class TicketTimeDetailsActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
             //DELETE HEADER
-        double price = getIntent().getDoubleExtra("price", 0);
+        double price = getIntent().getFloatExtra("price", 0);
         if (getSupportActionBar() != null) getSupportActionBar().hide();
         setContentView(R.layout.ticket_time_details);
         TextView header_title = findViewById(R.id.header_title);
@@ -26,7 +27,7 @@ public class TicketTimeDetailsActivity extends AppCompatActivity {
         ticketType = findViewById(R.id.ticket_type);
         ticketPrice = findViewById(R.id.ticket_price);
         ticketType.setText(getIntent().getStringExtra("ticketType"));
-        ticketPrice.setText(String.format("%.2f", price) + " zł");
+        ticketPrice.setText(String.format("%.2f", price) + " zł".replace(".", ","));
         Button previous = findViewById(R.id.previous);
         previous.setOnClickListener(view -> finish());
         TextWatcher cWatcher = new TextWatcher() {
@@ -41,20 +42,20 @@ public class TicketTimeDetailsActivity extends AppCompatActivity {
            @Override
            public void afterTextChanged(Editable s) {
                if (s.length() == 0) {
-                        ticketPrice.setText(String.format("%.2f", price) + " zł");
+                        ticketPrice.setText((String.format("%.2f", price) + " zł"));
                     } else {
-                        ticketPrice.setText(String.format("%.2f", price * Double.parseDouble(s.toString())) + " zł");
+                        ticketPrice.setText((String.format("%.2f", price * Double.parseDouble(s.toString())) + " zł"));
                     }
                 }
             };
             TextView count = findViewById(R.id.Tickets_amount);
             count.addTextChangedListener(cWatcher);
-            TextView line = findViewById(R.id.ticket_line_number);
             Button buy = findViewById(R.id.buy_ticket_button);
             buy.setOnClickListener(v -> {
-            DBHandler db = new DBHandler(this);
-            db.buyTicket(getIntent().getStringExtra("ticketType"), Float.parseFloat(ticketPrice.getText().toString().substring(0, ticketPrice.getText().toString().length() - 3)), Integer.parseInt(count.getText().toString()), Integer.parseInt(line.getText().toString()));
-            finish();
+                DBHandler db = new DBHandler(this);
+                db.buyTicket(getIntent().getStringExtra("ticketType"), Float.parseFloat(ticketPrice.getText().toString().substring(0, ticketPrice.getText().toString().length() - 3)), Integer.parseInt(count.getText().toString()), 1, getIntent().getIntExtra("time", 0));
+                Toast.makeText(this, "Bilet został zakupiony", Toast.LENGTH_SHORT).show();
+                finish();
             });
         }
     }

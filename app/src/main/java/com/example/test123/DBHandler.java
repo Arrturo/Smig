@@ -1,11 +1,13 @@
 package com.example.test123;
 
+import android.annotation.SuppressLint;
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.concurrent.TimeUnit;
 
@@ -38,7 +40,11 @@ public class DBHandler extends SQLiteOpenHelper {
 
     private static final String DISCOUNT_COL = "discount";
 
-    private static final String USER_ID = "2";
+    private String USER_ID = "2";
+
+    public void setUSER_ID(String USER_ID) {
+        this.USER_ID = USER_ID;
+    }
 
     // creating a constructor for our database handler.
     public DBHandler(Context context) {
@@ -158,8 +164,8 @@ public class DBHandler extends SQLiteOpenHelper {
     }
     public void createTable(){
     }
-    public void buyTicket(String rodzaj, float cena, int ilosc, int linia){
-        SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
+    public void buyTicket(String rodzaj, float cena, int ilosc, int linia, int time){
+        @SuppressLint("SimpleDateFormat") SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
         Date date = new Date();
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues values = new ContentValues();
@@ -168,10 +174,51 @@ public class DBHandler extends SQLiteOpenHelper {
         values.put("data_zakupu", formatter.format(date));
         values.put("linia", linia);
         values.put("id_klienta", USER_ID);
-        values.put("data_wygasniecia", formatter.format(date.getTime() + 3600000));
+        values.put("data_wygasniecia", formatter.format(date.getTime() + time * 1000L));
         values.put("ilosc", ilosc);
         db.insert("user_ticket", null, values);
     }
+
+    public int getTicketsCounts(){
+        SQLiteDatabase db = this.getReadableDatabase();
+        int count = 0;
+        Cursor cursorCourses = db.rawQuery("SELECT * FROM user_ticket WHERE id_klienta=" + USER_ID, null);
+        if (cursorCourses.moveToFirst()) {
+            do {
+                count++;
+            }
+            while (cursorCourses.moveToNext());
+            cursorCourses.close();
+        }
+        return count;
+    }
+    public ArrayList<Ticket> getTickets(){
+        SQLiteDatabase db = this.getReadableDatabase();
+        ArrayList<Ticket> tickets = new ArrayList<>();
+        Cursor cursorCourses = db.rawQuery("SELECT * FROM user_ticket WHERE id_klienta=" + USER_ID + "  ORDER BY data_wygasniecia DESC LIMIT 30", null);
+        if (cursorCourses.moveToFirst()) {
+            do {
+                tickets.add(new Ticket(cursorCourses.getString(1), cursorCourses.getFloat(2), cursorCourses.getString(3), cursorCourses.getInt(4), cursorCourses.getString(6), cursorCourses.getInt(7)));
+            }
+            while (cursorCourses.moveToNext());
+            cursorCourses.close();
+        }
+        return tickets;
+    }
+    public ArrayList<TicketInOffer> TicketsOffer(int from, int to){
+        SQLiteDatabase db = this.getReadableDatabase();
+        ArrayList<TicketInOffer> tickets = new ArrayList<>();
+        Cursor cursorCourses = db.rawQuery("SELECT * FROM ticket WHERE time >= " + Integer.toString(from) + " AND time <= " + Integer.toString(to), null);
+        if (cursorCourses.moveToFirst()) {
+            do {
+                tickets.add(new TicketInOffer(cursorCourses.getString(2), cursorCourses.getFloat(1), cursorCourses.getInt(3)));
+            }
+            while (cursorCourses.moveToNext());
+            cursorCourses.close();
+        }
+        return tickets;
+    }
+
 }
 
 

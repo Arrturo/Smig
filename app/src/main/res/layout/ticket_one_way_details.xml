@@ -11,7 +11,7 @@
     <LinearLayout
         android:id="@+id/m1"
         android:layout_width="350dp"
-        android:layout_height="256dp"
+        android:layout_height="350dp"
         android:layout_gravity="center"
         android:layout_marginTop="20dp"
         android:background="@drawable/report_shape"
@@ -19,6 +19,8 @@
 
 
         <include layout="@layout/ticket_type_field" />
+
+        <include layout="@layout/ticket_line_number_filed" />
 
         <include layout="@layout/ticket_tickets_amount_filed" />
 

@@ -36,7 +36,11 @@
         <activity android:name=".TicketLongtermDetailsActivity"/>
         <activity android:name=".TicketHistoryActivity"/>
         <activity android:name=".TicketHistoryDetailsActivity"/>
-
+        <activity android:name=".TicketTimeDetailsActivity"/>
+        <activity android:name=".TicketMonthTicketActivity"/>
+        <activity android:name=".ThreeMonthTicketActivity"/>
+        <activity android:name=".YearTicketActivity"/>
+        <activity android:name=".TicketOneWayDetailsActivity"/>
     </application>
 
 </manifest>

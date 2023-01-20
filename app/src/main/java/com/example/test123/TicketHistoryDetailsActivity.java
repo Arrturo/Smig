@@ -1,5 +1,6 @@
 package com.example.test123;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -10,6 +11,7 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class TicketHistoryDetailsActivity extends AppCompatActivity {
+    @SuppressLint("SetTextI18n")
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         //DELETE HEADER
@@ -26,11 +28,12 @@ public class TicketHistoryDetailsActivity extends AppCompatActivity {
 
         TextView ticketType = contentView.findViewById(R.id.ticket_history_element_type);
         TextView ticketNumber = contentView.findViewById(R.id.ticket_history_element_line_number);
+
         TextView ticketDate = contentView.findViewById(R.id.ticket_history_element_date);
 
-        ticketType.setText("Dobowy");
-        ticketNumber.setText("303");
-        ticketDate.setText("25-04-2022");
+        ticketType.setText(getIntent().getStringExtra("ticketType"));
+        ticketNumber.setText(Integer.toString(getIntent().getIntExtra("ticketLine", 0)));
+        ticketDate.setText(getIntent().getStringExtra("ticketCreationDate"));
 
         Button previous = header.findViewById(R.id.previous);
         previous.setOnClickListener(view -> finish());

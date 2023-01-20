@@ -26,9 +26,14 @@ public class MainActivity extends AppCompatActivity {
         greetings.setText("Witaj, " + user.getUsername() + "!");
 
         Button Profile = findViewById(R.id.client_profile);
-        Button Buy_ticket = findViewById(R.id.Buy_ticket);
+        Button BuyTicket = findViewById(R.id.Buy_ticket);
+        Button TicketHistory = findViewById(R.id.ticket_history);
         Button Timetable = findViewById(R.id.timetable);
         Button SendReport = findViewById(R.id.create_report);
+        SendReport.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, ReportActivity.class);
+            startActivity(intent);
+        });
         Profile.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity.this, ClientProfile.class);
             intent.putExtra("username", user.getUsername());
@@ -43,10 +48,14 @@ public class MainActivity extends AppCompatActivity {
             Intent intent = new Intent(MainActivity.this, ReportActivity.class);
             startActivity(intent);
         });
-        Buy_ticket.setOnClickListener(v -> {
+        BuyTicket.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity.this, BuyTicketActivity.class);
             startActivity(intent);
             intent.putExtra("discount", user.getDiscount());
+        });
+        TicketHistory.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, TicketHistoryActivity.class);
+            startActivity(intent);
         });
         Timetable.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity.this, TimetableActivity.class);
@@ -60,5 +69,7 @@ public class MainActivity extends AppCompatActivity {
     public void onResume() {
         super.onResume();
         user = dbHandler.getUser();
+        TextView greetings = findViewById(R.id.greetings);
+        greetings.setText("Witaj, " + user.getUsername() + "!");
       }
     }
