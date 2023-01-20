@@ -28,6 +28,7 @@ public class TimetableDirectionActivity extends AppCompatActivity {
         will be changed in the future*/
         Integer id = db.getCurrentId(getIntent().getStringExtra("busNumber"));
         ArrayList<String> route = db.getAllRoutes(id);
+        ArrayList<String> stops = db.getAllStop(id);
 
         // delete header
         if (getSupportActionBar() != null) getSupportActionBar().hide();
@@ -43,21 +44,24 @@ public class TimetableDirectionActivity extends AppCompatActivity {
         View directionsView = vi.inflate(R.layout.timetable_direction, insertPoint);
 
         Button btnTop = directionsView.findViewById(R.id.timetable_direction_element_btn_top);
-        btnTop.setText("Pierwszy Kierunek");
+        btnTop.setText(route.get(0) + " -> " + route.get(route.size()-1));
         btnTop.setOnClickListener(v -> {
             Intent intent = new Intent(TimetableDirectionActivity.this, TimetableTimesMenuActivity.class);
             intent.putExtra("id", id);
             intent.putExtra("route", route);
+            intent.putExtra("stop", stops);
             startActivity(intent);
         });
 
         Button btnBottom = directionsView.findViewById(R.id.timetable_direction_element_btn_bottom);
-        btnBottom.setText("Drugi Kierunek");
+        btnBottom.setText(route.get(route.size() - 1 ) + " -> " + route.get(0));
         btnBottom.setOnClickListener(v -> {
             Intent intent = new Intent(TimetableDirectionActivity.this, TimetableTimesMenuActivity.class);
             Collections.reverse(route);
             intent.putExtra("id", id);
             intent.putExtra("route", route);
+            Collections.reverse(stops);
+            intent.putExtra("stop", stops);
             startActivity(intent);
         });
 
