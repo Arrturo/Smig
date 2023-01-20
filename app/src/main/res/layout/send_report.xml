@@ -52,7 +52,7 @@
             android:textStyle="bold"/>
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/email"
+            android:id="@+id/message"
             android:layout_width="fill_parent"
             android:layout_height="160dp"
             android:background="@drawable/input_shape_round"
@@ -67,7 +67,7 @@
 
 
     <Button
-        android:id="@+id/send_discount"
+        android:id="@+id/send_report"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
