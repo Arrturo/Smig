@@ -37,8 +37,7 @@ public class DBHandler extends SQLiteOpenHelper {
 
     private static final String DISCOUNT_COL = "discount";
 
-
-
+    private static final String USER_ID = "2";
 
     // creating a constructor for our database handler.
     public DBHandler(Context context) {
@@ -80,7 +79,7 @@ public class DBHandler extends SQLiteOpenHelper {
                 + EMAIL_COL + " TEXT,"
                 + PHONE_COL + " TEXT,"
                 + PASSWORD_COL + " TEXT,"
-                + DISCOUNT_COL + " INTEGER)";
+                + DISCOUNT_COL + " INTEGER DEFAULT 0)";
 
         // at last we are calling a exec sql
         // method to execute above sql query
@@ -95,7 +94,7 @@ public class DBHandler extends SQLiteOpenHelper {
         SQLiteDatabase db = this.getReadableDatabase();
         User user = null;
         // on below line we are creating a cursor with query to read data from database.
-        Cursor cursorCourses = db.rawQuery("SELECT * FROM users WHERE id=2", null);
+        Cursor cursorCourses = db.rawQuery("SELECT * FROM users WHERE id=" + USER_ID, null);
         // moving our cursor to first position.
         if (cursorCourses.moveToFirst()) {
             do {
@@ -116,7 +115,7 @@ public class DBHandler extends SQLiteOpenHelper {
         values.put(EMAIL_COL, email);
         values.put(PHONE_COL, phone);
         values.put(PASSWORD_COL, password);
-        db.update(TABLE_NAME, values, "id=2", null);
+        db.update(TABLE_NAME, values, "id="+USER_ID, null);
         db.close();
     }
 
@@ -124,12 +123,39 @@ public class DBHandler extends SQLiteOpenHelper {
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues values = new ContentValues();
         values.put(DISCOUNT_COL, discount);
-        db.update(TABLE_NAME, values, "id=2", null);
+        db.update(TABLE_NAME, values, "id=" + USER_ID, null);
         db.close();
     }
+    public int getDiscount(){
+        SQLiteDatabase db = this.getReadableDatabase();
+        int discount = 0;
+        Cursor cursorCourses = db.rawQuery("SELECT * FROM users WHERE id=" + USER_ID, null);
+        if (cursorCourses.moveToFirst()) {
+            do {
+                discount = cursorCourses.getInt(5);
+            }
+            while (cursorCourses.moveToNext());
+            cursorCourses.close();
+        }
+        return discount;
+    }
 
-    public void addTicket(){
+    public void addTicket(String rodzaj, double cena){
+        SQLiteDatabase db = this.getWritableDatabase();
+        ContentValues values = new ContentValues();
+        values.put("rodzaj", rodzaj);
+        values.put("cena", cena);
+        db.insert("ticket", null, values);
+    }
 
+    public void sendReport(String topic, String message){
+        SQLiteDatabase db = this.getWritableDatabase();
+        ContentValues values = new ContentValues();
+        values.put("topic", topic);
+        values.put("message", message);
+        db.insert("report", null, values);
+    }
+    public void createTable(){
     }
 //    get all bus numbers from database
     public ArrayList<String> getAllBusNumbers(){
@@ -217,4 +243,5 @@ public class DBHandler extends SQLiteOpenHelper {
         return id;
     }
 }
+
 

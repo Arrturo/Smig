@@ -16,8 +16,11 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class BuyTicketActivity extends AppCompatActivity {
 
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+
         //DELETE HEADER
         if (getSupportActionBar() != null) getSupportActionBar().hide();
         setContentView(R.layout.timetable_menu_back);
@@ -33,30 +36,37 @@ public class BuyTicketActivity extends AppCompatActivity {
 
 
         Button jednorazowy = contentView.findViewById(R.id.jednorazowy);
-
         jednorazowy.setOnClickListener(v -> {
             Intent intent = new Intent(BuyTicketActivity.this, TicketOnewayActivity.class);
+            intent.putExtra("discount", getIntent().getStringExtra("discount"));
             startActivity(intent);
         });
 
         Button krotkookresowy = contentView.findViewById(R.id.krotkookresowy);
         krotkookresowy.setOnClickListener(v -> {
-            Intent intent = new Intent(BuyTicketActivity.this, TicketTemporaryActivity.class);
+            Intent intent = new Intent(BuyTicketActivity.this, TicketOnewayActivity.class);
+            intent.putExtra("discount", getIntent().getStringExtra("discount"));
             startActivity(intent);
         });
+        
         Button miesieczny = contentView.findViewById(R.id.miesieczny);
         miesieczny.setOnClickListener(v -> {
-            Intent intent = new Intent(BuyTicketActivity.this, TicketLongtermDetailsActivity.class);
+            Intent intent = new Intent(BuyTicketActivity.this, TicketOnewayActivity.class);
+            intent.putExtra("discount",getIntent().getStringExtra("discount"));
             startActivity(intent);
         });
+        
         Button trzymiesieczny = contentView.findViewById(R.id.trzymiesieczny);
         trzymiesieczny.setOnClickListener(v -> {
-            Intent intent = new Intent(BuyTicketActivity.this, TicketLongtermDetailsActivity.class);
+            Intent intent = new Intent(BuyTicketActivity.this, TicketOnewayActivity.class);
+            intent.putExtra("discount", getIntent().getStringExtra("discount"));
             startActivity(intent);
         });
+        
         Button roczny = contentView.findViewById(R.id.roczny);
         roczny.setOnClickListener(v -> {
-            Intent intent = new Intent(BuyTicketActivity.this, TicketLongtermDetailsActivity.class);
+            Intent intent = new Intent(BuyTicketActivity.this, TicketOnewayActivity.class);
+            intent.putExtra("discount", getIntent().getStringExtra("discount"));d
             startActivity(intent);
         });
 

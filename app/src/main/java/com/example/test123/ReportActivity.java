@@ -32,8 +32,8 @@ public class ReportActivity extends AppCompatActivity {
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.reports_types,
                 android.R.layout.simple_spinner_item);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        discounts.setAdapter(adapter);
-        discounts.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+        reports.setAdapter(adapter);
+        reports.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 String text = parent.getItemAtPosition(position).toString();
@@ -44,7 +44,15 @@ public class ReportActivity extends AppCompatActivity {
             }
         });
 
-        Button previousActivity = header.findViewById(R.id.previous);
+        Button sendReport = findViewById(R.id.send_report);
+        sendReport.setOnClickListener(view -> {
+            TextView textView = (TextView) findViewById(R.id.message);
+            String topic = reports.getSelectedItem().toString();
+            String message = textView.getText().toString();
+            db.sendReport(topic, message);
+            finish();
+        });
+        Button previousActivity = findViewById(R.id.previous);
         previousActivity.setOnClickListener(view -> {
             // Finish the current activity and return to the previous one
             finish();
