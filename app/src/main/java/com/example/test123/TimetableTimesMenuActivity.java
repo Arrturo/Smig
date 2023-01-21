@@ -47,8 +47,7 @@ public class TimetableTimesMenuActivity extends AppCompatActivity {
                         View btnLeftView = vi.inflate(R.layout.timetable_times_menu_pair_left, insertPointOne);
                         btnLeftView.setId(row+column);
                         Button btnLeft = btnLeftView.findViewById(R.id.timetable_times_menu_btn_left);
-                        btnLeft.setText(time.get(row + column)); // Zamiast ValueOfId godzina odjazdu z petli autobusu w stringu
-                        int idOfTime = time.indexOf(btnLeft.getText().toString());
+                        btnLeft.setText(time.get(row + column));
                         btnLeft.setOnClickListener(v -> {
                             Intent intent = new Intent(TimetableTimesMenuActivity.this, TimetableDetailsActivity.class);
                             intent.putExtra("id", id);
@@ -62,16 +61,10 @@ public class TimetableTimesMenuActivity extends AppCompatActivity {
                         View btnRightView = vi.inflate(R.layout.timetable_times_menu_pair_right, insertPointOne);
                         Button btnRight = btnRightView.findViewById(R.id.timetable_times_menu_btn_right);
                         btnRight.setId(row+column);
-                        btnRight.setText(time.get(row + column)); //Zamiast ValueOfId godzina odjazdu z petli autobusu w stringu
-                        int idOfTime = time.indexOf(btnRight.getText().toString());
+                        btnRight.setText(time.get(row + column));
                         btnRight.setOnClickListener(v -> {
                             Intent intent = new Intent(TimetableTimesMenuActivity.this, TimetableDetailsActivity.class);
                             intent.putExtra("id", id);
-                            time.subList(idOfTime, time.size());
-                            List<String> reducedRoute = route.subList(idOfTime, route.size());
-                            ArrayList<String> reducedRouteArray = new ArrayList<>(reducedRoute);
-                            List<String> reducedTime = time.subList(idOfTime, time.size());
-                            ArrayList<String> reducedTimeArray = new ArrayList<>(reducedTime);
                             intent.putStringArrayListExtra("route", route);
                             intent.putExtra("time", btnRight.getText().toString());
                             intent.putStringArrayListExtra("stops", stops);

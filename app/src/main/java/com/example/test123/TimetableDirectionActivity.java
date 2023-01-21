@@ -23,7 +23,6 @@ public class TimetableDirectionActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         DBHandler db = new DBHandler(this);
-        System.out.println((getIntent().getStringExtra("busNumber")));
         /*not quite good solution, but it works
         will be changed in the future*/
         Integer id = db.getCurrentId(getIntent().getStringExtra("busNumber"));
