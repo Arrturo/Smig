@@ -6,7 +6,7 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import java.util.ArrayList;
-
+import java.util.Arrays;
 
 
 public class DBHandler extends SQLiteOpenHelper {
@@ -241,6 +241,21 @@ public class DBHandler extends SQLiteOpenHelper {
             cursor.close();
         }
         return id;
+    }
+
+    public ArrayList<String> getAllStop(int id){
+        ArrayList<String> stops = new ArrayList<>();
+        SQLiteDatabase db = this.getReadableDatabase();
+        Cursor cursor = db.rawQuery("SELECT * FROM timetable WHERE id=" + id, null);
+        if (cursor.moveToFirst()) {
+            do {
+                String[] stopsList = cursor.getString(4).split(",");
+                stops.addAll(Arrays.asList(stopsList));
+            }
+            while (cursor.moveToNext());
+            cursor.close();
+        }
+        return stops;
     }
 }
 
