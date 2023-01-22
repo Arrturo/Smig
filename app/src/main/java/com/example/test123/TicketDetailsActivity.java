@@ -23,7 +23,7 @@ public class TicketDetailsActivity extends AppCompatActivity {
         if (getSupportActionBar() != null) getSupportActionBar().hide();
         setContentView(R.layout.ticket_time_details);
         TextView header_title = findViewById(R.id.header_title);
-        header_title.setText("Szczegóły biletu");
+        header_title.setText("Kup bilet");
         ticketType = findViewById(R.id.ticket_type);
         ticketPrice = findViewById(R.id.ticket_price);
         ticketType.setText(getIntent().getStringExtra("ticketType"));

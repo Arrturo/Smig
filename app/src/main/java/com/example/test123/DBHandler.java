@@ -9,7 +9,6 @@ import android.database.sqlite.SQLiteOpenHelper;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
-import java.util.concurrent.TimeUnit;
 
 
 public class DBHandler extends SQLiteOpenHelper {
@@ -19,6 +18,11 @@ public class DBHandler extends SQLiteOpenHelper {
 
     // below int is our database version
     private static final int DB_VERSION = 1;
+
+    public DBHandler(Context context) {
+        super(context, DB_NAME, null, DB_VERSION);
+    }
+
 
     // below variable is for our table name.
     private static final String TABLE_NAME = "users";
@@ -40,15 +44,21 @@ public class DBHandler extends SQLiteOpenHelper {
 
     private static final String DISCOUNT_COL = "discount";
 
-    private String USER_ID = "2";
+    private static String USER_ID = "2";
 
     public void setUSER_ID(String USER_ID) {
-        this.USER_ID = USER_ID;
+        DBHandler.USER_ID = USER_ID;
     }
 
-    // creating a constructor for our database handler.
-    public DBHandler(Context context) {
-        super(context, DB_NAME, null, DB_VERSION);
+
+    public boolean Login(String username, String password) {
+        SQLiteDatabase db = this.getReadableDatabase();
+        Cursor cursor = db.rawQuery("SELECT * FROM users WHERE username = ? AND password = ?", new String[]{username, password});
+        while (cursor.moveToNext()) {
+            setUSER_ID(cursor.getString(0));
+            return true;
+        }
+        return false;
     }
     public void addNewUser(String username, String email, String phone, String password) {
 
@@ -147,14 +157,6 @@ public class DBHandler extends SQLiteOpenHelper {
         return discount;
     }
 
-    public void addTicket(String rodzaj, double cena){
-        SQLiteDatabase db = this.getWritableDatabase();
-        ContentValues values = new ContentValues();
-        values.put("rodzaj", rodzaj);
-        values.put("cena", cena);
-        db.insert("ticket", null, values);
-    }
-
     public void sendReport(String topic, String message){
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues values = new ContentValues();
@@ -162,8 +164,7 @@ public class DBHandler extends SQLiteOpenHelper {
         values.put("message", message);
         db.insert("report", null, values);
     }
-    public void createTable(){
-    }
+
     public void buyTicket(String rodzaj, float cena, int ilosc, int linia, int time){
         @SuppressLint("SimpleDateFormat") SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
         Date date = new Date();
@@ -179,19 +180,6 @@ public class DBHandler extends SQLiteOpenHelper {
         db.insert("user_ticket", null, values);
     }
 
-    public int getTicketsCounts(){
-        SQLiteDatabase db = this.getReadableDatabase();
-        int count = 0;
-        Cursor cursorCourses = db.rawQuery("SELECT * FROM user_ticket WHERE id_klienta=" + USER_ID, null);
-        if (cursorCourses.moveToFirst()) {
-            do {
-                count++;
-            }
-            while (cursorCourses.moveToNext());
-            cursorCourses.close();
-        }
-        return count;
-    }
     public ArrayList<Ticket> getTickets(){
         SQLiteDatabase db = this.getReadableDatabase();
         ArrayList<Ticket> tickets = new ArrayList<>();
@@ -205,6 +193,7 @@ public class DBHandler extends SQLiteOpenHelper {
         }
         return tickets;
     }
+
     public ArrayList<TicketInOffer> TicketsOffer(int from, int to){
         SQLiteDatabase db = this.getReadableDatabase();
         ArrayList<TicketInOffer> tickets = new ArrayList<>();
@@ -219,6 +208,41 @@ public class DBHandler extends SQLiteOpenHelper {
         return tickets;
     }
 
+    public ArrayList<Mandate> getPaidMandates(){
+        SQLiteDatabase db = this.getReadableDatabase();
+        ArrayList<Mandate> mandates = new ArrayList<>();
+        Cursor cursorCourses = db.rawQuery("SELECT * FROM mandate WHERE user_id=" + USER_ID + " AND status=1 ORDER BY datetime DESC LIMIT 30", null);
+        if (cursorCourses.moveToFirst()) {
+            do {
+                mandates.add(new Mandate(cursorCourses.getInt(0), cursorCourses.getString(1), cursorCourses.getFloat(2), cursorCourses.getInt(4), cursorCourses.getString(5)));
+            }
+            while (cursorCourses.moveToNext());
+            cursorCourses.close();
+        }
+        return mandates;
+    }
+
+    public ArrayList<Mandate> getUnpaidMandates(){
+        SQLiteDatabase db = this.getReadableDatabase();
+        ArrayList<Mandate> mandates = new ArrayList<>();
+        Cursor cursorCourses = db.rawQuery("SELECT * FROM mandate WHERE user_id=" + USER_ID + " AND status=0 ORDER BY datetime DESC LIMIT 30", null);
+        if (cursorCourses.moveToFirst()) {
+            do {
+                mandates.add(new Mandate(cursorCourses.getInt(0) ,cursorCourses.getString(1), cursorCourses.getFloat(2), cursorCourses.getInt(4), cursorCourses.getString(5)));
+            }
+            while (cursorCourses.moveToNext());
+            cursorCourses.close();
+        }
+        return mandates;
+    }
+
+    public void payMandate(int id){
+        SQLiteDatabase db = this.getWritableDatabase();
+        ContentValues values = new ContentValues();
+        values.put("status", 1);
+        db.update("mandate", values, "id="+id, null);
+        db.close();
+    }
 }
 
 

@@ -3,6 +3,7 @@ package com.example.test123;
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
+import android.widget.TextView;
 
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -17,6 +18,8 @@ public class BuyTicketActivity extends AppCompatActivity {
         //DELETE HEADER
         if (getSupportActionBar() != null) getSupportActionBar().hide();
         setContentView(R.layout.ticket_buy);
+        TextView header = findViewById(R.id.header_title);
+        header.setText("Wybierz rodzaj biletu");
         Button jednorazowy = findViewById(R.id.jednorazowy);
         jednorazowy.setOnClickListener(v -> {
             Intent intent = new Intent(BuyTicketActivity.this, TicketOnewayActivity.class);

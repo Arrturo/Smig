@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fine_pay"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+
+    <LinearLayout
+        android:id="@+id/fine_history_element"
+        android:layout_width="350dp"
+        android:layout_height="220dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/fine_his"
+            android:orientation="vertical"
+            android:paddingTop="0dp">
+            <LinearLayout
+                android:layout_width="350dp"
+                android:layout_height="40dp"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:paddingTop="8dp">
+                <TextView
+                    android:id="@+id/fine_pay_date"
+                    android:layout_width="fill_parent"
+                    android:layout_height="25dp"
+                    android:textColor="@color/black"
+                    android:text="15.08.2022"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:textSize="20sp">
+                </TextView>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="170dp"
+            android:background="@drawable/fine_his_white"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="175dp"
+                android:layout_height="160dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="10dp"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/fine_pay_value"
+                    android:layout_width="fill_parent"
+                    android:layout_height="25dp"
+                    android:textColor="@color/black"
+                    android:text="Kwota: 120 zł"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:paddingStart="30dp">
+
+                </TextView>
+                <TextView
+                    android:id="@+id/fine_pay_kontrolerID"
+                    android:layout_width="fill_parent"
+                    android:layout_height="55dp"
+                    android:textColor="@color/black"
+                    android:text="ID kontrolera: 763"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:paddingStart="30dp"
+                    android:paddingTop="30dp">
+                </TextView>
+
+                <TextView
+                    android:id="@+id/fine_pay_reason"
+                    android:layout_width="345dp"
+                    android:layout_height="55dp"
+                    android:paddingStart="30dp"
+                    android:paddingTop="30dp"
+                    android:text="Powód: Brak biletu"
+                    android:textColor="@color/red"
+                    android:textSize="15sp"
+                    android:textStyle="bold"></TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="175dp"
+                android:layout_height="160dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/fine_pay_button"
+                    android:layout_width="108dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/pay_button_red"
+                    android:gravity="center"
+                    android:text="@string/Button_pay"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

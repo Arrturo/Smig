@@ -44,7 +44,7 @@ public class YearTicketActivity extends AppCompatActivity {
 
             ticketName.setText(tickets.get(row).getType());
             TicketOffer.setOnClickListener(v -> {
-                Intent intent = new Intent(YearTicketActivity.this,TicketDetailsActivity.class);
+                Intent intent = new Intent(YearTicketActivity.this,TicketLongtermDetailsActivity.class);
                 intent.putExtra("ticketType", tickets.get(v.getId()).getType());
                 intent.putExtra("price", tickets.get(v.getId()).getPrice() * 1.0);
                 intent.putExtra("time", tickets.get(v.getId()).getTime());
@@ -58,7 +58,7 @@ public class YearTicketActivity extends AppCompatActivity {
             TextView ticketNameReduced = TicketOfferReduced.findViewById(R.id.ticket_type);
             ticketNameReduced.setText(tickets.get(row).getType() + " Ulgowy");
             TicketOfferReduced.setOnClickListener(v -> {
-                Intent intentReduced = new Intent(YearTicketActivity.this,TicketDetailsActivity.class);
+                Intent intentReduced = new Intent(YearTicketActivity.this,TicketLongtermDetailsActivity.class);
                 intentReduced.putExtra("ticketType", tickets.get(v.getId()).getType() + " ulgowy");
                 intentReduced.putExtra("price", tickets.get(v.getId()).getPrice() * discount);
                 intentReduced.putExtra("time", tickets.get(v.getId()).getTime());

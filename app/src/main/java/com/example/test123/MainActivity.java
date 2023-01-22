@@ -30,6 +30,8 @@ public class MainActivity extends AppCompatActivity {
         Button TicketHistory = findViewById(R.id.ticket_history);
         Button Timetable = findViewById(R.id.timetable);
         Button SendReport = findViewById(R.id.create_report);
+        Button Fine = findViewById(R.id.fine);
+        Button Logout = findViewById(R.id.logout);
         SendReport.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity.this, ReportActivity.class);
             startActivity(intent);
@@ -48,18 +50,31 @@ public class MainActivity extends AppCompatActivity {
             Intent intent = new Intent(MainActivity.this, ReportActivity.class);
             startActivity(intent);
         });
+
         BuyTicket.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity.this, BuyTicketActivity.class);
             startActivity(intent);
             intent.putExtra("discount", user.getDiscount());
         });
+
         TicketHistory.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity.this, TicketHistoryActivity.class);
             startActivity(intent);
         });
+
         Timetable.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity.this, TimetableActivity.class);
             startActivity(intent);
+        });
+
+        Fine.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, FineMenuActivitiy.class);
+            startActivity(intent);
+        });
+
+        Logout.setOnClickListener(v -> {
+
+            finish();
         });
 
 

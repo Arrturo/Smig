@@ -55,7 +55,7 @@ public class TicketOneWayDetailsActivity extends AppCompatActivity {
         Button buy = findViewById(R.id.buy_ticket_button);
         buy.setOnClickListener(v -> {
             DBHandler db = new DBHandler(this);
-            db.buyTicket(getIntent().getStringExtra("ticketType"), Float.parseFloat(ticketPrice.getText().toString().substring(0, ticketPrice.getText().toString().length() - 3)), Integer.parseInt(count.getText().toString()), Integer.parseInt(TicketLine.getText().toString()), getIntent().getIntExtra("time", 0));
+            db.buyTicket(getIntent().getStringExtra("ticketType"), getIntent().getFloatExtra("price", 0) * Integer.parseInt(count.getText().toString()), Integer.parseInt(count.getText().toString()), Integer.parseInt(TicketLine.getText().toString()), getIntent().getIntExtra("time", 0));
             Toast.makeText(this, "Bilet został zakupiony", Toast.LENGTH_SHORT).show();
             finish();
         });

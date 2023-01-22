@@ -9,6 +9,9 @@ import android.widget.Button;
 import android.content.Intent;
 import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
+
+import org.w3c.dom.Text;
+
 import java.util.ArrayList;
 
 public class TicketOnewayActivity extends AppCompatActivity {
@@ -16,14 +19,13 @@ public class TicketOnewayActivity extends AppCompatActivity {
     @SuppressLint("SetTextI18n")
     protected void onCreate(Bundle savedInstanceState) {
         DBHandler db = new DBHandler(this);
+
         double discount = 1 - db.getDiscount() / 100.0;
 
         super.onCreate(savedInstanceState);
         //DELETE HEADER
         if (getSupportActionBar() != null) getSupportActionBar().hide();
         setContentView(R.layout.ticket_one_way);
-        TextView header_title = findViewById(R.id.header_title);
-        header_title.setText("Kup bilet");
 
         setContentView(R.layout.timetable_menu_back);
 
@@ -32,7 +34,7 @@ public class TicketOnewayActivity extends AppCompatActivity {
         LayoutInflater vi = getLayoutInflater();
         View header = vi.inflate(R.layout.header, insertPoint);
         TextView headerText = header.findViewById(R.id.header_title);
-        headerText.setText("Kup bilet");
+        headerText.setText("Wybierz rodzaj biletu");
 
         DBHandler dbHandler = new DBHandler(TicketOnewayActivity.this);
 
