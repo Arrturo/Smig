@@ -9,7 +9,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TEST123">
         <activity
-            android:name=".MainActivity"
+            android:name=".Login"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -17,6 +17,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
 
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
@@ -36,6 +43,16 @@
         <activity android:name=".TicketLongtermDetailsActivity"/>
         <activity android:name=".TicketHistoryActivity"/>
         <activity android:name=".TicketHistoryDetailsActivity"/>
+        <activity android:name=".FineMenuActivitiy"/>
+        <activity android:name=".FineHistoryActivity"/>
+        <activity android:name=".FineHistoryDetailsActivity"/>
+        <activity android:name=".FinePayDetailsActivity"/>
+        <activity android:name=".TicketOneWayDetailsActivity"/>
+        <activity android:name=".TicketTimeDetailsActivity"/>
+        <activity android:name=".ThreeMonthTicketActivity"/>
+        <activity android:name=".YearTicketActivity"/>
+        <activity android:name=".TicketMonthTicketActivity"/>
+
 
     </application>
 

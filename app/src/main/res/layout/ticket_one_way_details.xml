@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/background">
+
+    <include layout="@layout/header" />
+
+    <LinearLayout
+        android:id="@+id/m1"
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/report_shape"
+        android:orientation="vertical">
+
+
+        <include layout="@layout/ticket_type_field" />
+
+        <include layout="@layout/ticket_line_number_filed" />
+
+        <include layout="@layout/ticket_tickets_amount_filed" />
+
+        <include layout="@layout/ticket_price_field" />
+
+        <Button
+            android:id="@+id/buy_ticket_button"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/pay_button_orange"
+            android:gravity="center"
+            android:paddingBottom="5dp"
+            android:text="@string/Button_pay"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+
+    </LinearLayout>
+</LinearLayout>

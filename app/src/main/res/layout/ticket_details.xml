@@ -3,7 +3,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@drawable/background">
+
+    <include layout="@layout/header" />
 
     <LinearLayout
         android:id="@+id/m1"
@@ -24,7 +27,7 @@
     <include layout="@layout/ticket_price_field"/>
 
     <Button
-        android:id="@+id/send_discount"
+        android:id="@+id/buy_ticket_button"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"

@@ -1,2 +1,0 @@
-ninja: Entering directory `C:\Users\Pc\Desktop\Public-Transport-Mobile-App-main\app\.cxx\Debug\3641595v\x86_64'
-ninja: no work to do.

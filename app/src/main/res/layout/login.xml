@@ -9,30 +9,31 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="400dp"
-        android:orientation="vertical"
-        android:gravity="center">
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
         <ImageView
             android:id="@+id/imageView"
             android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="64dp"
             android:contentDescription="@string/todo"
-            android:src="@drawable/logo"
-            android:paddingBottom="30dp"/>
+            android:paddingBottom="30dp"
+            android:src="@drawable/logo" />
 
         <LinearLayout
             android:layout_width="300dp"
             android:layout_height="60dp"
-            android:orientation="vertical"
             android:layout_gravity="center"
-            android:layout_margin="8dp">
+            android:layout_margin="8dp"
+            android:orientation="vertical">
 
             <TextView
                 android:layout_width="130dp"
                 android:layout_height="20dp"
-                android:textColor="@color/black"
                 android:text="Nazwa użytkownika"
+                android:textColor="@color/black"
                 android:textStyle="bold">
 
 
@@ -44,23 +45,24 @@
                 android:layout_height="40dp"
                 android:background="@drawable/input_shape_round"
                 android:ems="10"
+                android:inputType="textPersonName"
                 android:padding="8dp"
                 android:textColor="@color/black"
-                tools:ignore="TouchTargetSizeCheck"
-                android:inputType="textPersonName" />
+                tools:ignore="TouchTargetSizeCheck" />
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="300dp"
             android:layout_height="60dp"
-            android:orientation="vertical"
             android:layout_gravity="center"
-            android:layout_margin="8dp">
+            android:layout_margin="8dp"
+            android:orientation="vertical">
+
             <TextView
                 android:layout_width="130dp"
                 android:layout_height="20dp"
-                android:textColor="@color/black"
                 android:text="Hasło"
+                android:textColor="@color/black"
                 android:textStyle="bold">
 
 
@@ -72,23 +74,26 @@
                 android:layout_height="40dp"
                 android:background="@drawable/input_shape_round"
                 android:ems="10"
+                android:inputType="textPersonName|textPassword"
                 android:padding="8dp"
+                android:password="true"
                 android:textColor="@color/black"
-                tools:ignore="TouchTargetSizeCheck"
-                android:inputType="textPersonName" />
+                tools:ignore="TouchTargetSizeCheck" />
         </LinearLayout>
+
         <Button
-            android:id="@+id/lgowanie"
+            android:id="@+id/logowanie"
             android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="20dp"
-            android:paddingBottom="5dp"
             android:background="@drawable/pay_button_orange"
-            android:textColor="@color/white"
             android:gravity="center"
+            android:paddingBottom="5dp"
             android:text="@string/zaloguj"
             android:textAlignment="center"
+            android:textColor="@color/white"
             android:textSize="16sp" />
+
     </LinearLayout>
 </LinearLayout>
