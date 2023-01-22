@@ -19,7 +19,6 @@ public class TicketOnewayActivity extends AppCompatActivity {
     @SuppressLint("SetTextI18n")
     protected void onCreate(Bundle savedInstanceState) {
         DBHandler db = new DBHandler(this);
-
         double discount = 1 - db.getDiscount() / 100.0;
 
         super.onCreate(savedInstanceState);
