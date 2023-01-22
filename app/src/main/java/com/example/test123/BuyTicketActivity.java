@@ -1,8 +1,5 @@
 package com.example.test123;
 
-
-import android.annotation.SuppressLint;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -10,12 +7,10 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
-
-
 import androidx.appcompat.app.AppCompatActivity;
 
-public class BuyTicketActivity extends AppCompatActivity {
 
+public class BuyTicketActivity extends AppCompatActivity {
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -66,7 +61,7 @@ public class BuyTicketActivity extends AppCompatActivity {
         Button roczny = contentView.findViewById(R.id.roczny);
         roczny.setOnClickListener(v -> {
             Intent intent = new Intent(BuyTicketActivity.this, TicketOnewayActivity.class);
-            intent.putExtra("discount", getIntent().getStringExtra("discount"));d
+            intent.putExtra("discount", getIntent().getStringExtra("discount"));
             startActivity(intent);
         });
 
