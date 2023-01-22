@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fine_pay"
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical">
@@ -8,6 +9,7 @@
 
 
     <LinearLayout
+        android:id="@+id/fine_history_element"
         android:layout_width="350dp"
         android:layout_height="220dp"
         android:layout_marginTop="20dp"
@@ -75,17 +77,17 @@
                     android:paddingStart="30dp"
                     android:paddingTop="30dp">
                 </TextView>
+
                 <TextView
                     android:id="@+id/fine_pay_reason"
-                    android:layout_width="fill_parent"
+                    android:layout_width="345dp"
                     android:layout_height="55dp"
-                    android:textColor="@color/red"
-                    android:text="Powód: Brak biletu"
-                    android:textStyle="bold"
-                    android:textSize="15sp"
                     android:paddingStart="30dp"
-                    android:paddingTop="30dp">
-                </TextView>
+                    android:paddingTop="30dp"
+                    android:text="Powód: Brak biletu"
+                    android:textColor="@color/red"
+                    android:textSize="15sp"
+                    android:textStyle="bold"></TextView>
             </LinearLayout>
 
             <LinearLayout
@@ -104,8 +106,8 @@
                     android:gravity="center"
                     android:text="@string/Button_pay"
                     android:textAlignment="center"
-                    android:textSize="16sp"
-                    android:textColor="@color/white"/>
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>

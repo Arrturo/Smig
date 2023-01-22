@@ -1,3 +1,0 @@
-D:/studia/Public-Transport-Mobile-App-main/app/.cxx/Debug/1i4t201b/x86/CMakeFiles/test123.dir
-D:/studia/Public-Transport-Mobile-App-main/app/.cxx/Debug/1i4t201b/x86/CMakeFiles/edit_cache.dir
-D:/studia/Public-Transport-Mobile-App-main/app/.cxx/Debug/1i4t201b/x86/CMakeFiles/rebuild_cache.dir

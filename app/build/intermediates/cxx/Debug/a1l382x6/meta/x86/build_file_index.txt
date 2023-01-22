@@ -1,1 +1,0 @@
-C:\Users\Pc\Desktop\p\Public-Transport-Mobile-App-main\app\src\main\cpp\CMakeLists.txt

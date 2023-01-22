@@ -12,7 +12,6 @@ public class MainActivity extends AppCompatActivity {
 
     public User user;
     public DBHandler dbHandler;
-
     TextView greetings;
 
     @SuppressLint("SetTextI18n")
@@ -21,23 +20,23 @@ public class MainActivity extends AppCompatActivity {
         dbHandler = new DBHandler(MainActivity.this);
         user = dbHandler.getUser();
         super.onCreate(savedInstanceState);
-
-
         // delete header
         if (getSupportActionBar() != null) getSupportActionBar().hide();
-
         setContentView(R.layout.activity_main);
-
         TextView greetings = findViewById(R.id.greetings);
         greetings.setText("Witaj, " + user.getUsername() + "!");
 
-
         Button Profile = findViewById(R.id.client_profile);
         Button BuyTicket = findViewById(R.id.Buy_ticket);
+        Button TicketHistory = findViewById(R.id.ticket_history);
         Button Timetable = findViewById(R.id.timetable);
         Button SendReport = findViewById(R.id.create_report);
-        Button TicketHistory = findViewById(R.id.ticket_history);
-        Button FineHistory = findViewById(R.id.fine);
+        Button Fine = findViewById(R.id.fine);
+        Button Logout = findViewById(R.id.logout);
+        SendReport.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, ReportActivity.class);
+            startActivity(intent);
+        });
         Profile.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity.this, ClientProfile.class);
             intent.putExtra("username", user.getUsername());
@@ -52,34 +51,45 @@ public class MainActivity extends AppCompatActivity {
             Intent intent = new Intent(MainActivity.this, ReportActivity.class);
             startActivity(intent);
         });
+
         BuyTicket.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity.this, BuyTicketActivity.class);
             startActivity(intent);
-        });
-        Timetable.setOnClickListener(v -> {
-            Intent intent = new Intent(MainActivity.this, TimetableActivity.class);
-            startActivity(intent);
+            intent.putExtra("discount", user.getDiscount());
         });
 
         TicketHistory.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity.this, TicketHistoryActivity.class);
             startActivity(intent);
         });
-        FineHistory.setOnClickListener(v -> {
+
+        Timetable.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, TimetableActivity.class);
+            startActivity(intent);
+        });
+
+        Fine.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity.this, FineMenuActivitiy.class);
             startActivity(intent);
         });
 
+        Logout.setOnClickListener(v -> {
+
+            finish();
+        });
 
 
     }
     @SuppressLint("SetTextI18n")
     @Override
-    public void onResume(){
+    public void onResume() {
         super.onResume();
         user = dbHandler.getUser();
+        TextView greetings = findViewById(R.id.greetings);
+        greetings.setText("Witaj, " + user.getUsername() + "!");
+      }
+    }
+      }
     }
 
 }
-
-

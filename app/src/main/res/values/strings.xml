@@ -41,6 +41,8 @@
     <string name="oplac_mandat">Opłać mandat</string>
     <string name="historia_mandatów">Historia mandatów</string>
     <string name="zaloguj">Zaloguj się</string>
+    <string name="count">Ilość biletów:</string>
+    <string name="count1">Ilość biletów</string>
 
     <string-array name="discounts">
         <item>Student(30%)</item>

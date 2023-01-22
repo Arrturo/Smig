@@ -1,5 +1,6 @@
 package com.example.test123;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -10,6 +11,7 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class FineHistoryDetailsActivity extends AppCompatActivity {
+    @SuppressLint("SetTextI18n")
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         //DELETE HEADER
@@ -29,13 +31,10 @@ public class FineHistoryDetailsActivity extends AppCompatActivity {
         TextView fineKontrolerID = contentView.findViewById(R.id.fine_element_kontroler_id);
         TextView fineReason = contentView.findViewById(R.id.fine_element_reason);
 
-        fineDate.setText("28.10.2022");
-        String value = "Kwota: "+"120 "+"zł";
-        fineValue.setText(value);
-        String kontrolerID = "ID Kontrolera: "+"2463";
-        fineKontrolerID.setText(kontrolerID);
-        String reason = "Powód: "+"Brak biletu";
-        fineReason.setText(reason);
+        fineDate.setText(getIntent().getStringExtra("date").substring(0, 16));
+        fineValue.setText("Kwota: " + getIntent().getFloatExtra("amount", 0) + " zł");
+        fineKontrolerID.setText("ID Kontrolera: "+ getIntent().getIntExtra("workerID", 0));
+        fineReason.setText("Powód: " + getIntent().getStringExtra("reason"));
 
         Button previous = header.findViewById(R.id.previous);
         previous.setOnClickListener(view -> finish());

@@ -30,8 +30,26 @@
                     android:textStyle="normal">
 
                 </TextView>
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="20dp"
+                    android:textColor="@color/black"
+                    android:text="Data zakupu"
+                    android:textStyle="bold"
+                    android:layout_marginTop="5dp">
+                </TextView>
 
                 <TextView
+                    android:id="@+id/ticket_history_element_date"
+                    android:layout_width="fill_parent"
+                    android:layout_height="20dp"
+                    android:text="27.01.2022"
+                    android:textColor="@color/black"
+                    android:textStyle="normal">
+                </TextView>
+
+                <TextView
+                    android:id="@+id/line_number_date"
                     android:layout_width="fill_parent"
                     android:layout_height="20dp"
                     android:textColor="@color/black"
@@ -48,26 +66,28 @@
                     android:textColor="@color/black"
                     android:textStyle="normal">
                 </TextView>
+
                 <TextView
                     android:layout_width="fill_parent"
                     android:layout_height="20dp"
                     android:textColor="@color/black"
-                    android:text="@string/Date_as_word"
+                    android:text="@string/count1"
                     android:textStyle="bold"
                     android:layout_marginTop="5dp">
                 </TextView>
 
                 <TextView
-                    android:id="@+id/ticket_history_element_date"
+                    android:id="@+id/count"
                     android:layout_width="fill_parent"
                     android:layout_height="20dp"
-                    android:text="27.01.2022"
+                    android:text="1"
                     android:textColor="@color/black"
                     android:textStyle="normal">
                 </TextView>
+
                 <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="218dp"
                     android:src="@drawable/qr_code">
 
                 </ImageView>
