@@ -243,9 +243,8 @@ public class DBHandler extends SQLiteOpenHelper {
         values.put("status", 1);
         db.update("mandate", values, "id="+id, null);
         db.close();
-=======
-    public void createTable(){
     }
+
 //    get all bus numbers from database
     public ArrayList<String> getAllBusNumbers(){
         ArrayList<String> busNumbers = new ArrayList<>();

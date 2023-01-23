@@ -55,6 +55,7 @@
             android:layout_height="40dp"
             android:paddingBottom="5dp"
             android:ems="10"
+            android:padding="8dp"
             android:textColor="@color/black"
             android:background="@drawable/input_shape_round" />
 

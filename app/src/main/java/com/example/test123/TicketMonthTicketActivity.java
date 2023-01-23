@@ -16,14 +16,21 @@ import java.util.ArrayList;
 public class TicketMonthTicketActivity extends AppCompatActivity {
     @SuppressLint("SetTextI18n")
     protected void onCreate(Bundle savedInstanceState) {
+
+
         DBHandler dbHandler = new DBHandler(TicketMonthTicketActivity.this);
-        double discount = 1 - dbHandler.getDiscount() / 100.0;
+        double discount = 1 - 30 / 100.0;
+
+        if (dbHandler.getDiscount() != 0) {
+            discount = 1 - dbHandler.getDiscount() / 100.0;
+        }
+
         super.onCreate(savedInstanceState);
         //DELETE HEADER
         if (getSupportActionBar() != null) getSupportActionBar().hide();
         setContentView(R.layout.ticket_one_way);
         TextView header_title = findViewById(R.id.header_title);
-        header_title.setText("Kup bilet");
+        header_title.setText("Wybierz rodzaj biletu");
 
         setContentView(R.layout.timetable_menu_back);
 
@@ -59,10 +66,11 @@ public class TicketMonthTicketActivity extends AppCompatActivity {
             TicketOfferReduced.setId(row);
             TextView ticketNameReduced = TicketOfferReduced.findViewById(R.id.ticket_type);
             ticketNameReduced.setText(tickets.get(row).getType() + " Ulgowy");
+            double finalDiscount = discount;
             TicketOfferReduced.setOnClickListener(v -> {
                 Intent intentReduced = new Intent(TicketMonthTicketActivity.this,TicketLongtermDetailsActivity.class);
                 intentReduced.putExtra("ticketType", tickets.get(v.getId()).getType() + " ulgowy");
-                intentReduced.putExtra("price", tickets.get(v.getId()).getPrice() * discount);
+                intentReduced.putExtra("price", tickets.get(v.getId()).getPrice() * finalDiscount);
                 intentReduced.putExtra("time", tickets.get(v.getId()).getTime());
                 startActivity(intentReduced);
             });

@@ -6,6 +6,7 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.Spinner;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -21,6 +22,8 @@ public class DiscountActivity extends AppCompatActivity {
 
         DBHandler dbHandler = new DBHandler(DiscountActivity.this);
 
+        TextView headerTitle = findViewById(R.id.header_title);
+        headerTitle.setText("Dodaj ulgę");
 
         //SPINNER
         Spinner discounts = findViewById(R.id.discount_spinner);
@@ -42,19 +45,19 @@ public class DiscountActivity extends AppCompatActivity {
         send_discounts.setOnClickListener(view -> {
             switch (discounts.getSelectedItemPosition()) {
                 case 0:
-                    dbHandler.addDiscount(30);
+                    dbHandler.addDiscount(50);
                     break;
                 case 1:
                     dbHandler.addDiscount(70);
                     break;
                 case 2:
-                    dbHandler.addDiscount(95);
+                    dbHandler.addDiscount(90);
                     break;
                 case 3:
-                    dbHandler.addDiscount(37);
+                    dbHandler.addDiscount(30);
                     break;
                 case 4:
-                    dbHandler.addDiscount(100);
+                    dbHandler.addDiscount(60);
                     break;
             }
             finish();
