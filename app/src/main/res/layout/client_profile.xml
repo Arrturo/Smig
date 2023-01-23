@@ -60,8 +60,7 @@
             android:ems="10"
             android:padding="8dp"
             android:textColor="@color/black"
-            tools:ignore="TouchTargetSizeCheck"
-            android:inputType="phone" />
+            tools:ignore="TouchTargetSizeCheck" />
     </LinearLayout>
 
 
@@ -108,7 +107,7 @@
                     android:background="@drawable/input_shape_round"
                     android:ems="10"
                     android:maxLength="9"
-                    android:inputType="textPhonetic"
+                    android:inputType="phone"
                     android:padding="5dp"
                     android:textColor="@color/black" />
                 </LinearLayout>

@@ -89,7 +89,4 @@ public class MainActivity extends AppCompatActivity {
         greetings.setText("Witaj, " + user.getUsername() + "!");
       }
     }
-      }
-    }
 
-}

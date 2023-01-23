@@ -17,13 +17,16 @@ public class ThreeMonthTicketActivity extends AppCompatActivity {
         @SuppressLint("SetTextI18n")
         protected void onCreate(android.os.Bundle savedInstanceState) {
             DBHandler dbHandler = new DBHandler(ThreeMonthTicketActivity.this);
-            double discount = 1 - dbHandler.getDiscount() / 100.0;
+            double discount = 1 - 30 / 100.0;
+
+            if (dbHandler.getDiscount() != 0) {
+                discount = 1 - dbHandler.getDiscount() / 100.0;
+            }
+
             super.onCreate(savedInstanceState);
             //DELETE HEADER
             if (getSupportActionBar() != null) getSupportActionBar().hide();
             setContentView(R.layout.ticket_one_way);
-            TextView header_title = findViewById(R.id.header_title);
-            header_title.setText("Kup bilet");
 
             setContentView(R.layout.timetable_menu_back);
 
@@ -32,7 +35,7 @@ public class ThreeMonthTicketActivity extends AppCompatActivity {
             LayoutInflater vi = getLayoutInflater();
             View header = vi.inflate(R.layout.header, insertPoint);
             TextView headerText = header.findViewById(R.id.header_title);
-            headerText.setText("Kup bilet");
+            headerText.setText("Wybierz rodzaj biletu");
 
             ArrayList<TicketInOffer> tickets = dbHandler.TicketsOffer(7884000, 7884000);
             for (int row = 0; row < tickets.size(); row++) {
@@ -59,10 +62,11 @@ public class ThreeMonthTicketActivity extends AppCompatActivity {
                 TicketOfferReduced.setId(row);
                 TextView ticketNameReduced = TicketOfferReduced.findViewById(R.id.ticket_type);
                 ticketNameReduced.setText(tickets.get(row).getType() + " Ulgowy");
+                double finalDiscount = discount;
                 TicketOfferReduced.setOnClickListener(v -> {
                     Intent intentReduced = new Intent(ThreeMonthTicketActivity.this,TicketLongtermDetailsActivity.class);
                     intentReduced.putExtra("ticketType", tickets.get(v.getId()).getType() + " ulgowy");
-                    intentReduced.putExtra("price", tickets.get(v.getId()).getPrice() * discount);
+                    intentReduced.putExtra("price", tickets.get(v.getId()).getPrice() * finalDiscount);
                     intentReduced.putExtra("time", tickets.get(v.getId()).getTime());
                     startActivity(intentReduced);
                 });

@@ -30,7 +30,7 @@ public class TimetableActivity extends AppCompatActivity {
             TextView headerText = header.findViewById(R.id.header_title);
             headerText.setText("Rozkład Jazdy");
 
-            for(int row = 0; row < db.getAllBusNumbers().size(); row++){
+            for(int row = 0; row < db.getAllBusNumbers().size()-1; row++){
                 if(row % 2 == 0) {
                     View pair = vi.inflate(R.layout.timetable_menu_elements_pair, insertPoint);
                     pair.setId(row);
