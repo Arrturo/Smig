@@ -35,11 +35,10 @@ public class YearTicketActivity extends AppCompatActivity {
         LayoutInflater vi = getLayoutInflater();
         View header = vi.inflate(R.layout.header, insertPoint);
         TextView headerText = header.findViewById(R.id.header_title);
-        headerText.setText("Kup bilet");
+        headerText.setText("Wybierz rodzaj biletu");
 
         ArrayList<TicketInOffer> tickets = dbHandler.TicketsOffer(31536000, 31536000);
         for (int row = 0; row < tickets.size(); row++) {
-            System.out.println("Ticket: " + tickets.get(row).getType());
             View pair = vi.inflate(R.layout.timetable_line_detail_pair, insertPoint);
             pair.setId(row);
             ViewGroup insertPointOne = (ViewGroup) findViewById(R.id.timetable_line_detail_pair);

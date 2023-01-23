@@ -30,7 +30,7 @@ public class TicketMonthTicketActivity extends AppCompatActivity {
         if (getSupportActionBar() != null) getSupportActionBar().hide();
         setContentView(R.layout.ticket_one_way);
         TextView header_title = findViewById(R.id.header_title);
-        header_title.setText("Kup bilet");
+        header_title.setText("Wybierz rodzaj biletu");
 
         setContentView(R.layout.timetable_menu_back);
 

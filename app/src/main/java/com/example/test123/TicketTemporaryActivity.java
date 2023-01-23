@@ -26,8 +26,6 @@ public class TicketTemporaryActivity extends AppCompatActivity {
         //DELETE HEADER
         if (getSupportActionBar() != null) getSupportActionBar().hide();
         setContentView(R.layout.ticket_one_way);
-        TextView header_title = findViewById(R.id.header_title);
-        header_title.setText("Kup bilet");
 
         setContentView(R.layout.timetable_menu_back);
 
@@ -36,7 +34,7 @@ public class TicketTemporaryActivity extends AppCompatActivity {
         LayoutInflater vi = getLayoutInflater();
         View header = vi.inflate(R.layout.header, insertPoint);
         TextView headerText = header.findViewById(R.id.header_title);
-        headerText.setText("Kup bilet");
+        headerText.setText("Wybierz rodzaj biletu");
 
         ArrayList<TicketInOffer> tickets = dbHandler.TicketsOffer(3601, 259200);
         for (int row = 0; row < tickets.size(); row++) {
