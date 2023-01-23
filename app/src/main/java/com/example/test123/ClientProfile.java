@@ -56,7 +56,7 @@ public class ClientProfile extends AppCompatActivity {
             discountTV.setText("Masz już zniżkę!");
             discountTV.setTextColor(Color.parseColor("#1FFF27"));
         }
-
+        
         dbHandler = new DBHandler(ClientProfile.this);
         addDiscount.setOnClickListener(v -> {
             Intent intent = new Intent(ClientProfile.this, DiscountActivity.class);

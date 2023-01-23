@@ -7,9 +7,9 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Date;
 
 
 public class DBHandler extends SQLiteOpenHelper {
@@ -157,7 +157,7 @@ public class DBHandler extends SQLiteOpenHelper {
         }
         return discount;
     }
-
+    
     public void sendReport(String topic, String message){
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues values = new ContentValues();
@@ -165,7 +165,7 @@ public class DBHandler extends SQLiteOpenHelper {
         values.put("message", message);
         db.insert("report", null, values);
     }
-
+    
     public void buyTicket(String rodzaj, float cena, int ilosc, int linia, int time){
         @SuppressLint("SimpleDateFormat") SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
         Date date = new Date();
@@ -243,8 +243,10 @@ public class DBHandler extends SQLiteOpenHelper {
         values.put("status", 1);
         db.update("mandate", values, "id="+id, null);
         db.close();
+=======
+    public void createTable(){
     }
-    //    get all bus numbers from database
+//    get all bus numbers from database
     public ArrayList<String> getAllBusNumbers(){
         ArrayList<String> busNumbers = new ArrayList<>();
         SQLiteDatabase db = this.getReadableDatabase();
@@ -329,7 +331,7 @@ public class DBHandler extends SQLiteOpenHelper {
         }
         return id;
     }
-
+    
     public ArrayList<String> getAllStop(int id){
         ArrayList<String> stops = new ArrayList<>();
         SQLiteDatabase db = this.getReadableDatabase();
