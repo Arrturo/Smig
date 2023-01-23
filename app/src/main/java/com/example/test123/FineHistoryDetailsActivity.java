@@ -11,7 +11,7 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class FineHistoryDetailsActivity extends AppCompatActivity {
-    @SuppressLint("SetTextI18n")
+    @SuppressLint({"SetTextI18n", "DefaultLocale"})
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         //DELETE HEADER
@@ -32,7 +32,7 @@ public class FineHistoryDetailsActivity extends AppCompatActivity {
         TextView fineReason = contentView.findViewById(R.id.fine_element_reason);
 
         fineDate.setText(getIntent().getStringExtra("date").substring(0, 16));
-        fineValue.setText("Kwota: " + getIntent().getFloatExtra("amount", 0) + " zł");
+        fineValue.setText(String.format("%.2f", getIntent().getFloatExtra("amount", 0)) + " zł");
         fineKontrolerID.setText("ID Kontrolera: "+ getIntent().getIntExtra("workerID", 0));
         fineReason.setText("Powód: " + getIntent().getStringExtra("reason"));
 

@@ -20,7 +20,11 @@ public class TicketOnewayActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         DBHandler db = new DBHandler(this);
 
-        double discount = 1 - db.getDiscount() / 100.0;
+        double discount = 1 - 30 / 100.0;
+
+        if (db.getDiscount() != 0) {
+            discount = 1 - db.getDiscount() / 100.0;
+        }
 
         super.onCreate(savedInstanceState);
         //DELETE HEADER
@@ -49,6 +53,7 @@ public class TicketOnewayActivity extends AppCompatActivity {
             TextView ticketName = TicketOffer.findViewById(R.id.ticket_type);
 
             ticketName.setText(tickets.get(row).getType());
+            double finalDiscount = discount;
             TicketOffer.setOnClickListener(v -> {
                 if (tickets.get(v.getId()).getTime() == 3000){
                     Intent intent = new Intent(TicketOnewayActivity.this,TicketOneWayDetailsActivity.class);
@@ -60,7 +65,7 @@ public class TicketOnewayActivity extends AppCompatActivity {
                 else{
                     Intent intent = new Intent(TicketOnewayActivity.this,TicketDetailsActivity.class);
                     intent.putExtra("ticketType", tickets.get(v.getId()).getType());
-                    intent.putExtra("price", tickets.get(v.getId()).getPrice() * discount);
+                    intent.putExtra("price", tickets.get(v.getId()).getPrice() * 1.0);
                     intent.putExtra("time", tickets.get(v.getId()).getTime());
                     startActivity(intent);
                 }
@@ -72,18 +77,19 @@ public class TicketOnewayActivity extends AppCompatActivity {
             TicketOfferReduced.setId(row);
             TextView ticketNameReduced = TicketOfferReduced.findViewById(R.id.ticket_type);
             ticketNameReduced.setText(tickets.get(row).getType() + " Ulgowy");
+            double finalDiscount1 = discount;
             TicketOfferReduced.setOnClickListener(v -> {
                 if (tickets.get(v.getId()).getTime() == 3000){
                     Intent intentReduced = new Intent(TicketOnewayActivity.this, TicketOneWayDetailsActivity.class);
                     intentReduced.putExtra("ticketType", tickets.get(v.getId()).getType() + " ulgowy");
-                    intentReduced.putExtra("price", tickets.get(v.getId()).getPrice() * discount);
+                    intentReduced.putExtra("price", tickets.get(v.getId()).getPrice() * finalDiscount1);
                     intentReduced.putExtra("time", tickets.get(v.getId()).getTime());
                     startActivity(intentReduced);
                 }
                 else {
                     Intent intentReduced = new Intent(TicketOnewayActivity.this, TicketDetailsActivity.class);
                     intentReduced.putExtra("ticketType", tickets.get(v.getId()).getType() + " ulgowy");
-                    intentReduced.putExtra("price", tickets.get(v.getId()).getPrice() * discount);
+                    intentReduced.putExtra("price", tickets.get(v.getId()).getPrice() * finalDiscount1);
                     intentReduced.putExtra("time", tickets.get(v.getId()).getTime());
                     startActivity(intentReduced);
                 }

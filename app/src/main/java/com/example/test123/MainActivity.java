@@ -12,6 +12,7 @@ public class MainActivity extends AppCompatActivity {
 
     public User user;
     public DBHandler dbHandler;
+    TextView greetings;
 
     @SuppressLint("SetTextI18n")
     @Override
@@ -88,3 +89,4 @@ public class MainActivity extends AppCompatActivity {
         greetings.setText("Witaj, " + user.getUsername() + "!");
       }
     }
+
