@@ -55,9 +55,17 @@ public class TicketOneWayDetailsActivity extends AppCompatActivity {
         Button buy = findViewById(R.id.buy_ticket_button);
         buy.setOnClickListener(v -> {
             DBHandler db = new DBHandler(this);
-            db.buyTicket(getIntent().getStringExtra("ticketType"), getIntent().getFloatExtra("price", 0) * Integer.parseInt(count.getText().toString()), Integer.parseInt(count.getText().toString()), Integer.parseInt(TicketLine.getText().toString()), getIntent().getIntExtra("time", 0));
-            Toast.makeText(this, "Bilet został zakupiony", Toast.LENGTH_SHORT).show();
-            finish();
+            if (count.getText().toString().equals("") || Integer.parseInt(count.getText().toString()) == 0){
+                Toast.makeText(this, "Podaj ilość biletów", Toast.LENGTH_SHORT).show();
+            }
+            else if (TicketLine.getText().toString().equals("") || Integer.parseInt(TicketLine.getText().toString()) == 0){
+                Toast.makeText(this, "Podaj numer linii", Toast.LENGTH_SHORT).show();
+            }
+            else {
+                db.buyTicket(getIntent().getStringExtra("ticketType"), getIntent().getFloatExtra("price", 0) * Integer.parseInt(count.getText().toString()), Integer.parseInt(count.getText().toString()), Integer.parseInt(TicketLine.getText().toString()), getIntent().getIntExtra("time", 0));
+                Toast.makeText(this, "Bilet został zakupiony", Toast.LENGTH_SHORT).show();
+                finish();
+            }
         });
     }
 }

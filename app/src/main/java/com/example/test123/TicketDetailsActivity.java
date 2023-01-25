@@ -7,7 +7,7 @@ import android.text.TextWatcher;
 import android.widget.Button;
 import android.content.Intent;
 import android.widget.TextView;
-
+import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 
@@ -52,10 +52,12 @@ public class TicketDetailsActivity extends AppCompatActivity {
         count.addTextChangedListener(cWatcher);
         Button buy = findViewById(R.id.buy_ticket_button);
         buy.setOnClickListener(v -> {
-        DBHandler db = new DBHandler(this);
-        db.buyTicket(getIntent().getStringExtra("ticketType"), Float.parseFloat(ticketPrice.getText().toString().substring(0, ticketPrice.getText().toString().length() - 3)), Integer.parseInt(count.getText().toString()), 0, getIntent().getIntExtra("time", 0));
-        finish();
+            DBHandler db = new DBHandler(this);
+            if (count.getText().toString().equals("")) {
+                Toast.makeText(this, "Podaj ilość biletów", Toast.LENGTH_SHORT).show();
+            }
+            db.buyTicket(getIntent().getStringExtra("ticketType"), Float.parseFloat(ticketPrice.getText().toString().substring(0, ticketPrice.getText().toString().length() - 3)), Integer.parseInt(count.getText().toString()), 0, getIntent().getIntExtra("time", 0));
+            finish();
         });
     }
 }
-

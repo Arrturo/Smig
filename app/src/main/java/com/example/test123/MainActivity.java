@@ -74,7 +74,6 @@ public class MainActivity extends AppCompatActivity {
         });
 
         Logout.setOnClickListener(v -> {
-
             finish();
         });
 
