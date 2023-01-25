@@ -23,6 +23,7 @@
             android:background="@drawable/app_btn_default"
             android:gravity="center"
             android:text="@string/historia_mandatów"
+            android:textColor="@color/black"
             android:textAlignment="center"
             android:textSize="16sp" />
 
@@ -36,6 +37,7 @@
             android:background="@drawable/app_btn_default"
             android:gravity="center"
             android:text="@string/oplac_mandat"
+            android:textColor="@color/black"
             android:textAlignment="center"
             android:textSize="16sp" />
 

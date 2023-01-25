@@ -11,6 +11,7 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.concurrent.atomic.AtomicBoolean;
 
 
 public class TimetableDirectionActivity extends AppCompatActivity {
@@ -25,6 +26,7 @@ public class TimetableDirectionActivity extends AppCompatActivity {
         Integer id = db.getCurrentId(getIntent().getStringExtra("busNumber"));
         ArrayList<String> route = db.getAllRoutes(id);
         ArrayList<String> stops = db.getAllStop(id);
+        AtomicBoolean dir = new AtomicBoolean(false);
 
         // delete header
         if (getSupportActionBar() != null) getSupportActionBar().hide();
@@ -42,6 +44,11 @@ public class TimetableDirectionActivity extends AppCompatActivity {
         Button btnTop = directionsView.findViewById(R.id.timetable_direction_element_btn_top);
         btnTop.setText(route.get(0) + " -> " + route.get(route.size()-1));
         btnTop.setOnClickListener(v -> {
+            if(dir.get()){
+                Collections.reverse(route);
+                Collections.reverse(stops);
+                dir.set(false);
+            }
             Intent intent = new Intent(TimetableDirectionActivity.this, TimetableTimesMenuActivity.class);
             intent.putExtra("id", id);
             intent.putExtra("route", route);
@@ -53,10 +60,13 @@ public class TimetableDirectionActivity extends AppCompatActivity {
         btnBottom.setText(route.get(route.size() - 1 ) + " -> " + route.get(0));
         btnBottom.setOnClickListener(v -> {
             Intent intent = new Intent(TimetableDirectionActivity.this, TimetableTimesMenuActivity.class);
-            Collections.reverse(route);
+            if(!dir.get()){
+                Collections.reverse(route);
+                Collections.reverse(stops);
+                dir.set(true);
+            }
             intent.putExtra("id", id);
             intent.putExtra("route", route);
-            Collections.reverse(stops);
             intent.putExtra("stop", stops);
             startActivity(intent);
         });
