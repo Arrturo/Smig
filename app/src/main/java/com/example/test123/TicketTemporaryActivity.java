@@ -48,7 +48,7 @@ public class TicketTemporaryActivity extends AppCompatActivity {
 
             ticketName.setText(tickets.get(row).getType());
             TicketOffer.setOnClickListener(v -> {
-                Intent intent = new Intent(TicketTemporaryActivity.this,TicketDetailsActivity.class);
+                Intent intent = new Intent(TicketTemporaryActivity.this,TicketTimeDetailsActivity.class);
                 intent.putExtra("ticketType", tickets.get(v.getId()).getType());
                 intent.putExtra("price", tickets.get(v.getId()).getPrice() * 1.0);
                 intent.putExtra("time", tickets.get(v.getId()).getTime());
@@ -63,7 +63,7 @@ public class TicketTemporaryActivity extends AppCompatActivity {
             ticketNameReduced.setText(tickets.get(row).getType() + " Ulgowy");
             double finalDiscount = discount;
             TicketOfferReduced.setOnClickListener(v -> {
-                Intent intentReduced = new Intent(TicketTemporaryActivity.this,TicketDetailsActivity.class);
+                Intent intentReduced = new Intent(TicketTemporaryActivity.this,TicketTimeDetailsActivity.class);
                 intentReduced.putExtra("ticketType", tickets.get(v.getId()).getType() + " ulgowy");
                 intentReduced.putExtra("price", tickets.get(v.getId()).getPrice() * finalDiscount);
                 intentReduced.putExtra("time", tickets.get(v.getId()).getTime());
