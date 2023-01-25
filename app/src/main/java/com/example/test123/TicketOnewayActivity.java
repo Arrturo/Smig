@@ -63,7 +63,7 @@ public class TicketOnewayActivity extends AppCompatActivity {
                     startActivity(intent);
                 }
                 else{
-                    Intent intent = new Intent(TicketOnewayActivity.this,TicketDetailsActivity.class);
+                    Intent intent = new Intent(TicketOnewayActivity.this,TicketTimeDetailsActivity.class);
                     intent.putExtra("ticketType", tickets.get(v.getId()).getType());
                     intent.putExtra("price", tickets.get(v.getId()).getPrice() * 1.0);
                     intent.putExtra("time", tickets.get(v.getId()).getTime());
@@ -87,7 +87,7 @@ public class TicketOnewayActivity extends AppCompatActivity {
                     startActivity(intentReduced);
                 }
                 else {
-                    Intent intentReduced = new Intent(TicketOnewayActivity.this, TicketDetailsActivity.class);
+                    Intent intentReduced = new Intent(TicketOnewayActivity.this, TicketTimeDetailsActivity.class);
                     intentReduced.putExtra("ticketType", tickets.get(v.getId()).getType() + " ulgowy");
                     intentReduced.putExtra("price", tickets.get(v.getId()).getPrice() * finalDiscount1);
                     intentReduced.putExtra("time", tickets.get(v.getId()).getTime());

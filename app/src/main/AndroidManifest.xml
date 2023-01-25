@@ -37,7 +37,6 @@
         <activity android:name=".TimetableTimesMenuActivity"/>
         <activity android:name=".TimetableDetailsActivity"/>
         <activity android:name=".TicketOnewayActivity"/>
-        <activity android:name=".TicketDetailsActivity"/>
         <activity android:name=".TicketTemporaryActivity"/>
         <activity android:name=".TicketTemporaryDetailsActivity"/>
         <activity android:name=".TicketLongtermDetailsActivity"/>
