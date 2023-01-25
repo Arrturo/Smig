@@ -18,6 +18,7 @@
         android:background="@drawable/client_profile_btn_reduction"
         android:gravity="center"
         android:text="@string/dodaj_ulge"
+        android:textColor="@color/black"
         android:textAlignment="center"
         android:paddingBottom="5dp"
         android:textSize="16sp"
@@ -28,7 +29,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-
         android:textColor="@color/black"
         android:text="Nie masz ulgi? Dodaj ją!"
         android:textSize="16sp"
