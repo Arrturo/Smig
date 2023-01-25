@@ -49,10 +49,9 @@ public class FinePayDetailsActivity extends AppCompatActivity {
             pay.setId(row);
             System.out.println(mandates.get(row).getID());
             pay.setOnClickListener(v -> {
-                Intent intent = new Intent(FinePayDetailsActivity.this, MainActivity.class);
                 dbHandler.payMandate(mandates.get(v.getId()).getID());
                 Toast.makeText(FinePayDetailsActivity.this, "Zapłacono mandat wystawiony dnia: " + mandates.get(v.getId()).getDate().toString().substring(0, 10), Toast.LENGTH_SHORT).show();
-                startActivity(intent);
+                finish();
             });
         }
 
