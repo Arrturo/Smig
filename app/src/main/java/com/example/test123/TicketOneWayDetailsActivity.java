@@ -20,7 +20,7 @@ public class TicketOneWayDetailsActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         //DELETE HEADER
-        double price = getIntent().getDoubleExtra("price", 0);
+        float price = (float) getIntent().getDoubleExtra("price", 0);
         if (getSupportActionBar() != null) getSupportActionBar().hide();
         setContentView(R.layout.ticket_one_way_details);
         TextView header_title = findViewById(R.id.header_title);
@@ -62,7 +62,7 @@ public class TicketOneWayDetailsActivity extends AppCompatActivity {
                 Toast.makeText(this, "Podaj numer linii", Toast.LENGTH_SHORT).show();
             }
             else {
-                db.buyTicket(getIntent().getStringExtra("ticketType"), getIntent().getFloatExtra("price", 0) * Integer.parseInt(count.getText().toString()), Integer.parseInt(count.getText().toString()), Integer.parseInt(TicketLine.getText().toString()), getIntent().getIntExtra("time", 0));
+                db.buyTicket(getIntent().getStringExtra("ticketType"), price * Integer.parseInt(count.getText().toString()), Integer.parseInt(count.getText().toString()), Integer.parseInt(TicketLine.getText().toString()), getIntent().getIntExtra("time", 0));
                 Toast.makeText(this, "Bilet został zakupiony", Toast.LENGTH_SHORT).show();
                 finish();
             }

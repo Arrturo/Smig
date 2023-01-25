@@ -53,7 +53,7 @@ public class TicketDetailsActivity extends AppCompatActivity {
         Button buy = findViewById(R.id.buy_ticket_button);
         buy.setOnClickListener(v -> {
             DBHandler db = new DBHandler(this);
-            if (count.getText().toString().equals("")) {
+            if (count.getText().toString().equals("") || count.getText().toString().equals("0")) {
                 Toast.makeText(this, "Podaj ilość biletów", Toast.LENGTH_SHORT).show();
             }
             db.buyTicket(getIntent().getStringExtra("ticketType"), Float.parseFloat(ticketPrice.getText().toString().substring(0, ticketPrice.getText().toString().length() - 3)), Integer.parseInt(count.getText().toString()), 0, getIntent().getIntExtra("time", 0));

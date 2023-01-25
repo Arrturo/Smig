@@ -34,7 +34,7 @@ public class TicketLongtermDetailsActivity extends AppCompatActivity{
         ticketType.setText(getIntent().getStringExtra("ticketType"));
         ticketPrice.setText(String.format("%.2f", getIntent().getDoubleExtra("price", 0)) + " zł");
         BuyTicket.setOnClickListener(view -> {
-            dbHandler.buyTicket(getIntent().getStringExtra("ticketType"), getIntent().getFloatExtra("price", 0), 1, 0, getIntent().getIntExtra("time", 0));
+            dbHandler.buyTicket(getIntent().getStringExtra("ticketType"), (float) getIntent().getDoubleExtra("price", 0), 1, 0, getIntent().getIntExtra("time", 0));
             Toast.makeText(getApplicationContext(), "Bilet zakupiony", Toast.LENGTH_SHORT).show();
             finish();
         });

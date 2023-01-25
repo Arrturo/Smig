@@ -19,7 +19,7 @@ public class TicketTimeDetailsActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         //DELETE HEADER
-        double price = getIntent().getDoubleExtra("price", 0);
+        float price = (float) getIntent().getDoubleExtra("price", 0);
         if (getSupportActionBar() != null) getSupportActionBar().hide();
         setContentView(R.layout.ticket_time_details);
         TextView header_title = findViewById(R.id.header_title);
@@ -53,9 +53,14 @@ public class TicketTimeDetailsActivity extends AppCompatActivity {
         Button buy = findViewById(R.id.buy_ticket_button);
         buy.setOnClickListener(v -> {
             DBHandler db = new DBHandler(this);
-            db.buyTicket(getIntent().getStringExtra("ticketType"), getIntent().getFloatExtra("price", 0) * Integer.parseInt(count.getText().toString()), Integer.parseInt(count.getText().toString()), 0, getIntent().getIntExtra("time", 0));
+            if (count.getText().toString().equals("") || count.getText().toString().equals("0")) {
+                Toast.makeText(this, "Podaj ilość biletów", Toast.LENGTH_SHORT).show();
+                return;
+            }
+            db.buyTicket(getIntent().getStringExtra("ticketType"), price * Integer.parseInt(count.getText().toString()), Integer.parseInt(count.getText().toString()), 0, getIntent().getIntExtra("time", 0));
             Toast.makeText(this, "Bilet został zakupiony", Toast.LENGTH_SHORT).show();
             finish();
+
         });
     }
 }
