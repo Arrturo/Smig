@@ -1,4 +1,4 @@
-# Public Transport Mobile App
+# Public Transport Mobile App ![Project Status](https://img.shields.io/badge/status-demo%20-blue)
 This is a mobile application based on project https://github.com/Arrturo/DSSCKWA_8_00. 
 The app is currently available for Android.
 
