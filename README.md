@@ -2,19 +2,21 @@
 This is a mobile application based on project https://github.com/Arrturo/DSSCKWA_8_00. 
 The app is currently available for Android.
 
-## Main menu
+## Example screenshots
+### Main menu
 ![](https://i.imgur.com/jHIhq48.png)
 
-## Buy ticket
+### Buy ticket
 ![](https://i.imgur.com/pWG2cCN.png)
 ![](https://i.imgur.com/rDFvxLS.png)
 
-## Check transport schedule
+### Check transport schedule
 ![](https://i.imgur.com/Eo8Z03V.png)
 ![](https://i.imgur.com/PgsU1oM.png)
 
 ## Table of contents
 * [General info](#public-transport-mobile-app)
+* [Screenshots](example-screenshots)
 * [Technologies](#technologies)
 * [Installation](#installation)
 * [Usage](#usage)
