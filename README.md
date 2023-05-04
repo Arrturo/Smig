@@ -1,4 +1,4 @@
-# śmig ![Project Status](https://img.shields.io/badge/status-demo%20-blue)
+# Śmig ![Project Status](https://img.shields.io/badge/status-demo%20-blue)
 This is a mobile application based on project https://github.com/Arrturo/DSSCKWA_8_00. 
 The app is currently available for Android.
 
@@ -15,7 +15,7 @@ The app is currently available for Android.
 ![](https://i.imgur.com/PgsU1oM.png)
 
 ## Table of contents
-* [General info](#smig)
+* [General info](#śmig)
 * [Screenshots](#example-screenshots)
 * [Technologies](#technologies)
 * [Installation](#installation)
