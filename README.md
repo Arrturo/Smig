@@ -1,4 +1,4 @@
-# Public Transport Mobile App ![Project Status](https://img.shields.io/badge/status-demo%20-blue)
+# śmig ![Project Status](https://img.shields.io/badge/status-demo%20-blue)
 This is a mobile application based on project https://github.com/Arrturo/DSSCKWA_8_00. 
 The app is currently available for Android.
 
@@ -15,8 +15,8 @@ The app is currently available for Android.
 ![](https://i.imgur.com/PgsU1oM.png)
 
 ## Table of contents
-* [General info](#public-transport-mobile-app)
-* [Screenshots](example-screenshots)
+* [General info](#smig)
+* [Screenshots](#example-screenshots)
 * [Technologies](#technologies)
 * [Installation](#installation)
 * [Usage](#usage)
